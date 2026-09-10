@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "is_simulation": true,
+  "purpose": "Fase 1 - NLP, semantic deduplication, map matching, survey, SAW",
+  "input_file": "laporan_fase1.csv",
+  "ground_truth_file": "ground_truth_fase1.csv",
+  "survey_file": "survey_fase1.csv",
+  "map_matching": {
+    "expected_max_distance_m": 50,
+    "note": "Koordinat dibuat 0-15 m dari segmen sintetis dan dijauhkan dari simpang."
+  },
+  "deduplication": {
+    "signals": [
+      "semantic_similarity",
+      "distance_m",
+      "time_delta"
+    ],
+    "ground_truth": "expected_duplicate_group"
+  },
+  "saw": {
+    "criteria": [
+      {
+        "name": "tingkat_kerusakan",
+        "weight": 0.3,
+        "type": "benefit"
+      },
+      {
+        "name": "dampak_akses",
+        "weight": 0.2,
+        "type": "benefit"
+      },
+      {
+        "name": "peran_jalan",
+        "weight": 0.15,
+        "type": "benefit"
+      },
+      {
+        "name": "panjang_rusak_m",
+        "weight": 0.15,
+        "type": "benefit"
+      },
+      {
+        "name": "jumlah_laporan_valid",
+        "weight": 0.1,
+        "type": "benefit"
+      },
+      {
+        "name": "fasilitas_kritis",
+        "weight": 0.05,
+        "type": "benefit"
+      },
+      {
+        "name": "lama_tidak_ditangani_hari",
+        "weight": 0.05,
+        "type": "benefit"
+      }
+    ],
+    "normalization": "benefit: value/max(value)",
+    "note": "Bobot/skala hanya fixture demo, bukan standar teknis PUPR."
+  }
+}
