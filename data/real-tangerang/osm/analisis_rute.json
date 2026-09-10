@@ -3,11 +3,7 @@
   "catatan": "Rute dihitung dari graf koridor hasil scripts/build_corridor_graph.py. Belum ada penutupan pekerjaan nyata; ini uji keterhubungan.",
   "hasil": [
     {
-      "uji": "Barat->Timur koridor",
-      "rute": false
-    },
-    {
-      "uji": "Wangsakara->Santika",
+      "uji": "Wangsakara->Santika (jalur alternatif resmi)",
       "rute": true,
       "jarak_km": 3.44,
       "nama_jalan": [
@@ -24,8 +20,36 @@
       ]
     },
     {
-      "uji": "Wangsakara->Otista (arah kota)",
-      "rute": false
+      "uji": "Wangsakara->Sitanala (Neglasari)",
+      "rute": true,
+      "jarak_km": 16.56,
+      "nama_jalan": [
+        "Jalan Nusa Indah I",
+        "Jalan Mawar 1",
+        "Jalan Mawar 2",
+        "Jalan Daman Huri",
+        "Gang Musholla",
+        "Jalan Kiakdar",
+        "Jalan Prabu Kian Santang",
+        "Grand Tomang",
+        "Jalan Grand Anturium II",
+        "Jalan Grand Anturium I",
+        "Jalan Muhammad Thoha",
+        "Jalan Raya Kuta Bumi",
+        "Jalan Haji Napi",
+        "Jalan Raya Cadas",
+        "Jalan Raya Mauk",
+        "Jalan MH Thamrin",
+        "Jalan Kedaung Baru",
+        "Jalan Tangga Tehay",
+        "Jalan Iskandar Muda",
+        "Jalan Raya Rawa Kucing",
+        "Jalan Jagal Lama/Ecopark",
+        "Gang Melati",
+        "Jalan Sitanala IV",
+        "Jalan Dokter Sitanala"
+      ],
+      "jalan_alternatif_resmi": []
     }
   ]
 }

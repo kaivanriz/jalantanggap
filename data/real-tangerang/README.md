@@ -8,10 +8,13 @@ Wilayah studi: **Kota Tangerang**. Diakses 10 September 2026. Isi folder ini ber
 |---|---|
 | pekerjaan_resmi.csv | Enam ruas pekerjaan dari berita resmi Pemkot Tangerang: jadwal, panjang, skema lalu lintas, status |
 | jalur_alternatif_resmi.csv | Jalur alternatif dan imbauan resmi Dishub |
-| analisis_koridor.md | Analisis koridor: temuan, cara membuat ulang, keterbatasan |
-| osm/jalan_tangerang.geojson | Geometri jalan bernama dari OpenStreetMap untuk koridor studi |
-| osm/koridor_nodes.csv + osm/koridor_edges.csv | Graf persimpangan siap-rute hasil OSM asli |
-| osm/analisis_rute.json | Hasil rute uji (termasuk jalur alternatif resmi) |
+| pemetaan_pekerjaan_osm.json | Pemetaan nama pekerjaan resmi → way OSM (alias ejaan, status verifikasi) |
+| analisis_koridor.md | Analisis koridor: skenario penutupan, temuan nama OSM, keterbatasan |
+| osm/koridor_nodes.csv + osm/koridor_edges.csv | Graf persimpangan siap-rute dari OSM asli (semua kelas jalan) |
+| osm/skenario_penutupan.json | Hasil 5 skenario penutupan + deteksi konflik jalur alternatif |
+| osm/fasilitas.geojson | 143 sekolah, 48 faskes, 28 pasar (OSM; jam padat belum diisi) |
+| osm/jalan_tangerang.geojson | Geometri jalan bernama se-Kota Tangerang |
+| osm/analisis_rute.json | Uji keterhubungan jalur alternatif resmi |
 | osm/koridor_detour_mtoha.geojson | Way OSM untuk nama jalur alternatif resmi M. Toha |
 
 ## Temuan utama
@@ -38,23 +41,26 @@ Wilayah studi: **Kota Tangerang**. Diakses 10 September 2026. Isi folder ini ber
 
 - **Status adalah kondisi saat berita diterbitkan**, bukan status langsung hari ini. M. Toha 98% pada 8 September; perkiraan dibuka Jumat bukan bukti sudah dibuka.
 - **Belum ada koordinat batas pekerjaan dan jam penutupan.** Berita menyebut nama ruas, bukan poligon/segmen tiap pekerjaan. Karena itu pekerjaan ini **belum boleh** langsung menutup segmen pada mesin rute.
-- Nama jalan OSM perlu diselaraskan: "Jalan Sultan Iskandar Muda" (63 way) adalah koridor panjang di timur (trunk), berbeda dari "Jalan Iskandar Muda" (19 way) di Neglasari. Verifikasi sebelum memakainya.
-- Data ini Kota Tangerang. Rajeg berada di Kabupaten Tangerang, sehingga koridor Kabupaten belum tercakup.
+- **Nama OSM tidak selalu sama dengan nama resmi.** M. Toha tercatat sebagai "Jalan **Muhammad Thoha**" dan Marsekal Suryadarma sebagai "Jalan **Surya Darma**" — regex kasar kehilangan keduanya. Tabel alias diverifikasi ada di `pemetaan_pekerjaan_osm.json`. "Jalan Sultan Iskandar Muda" (koridor timur, trunk) berbeda dari "Jalan Iskandar Muda" (Neglasari).
+- Data ini Kota Tangerang. Rajeg berada di Kabupaten Tangerang, sehingga koridor Kabupaten belum tercakup. Teuku Umar dan Otista juga belum masuk bbox koridor.
 - Portal `data.tangerangkota.go.id` dan `satudata.tangerangkab.go.id` tidak berhasil diakses lewat webfetch pada sesi ini; kegagalan akses bukan bukti data tidak tersedia.
 
 ## Sumber yang belum diambil
 
 1. **Batas koordinat dan jam pembatasan** tiap pekerjaan: minta ke PUPR/Dishub atau ekstrak dari pengumuman resmi.
 2. **Volume lalu lintas per arah/jam**: Dishub atau survei; belum ditemukan dalam sesi ini.
-3. **Lokasi sekolah, pasar, fasilitas kesehatan** beserta jam kegiatan: OSM/direktori resmi + konfirmasi pengelola.
+3. **Jam kegiatan sekolah/pasar/faskes** (lokasi sudah ada di `fasilitas.geojson`): perlu konfirmasi pengelola.
 4. **Geometri koridor Rajeg (Kabupaten)**: OSM bbox kabupaten; belum diambil.
 
-## Mengambil ulang geometri OSM
+## Mengambil ulang data
 
 ```powershell
-uv run python scripts/build_corridor_graph.py   # graf persimpangan koridor
-uv run python scripts/route_corridor.py         # uji rute + analisis_rute.json
-uv run python scripts/fetch_osm_tangerang.py    # jalan bernama se-Kota (opsional)
+uv run python scripts/build_corridor_graph.py       # graf persimpangan koridor dari OSM
+uv run python scripts/map_pekerjaan_osm.py          # pekerjaan resmi -> way OSM
+uv run python scripts/scenario_closures.py          # skenario penutupan + konflik
+uv run python scripts/route_corridor.py             # uji keterhubungan jalur resmi
+uv run python scripts/fetch_fasilitas_tangerang.py  # sekolah/pasar/faskes
+uv run python scripts/fetch_osm_tangerang.py        # jalan bernama se-Kota (opsional)
 ```
 
 Data © OpenStreetMap contributors (ODbL). Wajib atribusi. Atribut `lanes`, `oneway`, dan `maxspeed` sering kosong dan harus diverifikasi untuk rute nyata.

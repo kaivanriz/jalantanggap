@@ -1,0 +1,203 @@
+{
+  "sumber": {
+    "graf": "koridor_nodes.csv + koridor_edges.csv (OSM)",
+    "pekerjaan": "pekerjaan_resmi.csv (berita Pemkot Tangerang)",
+    "pemetaan": "pemetaan_pekerjaan_osm.json"
+  },
+  "asal": {
+    "node": "4556877724",
+    "label": "ujung barat Jalan Muhammad Thoha (M. Toha)",
+    "koordinat_lonlat": [
+      106.5946629,
+      -6.1517946
+    ]
+  },
+  "tujuan": {
+    "node": "2624649242",
+    "label": "ujung timur Jalan Aria Santika (titik temu jalur resmi ke arah Otista)",
+    "koordinat_lonlat": [
+      106.6211801,
+      -6.1773499
+    ]
+  },
+  "model_penutupan": {
+    "CT01": {
+      "way_dipetakan": 10,
+      "way_tengah_ditutup": 4
+    },
+    "CT02": {
+      "way_dipetakan": 19,
+      "way_tengah_ditutup": 7
+    },
+    "CT03": {
+      "way_dipetakan": 3,
+      "way_tengah_ditutup": 1
+    },
+    "CT04": {
+      "way_dipetakan": 4,
+      "way_tengah_ditutup": 2
+    },
+    "CT05": {
+      "way_dipetakan": 0,
+      "way_tengah_ditutup": 0
+    },
+    "CT06": {
+      "way_dipetakan": 3,
+      "way_tengah_ditutup": 1
+    },
+    "SIM99": {
+      "way_dipetakan": 4,
+      "way_tengah_ditutup": 2
+    }
+  },
+  "perhatian": [
+    "jalur_resmi_km: rute paksa origin -> Aria Wangsakara -> Aria Santika -> dest (3 kaki Dijkstra); \"terputus\" berarti akses/pintu jalur resmi ikut terhalang penutupan.",
+    "SIM99 = penutupan separuh Jalan Aria Santika untuk mensimulasikan \"alternatifnya juga diperbaiki\"; bukan pekerjaan resmi.",
+    "Way \"tengah\" = sepertiga tengah urutan centroid searah sumbu dominan; pendekatan kasar untuk demo, bukan batas lapangan.",
+    "Jarak = proksi geometrik; tanpa volume lalu lintas tidak ada prediksi kemacetan.",
+    "S0 tetap memakai jalan pekerjaan (sesuai berita: tidak ada penutupan total)."
+  ],
+  "hasil": [
+    {
+      "skenario": "S0_tanpa_penutupan",
+      "sebagian": [],
+      "total": [],
+      "edge_diblokir": 0,
+      "rute": true,
+      "jarak_km": 5.29,
+      "delta_km": 0.0,
+      "jalur_resmi_km": 8.02,
+      "jalan_dilalui": [
+        "Jalan Muhammad Thoha",
+        "Jalan Periuk Jaya",
+        "Jalan Angsana 10",
+        "Jalan Cemara Raya",
+        "Jalan Blok A5",
+        "Jalan Blok A6",
+        "Jalan Blok B10",
+        "Jalan Blok A8",
+        "Jalan RHM Noeradji"
+      ],
+      "detour_resmi_terpakai": [],
+      "konflik": {
+        "jumlah_way_pekerjaan_lain": 4,
+        "nama_jalan": [
+          "Jalan Muhammad Thoha"
+        ]
+      }
+    },
+    {
+      "skenario": "S1_mtoha_sebagian",
+      "sebagian": [
+        "CT01"
+      ],
+      "total": [],
+      "edge_diblokir": 60,
+      "rute": true,
+      "jarak_km": 5.71,
+      "delta_km": 0.42,
+      "jalur_resmi_km": 8.36,
+      "jalan_dilalui": [
+        "Jalan Muhammad Thoha",
+        "Jalan Periuk Jaya",
+        "Jalan Angsana 10",
+        "Jalan Cemara Raya",
+        "Jalan Blok A5",
+        "Jalan Blok A6",
+        "Jalan Blok B10",
+        "Jalan Blok A8",
+        "Jalan Larasati",
+        "Jalan Amarta",
+        "Jalan Benua Raya",
+        "Gang Abah Na'ain",
+        "Jalan RHM Noeradji"
+      ],
+      "detour_resmi_terpakai": [],
+      "konflik": {
+        "jumlah_way_pekerjaan_lain": 0,
+        "nama_jalan": []
+      }
+    },
+    {
+      "skenario": "S2_alternatif_ikut_dikerjakan",
+      "sebagian": [
+        "CT01",
+        "SIM99"
+      ],
+      "total": [],
+      "edge_diblokir": 74,
+      "rute": true,
+      "jarak_km": 5.71,
+      "delta_km": 0.42,
+      "jalur_resmi_km": 8.43,
+      "jalan_dilalui": [
+        "Jalan Muhammad Thoha",
+        "Jalan Periuk Jaya",
+        "Jalan Angsana 10",
+        "Jalan Cemara Raya",
+        "Jalan Blok A5",
+        "Jalan Blok A6",
+        "Jalan Blok B10",
+        "Jalan Blok A8",
+        "Jalan Larasati",
+        "Jalan Amarta",
+        "Jalan Benua Raya",
+        "Gang Abah Na'ain",
+        "Jalan RHM Noeradji"
+      ],
+      "detour_resmi_terpakai": [],
+      "konflik": {
+        "jumlah_way_pekerjaan_lain": 0,
+        "nama_jalan": []
+      }
+    },
+    {
+      "skenario": "S3_semua_pekerjaan_asli_sebagian",
+      "sebagian": [
+        "CT01",
+        "CT02",
+        "CT03",
+        "CT04"
+      ],
+      "total": [],
+      "edge_diblokir": 174,
+      "rute": true,
+      "jarak_km": 5.71,
+      "delta_km": 0.42,
+      "jalur_resmi_km": 8.36,
+      "jalan_dilalui": [
+        "Jalan Muhammad Thoha",
+        "Jalan Periuk Jaya",
+        "Jalan Angsana 10",
+        "Jalan Cemara Raya",
+        "Jalan Blok A5",
+        "Jalan Blok A6",
+        "Jalan Blok B10",
+        "Jalan Blok A8",
+        "Jalan Larasati",
+        "Jalan Amarta",
+        "Jalan Benua Raya",
+        "Gang Abah Na'ain",
+        "Jalan RHM Noeradji"
+      ],
+      "detour_resmi_terpakai": [],
+      "konflik": {
+        "jumlah_way_pekerjaan_lain": 0,
+        "nama_jalan": []
+      }
+    },
+    {
+      "skenario": "S4_semua_penutupan_total",
+      "sebagian": [],
+      "total": [
+        "CT01",
+        "CT02",
+        "CT03",
+        "CT04"
+      ],
+      "edge_diblokir": 600,
+      "rute": false,
+      "catatan": "tidak ada rute; penutupan total seluruh way lebih berat dari kondisi berita (tidak ada penutupan penuh)"
+    }
+  ]
+}

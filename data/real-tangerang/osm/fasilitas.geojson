@@ -1,0 +1,4611 @@
+{
+ "type": "FeatureCollection",
+ "attribution": "(c) OpenStreetMap contributors (ODbL)",
+ "bbox": [
+  -6.21,
+  106.585,
+  -6.135,
+  106.685
+ ],
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2472143825,
+    "tipe_el": "node",
+    "nama": "Perguruan Tinggi Buddhi",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.627561,
+     -6.18642
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624743680,
+    "tipe_el": "node",
+    "nama": "SDN Cibodas, Cimone 1, 5",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.612637,
+     -6.187796
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624743689,
+    "tipe_el": "node",
+    "nama": "SDN Cimone 7",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.611659,
+     -6.188556
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624743706,
+    "tipe_el": "node",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.615122,
+     -6.192745
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624743732,
+    "tipe_el": "node",
+    "nama": "SMA, SMK PGRI 109",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.617279,
+     -6.194
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624743774,
+    "tipe_el": "node",
+    "nama": "SMP, SMA, SMK Nusa Putra",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.618482,
+     -6.195578
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624743775,
+    "tipe_el": "node",
+    "nama": "SDN Karawaci 1, 20",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.623176,
+     -6.1957
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624743938,
+    "tipe_el": "node",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.60776,
+     -6.198079
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624743955,
+    "tipe_el": "node",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.612506,
+     -6.199232
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624743993,
+    "tipe_el": "node",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.615866,
+     -6.202154
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624744033,
+    "tipe_el": "node",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.604051,
+     -6.204078
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624744036,
+    "tipe_el": "node",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.613523,
+     -6.204642
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624744039,
+    "tipe_el": "node",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.601057,
+     -6.204985
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624744040,
+    "tipe_el": "node",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.613011,
+     -6.20512
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624744045,
+    "tipe_el": "node",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.613281,
+     -6.205695
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624744046,
+    "tipe_el": "node",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.613775,
+     -6.205717
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624744050,
+    "tipe_el": "node",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.613426,
+     -6.206134
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624744051,
+    "tipe_el": "node",
+    "nama": "SMA Yayasan Islamic Center Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.612725,
+     -6.205598
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624744052,
+    "tipe_el": "node",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.613758,
+     -6.206182
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624744053,
+    "tipe_el": "node",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.613599,
+     -6.206986
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624744061,
+    "tipe_el": "node",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.60666,
+     -6.208311
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 2624787351,
+    "tipe_el": "node",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.635962,
+     -6.159551
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 4235083227,
+    "tipe_el": "node",
+    "nama": "SMP Negeri 1 Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.632376,
+     -6.171045
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 4244121741,
+    "tipe_el": "node",
+    "nama": "RS An-Nisa Tangerang",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.604694,
+     -6.187972
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 4245857399,
+    "tipe_el": "node",
+    "nama": "Rumah Sakit TK. IV. Daan Mogot",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.631528,
+     -6.172042
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 4245865388,
+    "tipe_el": "node",
+    "nama": "Rumah Bersalin Metta Medika",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.643073,
+     -6.166271
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 4245874112,
+    "tipe_el": "node",
+    "nama": "RSIA Bunda Sejati Jatiuwung",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.589265,
+     -6.189999
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 4247785801,
+    "tipe_el": "node",
+    "nama": "SMK Angkasa 2 Sepatan",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.590177,
+     -6.146719
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 4956352243,
+    "tipe_el": "node",
+    "nama": "SMP Negeri 2 Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.636242,
+     -6.172054
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6150676302,
+    "tipe_el": "node",
+    "nama": "KB &TK Bonavita",
+    "jenis": "sekolah",
+    "amenity": "kindergarten",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.632064,
+     -6.174161
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6150681411,
+    "tipe_el": "node",
+    "nama": "King’s English and Education Centre",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.63208,
+     -6.175696
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6150681488,
+    "tipe_el": "node",
+    "nama": "Universitas Muhammadiyah Tangerang",
+    "jenis": "sekolah",
+    "amenity": "college",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.633471,
+     -6.171808
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6150681886,
+    "tipe_el": "node",
+    "nama": "SMK Kartini Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.634764,
+     -6.171997
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6150682986,
+    "tipe_el": "node",
+    "nama": "Sekolah Bonavita",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.632899,
+     -6.173627
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6154549288,
+    "tipe_el": "node",
+    "nama": "SD Negeri Tangerang 6",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.634619,
+     -6.172448
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6154549386,
+    "tipe_el": "node",
+    "nama": "SDN Tangerang 3",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.635339,
+     -6.172458
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6154559186,
+    "tipe_el": "node",
+    "nama": "TK Trisula Perwari",
+    "jenis": "sekolah",
+    "amenity": "kindergarten",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.635287,
+     -6.171887
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6154559188,
+    "tipe_el": "node",
+    "nama": "Bio Medika Lab",
+    "jenis": "faskes",
+    "amenity": "clinic",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.636027,
+     -6.168693
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6154639085,
+    "tipe_el": "node",
+    "nama": "SDN Pasar Baru 1",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.630444,
+     -6.167249
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6154722192,
+    "tipe_el": "node",
+    "nama": "Strada: TK St Maria 2, SD St Aloysius, SMP St Maria 2",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.625655,
+     -6.16974
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6154723585,
+    "tipe_el": "node",
+    "nama": "Perguruan Tinggi Lepisi",
+    "jenis": "sekolah",
+    "amenity": "college",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.627221,
+     -6.168411
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6154789586,
+    "tipe_el": "node",
+    "nama": "Klinik Bhayangkara Tangerang",
+    "jenis": "faskes",
+    "amenity": "clinic",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.625823,
+     -6.174723
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6154809387,
+    "tipe_el": "node",
+    "nama": "RS Melati",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.625208,
+     -6.177805
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6154809790,
+    "tipe_el": "node",
+    "nama": "SAMedika",
+    "jenis": "faskes",
+    "amenity": "clinic",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.62672,
+     -6.18042
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6155474089,
+    "tipe_el": "node",
+    "nama": "SD Negeri Tangerang 1",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.630484,
+     -6.177564
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6155553387,
+    "tipe_el": "node",
+    "nama": "Klinik YKS",
+    "jenis": "faskes",
+    "amenity": "clinic",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.631712,
+     -6.183832
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6155553388,
+    "tipe_el": "node",
+    "nama": "Perguruan Setia Bakti TK, SD, SMP, SMK, SMA",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.631403,
+     -6.182812
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6155553788,
+    "tipe_el": "node",
+    "nama": "Kawasan Kuliner Pasar Lama",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.630123,
+     -6.177712
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6264006391,
+    "tipe_el": "node",
+    "nama": "dr Ubeta Adikusnadi",
+    "jenis": "faskes",
+    "amenity": "doctors",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.624484,
+     -6.191696
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6264006394,
+    "tipe_el": "node",
+    "nama": "Klinik Karawaci Medika",
+    "jenis": "faskes",
+    "amenity": "clinic",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.623266,
+     -6.194877
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6264007288,
+    "tipe_el": "node",
+    "nama": "dr Tjuwita Mihardja",
+    "jenis": "faskes",
+    "amenity": "doctors",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.626347,
+     -6.183578
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6264013285,
+    "tipe_el": "node",
+    "nama": "Akademi Kebidanan Karya Bunda Husada",
+    "jenis": "sekolah",
+    "amenity": "college",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.623057,
+     -6.19609
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6264117088,
+    "tipe_el": "node",
+    "nama": "STKIP Surya",
+    "jenis": "sekolah",
+    "amenity": "college",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.618749,
+     -6.207359
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269490400,
+    "tipe_el": "node",
+    "nama": "SKh YKDW 01-02-03",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.620548,
+     -6.195178
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269490401,
+    "tipe_el": "node",
+    "nama": "Klinik AI Kartika",
+    "jenis": "faskes",
+    "amenity": "clinic",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.619362,
+     -6.195668
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269495096,
+    "tipe_el": "node",
+    "nama": "SMP Dharma Siswa",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.620947,
+     -6.195237
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269519902,
+    "tipe_el": "node",
+    "nama": "dr Setiawan",
+    "jenis": "faskes",
+    "amenity": "doctors",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.612913,
+     -6.192875
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269525888,
+    "tipe_el": "node",
+    "nama": "dr Anggraini, dr Yanti Ria, drg Widhitya",
+    "jenis": "faskes",
+    "amenity": "doctors",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.614164,
+     -6.194103
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269527091,
+    "tipe_el": "node",
+    "nama": "dr Prana, dr Mesiane, dr Chandra",
+    "jenis": "faskes",
+    "amenity": "doctors",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.612218,
+     -6.189507
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269548792,
+    "tipe_el": "node",
+    "nama": "dr Patmasari Prawiro",
+    "jenis": "faskes",
+    "amenity": "doctors",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.599808,
+     -6.186631
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269548803,
+    "tipe_el": "node",
+    "nama": "Posyandu Mawar 10",
+    "jenis": "faskes",
+    "amenity": "clinic",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.599846,
+     -6.185478
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269568790,
+    "tipe_el": "node",
+    "nama": "RS Tiara Tangerang",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.615128,
+     -6.195421
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269577427,
+    "tipe_el": "node",
+    "nama": "SDN Taman Cibodas",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.597948,
+     -6.182384
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269590798,
+    "tipe_el": "node",
+    "nama": "dr Sutjianto",
+    "jenis": "faskes",
+    "amenity": "doctors",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.598968,
+     -6.182026
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269599888,
+    "tipe_el": "node",
+    "nama": "SD Persada Ilmu",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.613077,
+     -6.186853
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269599889,
+    "tipe_el": "node",
+    "nama": "SMP, SMK Voctech 1, 2",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.612917,
+     -6.186344
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269599890,
+    "tipe_el": "node",
+    "nama": "Klinik Karya Agung Medika",
+    "jenis": "faskes",
+    "amenity": "clinic",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.613272,
+     -6.185331
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269599989,
+    "tipe_el": "node",
+    "nama": "STMIK MASA DEPAN",
+    "jenis": "sekolah",
+    "amenity": "college",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.612413,
+     -6.185094
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269600086,
+    "tipe_el": "node",
+    "nama": "Bina Sarana Informatika",
+    "jenis": "sekolah",
+    "amenity": "college",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.610254,
+     -6.186126
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269600087,
+    "tipe_el": "node",
+    "nama": "Politeknik LP3I Cimone",
+    "jenis": "sekolah",
+    "amenity": "college",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.610238,
+     -6.185456
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269626707,
+    "tipe_el": "node",
+    "nama": "Kusuma",
+    "jenis": "faskes",
+    "amenity": "clinic",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.598152,
+     -6.1884
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269628929,
+    "tipe_el": "node",
+    "nama": "Harapan Candi Kencana",
+    "jenis": "faskes",
+    "amenity": "clinic",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.596685,
+     -6.18175
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269632201,
+    "tipe_el": "node",
+    "nama": "dr Yulius, dr Sutanti",
+    "jenis": "faskes",
+    "amenity": "doctors",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.598733,
+     -6.181976
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269657185,
+    "tipe_el": "node",
+    "nama": "dr Tommy A",
+    "jenis": "faskes",
+    "amenity": "doctors",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.60006,
+     -6.184828
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269659585,
+    "tipe_el": "node",
+    "nama": "dr Z Dewi",
+    "jenis": "faskes",
+    "amenity": "doctors",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.601116,
+     -6.180337
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6269669886,
+    "tipe_el": "node",
+    "nama": "Khadimul Insan",
+    "jenis": "faskes",
+    "amenity": "clinic",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.598681,
+     -6.186771
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6725574487,
+    "tipe_el": "node",
+    "nama": "Ganesha Operation Sangiang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.600199,
+     -6.16883
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6725576497,
+    "tipe_el": "node",
+    "nama": "Gaesha Operation cikokol",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.634473,
+     -6.193272
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6725615562,
+    "tipe_el": "node",
+    "nama": "Icon Walk Tangerang",
+    "jenis": "pasar",
+    "amenity": "mall",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.616673,
+     -6.186127
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6725738532,
+    "tipe_el": "node",
+    "nama": "GO TANGCITY",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.634876,
+     -6.192355
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6725838426,
+    "tipe_el": "node",
+    "nama": "nuggna ahtiem",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.600212,
+     -6.168814
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6728327593,
+    "tipe_el": "node",
+    "nama": "STIE Lepisi",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.627223,
+     -6.168485
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6728542427,
+    "tipe_el": "node",
+    "nama": "STRADA THOMAS",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.62574,
+     -6.169632
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6728568139,
+    "tipe_el": "node",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.636179,
+     -6.171584
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6728568142,
+    "tipe_el": "node",
+    "nama": "SMPN 2 Tangerang",
+    "jenis": "sekolah",
+    "amenity": "college",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.63622,
+     -6.171594
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6728708950,
+    "tipe_el": "node",
+    "nama": "Universitas Raharja",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.634403,
+     -6.195413
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6728911621,
+    "tipe_el": "node",
+    "nama": "AKBID KARYA BUNDA HUSADA",
+    "jenis": "sekolah",
+    "amenity": "university",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.623042,
+     -6.196121
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6728928568,
+    "tipe_el": "node",
+    "nama": "BSI",
+    "jenis": "sekolah",
+    "amenity": "university",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.610277,
+     -6.186175
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6728993856,
+    "tipe_el": "node",
+    "nama": "STKIP SURYA",
+    "jenis": "sekolah",
+    "amenity": "university",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.61859,
+     -6.207347
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6729781011,
+    "tipe_el": "node",
+    "nama": "G0 sangiang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.600214,
+     -6.168819
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6731704452,
+    "tipe_el": "node",
+    "nama": "SMA Negeri 10 Kota Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.664877,
+     -6.191248
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6731823359,
+    "tipe_el": "node",
+    "nama": "Ganesha Operation Cikokol",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.634884,
+     -6.192356
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6731830623,
+    "tipe_el": "node",
+    "nama": "Icon Walk Tangerang",
+    "jenis": "pasar",
+    "amenity": "mall",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.616509,
+     -6.186379
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6731844178,
+    "tipe_el": "node",
+    "nama": "Ganesha Operation Cikokol",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.634836,
+     -6.192353
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6731988970,
+    "tipe_el": "node",
+    "nama": "Icon Walk Tangerang",
+    "jenis": "pasar",
+    "amenity": "mall",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.616609,
+     -6.186786
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6732119606,
+    "tipe_el": "node",
+    "nama": "AKBID KARYA HUSADA",
+    "jenis": "sekolah",
+    "amenity": "university",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.622959,
+     -6.196125
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 6751777301,
+    "tipe_el": "node",
+    "nama": "zeropromosi",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.666312,
+     -6.144033
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 7689057085,
+    "tipe_el": "node",
+    "nama": "Ponpes Ar-Ruhama",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.619385,
+     -6.185371
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 7912846353,
+    "tipe_el": "node",
+    "nama": "Service Laptop Murah",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.65026,
+     -6.20651
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 7912861459,
+    "tipe_el": "node",
+    "nama": "NTB Collection",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.649745,
+     -6.205983
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 7912877768,
+    "tipe_el": "node",
+    "nama": "Depot Air Minum Biru Rasuna Said Pakojan",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.649219,
+     -6.207278
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 7912891749,
+    "tipe_el": "node",
+    "nama": "Rizal Solite. Kredit Electronic & Furniture",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.649388,
+     -6.207415
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 7912921612,
+    "tipe_el": "node",
+    "nama": "TUJUH VAPE & Co",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.649488,
+     -6.207032
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 7912923140,
+    "tipe_el": "node",
+    "nama": "Warung Sayur Abadi",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.649406,
+     -6.207566
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 7912938007,
+    "tipe_el": "node",
+    "nama": "TIKI Agen Cipete",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.649071,
+     -6.208225
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 7912938935,
+    "tipe_el": "node",
+    "nama": "Blessing Store",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.649145,
+     -6.2078
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 7912970702,
+    "tipe_el": "node",
+    "nama": "Ratu Flat Shoes",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.648739,
+     -6.208895
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 7912979940,
+    "tipe_el": "node",
+    "nama": "Praktek Dokter Heny Arisal Medika",
+    "jenis": "faskes",
+    "amenity": "doctors",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.648685,
+     -6.209135
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 7912998580,
+    "tipe_el": "node",
+    "nama": "Toko Tas Farenbags",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.648361,
+     -6.20936
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 7913002474,
+    "tipe_el": "node",
+    "nama": "Pendawa Motor 2",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.648244,
+     -6.209153
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 7913020442,
+    "tipe_el": "node",
+    "nama": "Toko Susu Buah Hati",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.648459,
+     -6.209453
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 7913033728,
+    "tipe_el": "node",
+    "nama": "Toko Satria Jaya",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.648316,
+     -6.209926
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 7913042522,
+    "tipe_el": "node",
+    "nama": "Toko Kaca & Aluminium BINA KARYA",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.648099,
+     -6.209835
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 9695576508,
+    "tipe_el": "node",
+    "nama": "RSIA Gebang Medika",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.592617,
+     -6.183065
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 9695764261,
+    "tipe_el": "node",
+    "nama": "Strada SMK Daan Mogot",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.619899,
+     -6.180686
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 9695795540,
+    "tipe_el": "node",
+    "nama": "Universitas Muhammadiyah Tangerang",
+    "jenis": "sekolah",
+    "amenity": "university",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.630898,
+     -6.192484
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 9696016624,
+    "tipe_el": "node",
+    "nama": "SMA Negeri 1 Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.633323,
+     -6.170116
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 9731788223,
+    "tipe_el": "node",
+    "nama": "SMK Kesehatan Banten",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.658202,
+     -6.184319
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 12587150201,
+    "tipe_el": "node",
+    "nama": "RSIA Pratiwi",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.620217,
+     -6.176584
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 12869981814,
+    "tipe_el": "node",
+    "nama": "Pasar Lama Tangerang",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.63027,
+     -6.17866
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 13185374649,
+    "tipe_el": "node",
+    "nama": "Pesantren Modern Tahfidz Ar-Rahmah",
+    "jenis": "sekolah",
+    "amenity": "college",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.617177,
+     -6.184544
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 13293899237,
+    "tipe_el": "node",
+    "nama": "Sekolah Tinggi Meteorologi Klimatologi dan Geofisika (STMKG)",
+    "jenis": "sekolah",
+    "amenity": "university",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.645759,
+     -6.17194
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 13459688401,
+    "tipe_el": "node",
+    "nama": "SD Bonavita",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.633269,
+     -6.173478
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 201054000,
+    "tipe_el": "way",
+    "nama": "Klinik Medica",
+    "jenis": "faskes",
+    "amenity": "doctors",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.599748,
+     -6.187502
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 230068165,
+    "tipe_el": "way",
+    "nama": "Sekolah Harapan Bangsa",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.634583,
+     -6.202622
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 230068291,
+    "tipe_el": "way",
+    "nama": "Pasar Modern",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.636771,
+     -6.195407
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 230071922,
+    "tipe_el": "way",
+    "nama": "Sekolah Harapan Bangsa",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.640834,
+     -6.198937
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 230071923,
+    "tipe_el": "way",
+    "nama": "Mayapada Hospital",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.641633,
+     -6.205082
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 239436609,
+    "tipe_el": "way",
+    "nama": "Cetiya",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.627065,
+     -6.187048
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 239436611,
+    "tipe_el": "way",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.627491,
+     -6.18682
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 239436613,
+    "tipe_el": "way",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.627683,
+     -6.186317
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 239436615,
+    "tipe_el": "way",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.626672,
+     -6.186687
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 239436617,
+    "tipe_el": "way",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.626321,
+     -6.186617
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 239436618,
+    "tipe_el": "way",
+    "nama": "Universitas Buddhi Dharma",
+    "jenis": "sekolah",
+    "amenity": "university",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.626661,
+     -6.186983
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 239436620,
+    "tipe_el": "way",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.627143,
+     -6.186706
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 239436622,
+    "tipe_el": "way",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.627534,
+     -6.186261
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 239436623,
+    "tipe_el": "way",
+    "nama": "Clinic",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.627703,
+     -6.185915
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 239436625,
+    "tipe_el": "way",
+    "nama": "Administration Building",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.62789,
+     -6.185878
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 239438373,
+    "tipe_el": "way",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.626965,
+     -6.186461
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 239438374,
+    "tipe_el": "way",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.626594,
+     -6.186414
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 293135665,
+    "tipe_el": "way",
+    "nama": "RSI Sari Asih Ar Rahmah Tangerang",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.629972,
+     -6.163879
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 343232836,
+    "tipe_el": "way",
+    "nama": "Mutiara Bangsa School",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.68487,
+     -6.141871
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 361228055,
+    "tipe_el": "way",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.614149,
+     -6.170326
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 361228056,
+    "tipe_el": "way",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.614327,
+     -6.170247
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 361228057,
+    "tipe_el": "way",
+    "nama": "",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.613849,
+     -6.169905
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 381684000,
+    "tipe_el": "way",
+    "nama": "Pasar Royal",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.663803,
+     -6.175316
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 391854804,
+    "tipe_el": "way",
+    "nama": "SMP Strada ST Maria Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.631481,
+     -6.171145
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 401518118,
+    "tipe_el": "way",
+    "nama": "Puskesmas Kelurahan Cipondoh",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.67628,
+     -6.194123
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 478742140,
+    "tipe_el": "way",
+    "nama": "SMP Islam Terpadu An Nuqthah",
+    "jenis": "sekolah",
+    "amenity": "college",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.648911,
+     -6.206228
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 494064326,
+    "tipe_el": "way",
+    "nama": "Klinik Harapan Ibu",
+    "jenis": "faskes",
+    "amenity": "clinic",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.609281,
+     -6.20989
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 500845785,
+    "tipe_el": "way",
+    "nama": "GRANADA Islamic Heritage School",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.616504,
+     -6.208928
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 516581159,
+    "tipe_el": "way",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.62244,
+     -6.176584
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 534646782,
+    "tipe_el": "way",
+    "nama": "Pasar Anyar Tangerang",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.635532,
+     -6.175676
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 669046705,
+    "tipe_el": "way",
+    "nama": "Gerendeng",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.626339,
+     -6.178988
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 669590978,
+    "tipe_el": "way",
+    "nama": "Pasar Laris Cibodas",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.598044,
+     -6.186154
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 715631482,
+    "tipe_el": "way",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.60021,
+     -6.168838
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 715631704,
+    "tipe_el": "way",
+    "nama": "GANESHA OPERATION DAAN MOGOT",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.630708,
+     -6.173282
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 715645036,
+    "tipe_el": "way",
+    "nama": "Ganesha Operation Sutopo",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.632036,
+     -6.174249
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 715647181,
+    "tipe_el": "way",
+    "nama": "GO TANGCITY",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.635001,
+     -6.192351
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 716013906,
+    "tipe_el": "way",
+    "nama": "SMA Negeri 1 Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.633366,
+     -6.170183
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 716015865,
+    "tipe_el": "way",
+    "nama": "SMA Negeri 4 Kota Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.617605,
+     -6.164963
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 716018241,
+    "tipe_el": "way",
+    "nama": "SMA Negeri 2 Kota Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.639031,
+     -6.175321
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 716672368,
+    "tipe_el": "way",
+    "nama": "SMA Negeri 10 Kota Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.664947,
+     -6.191326
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 782911914,
+    "tipe_el": "way",
+    "nama": "RS Hermina Tangerang",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.626686,
+     -6.169494
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 782912458,
+    "tipe_el": "way",
+    "nama": "RS Sari Asih Karawaci",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.626121,
+     -6.179211
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 782963159,
+    "tipe_el": "way",
+    "nama": "RS An-Nisa Tangerang",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.604493,
+     -6.187578
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 782999459,
+    "tipe_el": "way",
+    "nama": "Rumah Sakit Sari Asih Sangiang",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.600844,
+     -6.170368
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 783776976,
+    "tipe_el": "way",
+    "nama": "RSUD Kota Tangerang",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.634509,
+     -6.200774
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 783778484,
+    "tipe_el": "way",
+    "nama": "RSUD Kabupaten Tangerang",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.636385,
+     -6.16996
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 783814426,
+    "tipe_el": "way",
+    "nama": "RSUP Dr. Sitanala",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.634544,
+     -6.162496
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 783903874,
+    "tipe_el": "way",
+    "nama": "RS Dinda",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.591653,
+     -6.191998
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 846676614,
+    "tipe_el": "way",
+    "nama": "SMP Negeri Tangerang 13",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.63157,
+     -6.191862
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 846679245,
+    "tipe_el": "way",
+    "nama": "SMP Negeri 1 Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.632686,
+     -6.171297
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 850118250,
+    "tipe_el": "way",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.633689,
+     -6.192809
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 850118674,
+    "tipe_el": "way",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.633682,
+     -6.192484
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 850119822,
+    "tipe_el": "way",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.637758,
+     -6.187322
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 852685134,
+    "tipe_el": "way",
+    "nama": "SD Negeri Tangerang 15",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.633646,
+     -6.192616
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 899097104,
+    "tipe_el": "way",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.684748,
+     -6.196861
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 934252095,
+    "tipe_el": "way",
+    "nama": "Universitas Islam Syekh Yusuf Tangerang",
+    "jenis": "sekolah",
+    "amenity": "university",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.636571,
+     -6.189743
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 984167242,
+    "tipe_el": "way",
+    "nama": "RS EMC Tangerang",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.648205,
+     -6.183882
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1016777950,
+    "tipe_el": "way",
+    "nama": "Universitas Muhammadiyah Tangerang",
+    "jenis": "sekolah",
+    "amenity": "university",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.63349,
+     -6.171997
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1046826032,
+    "tipe_el": "way",
+    "nama": "SMK Negeri 3 Kota Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.637934,
+     -6.189072
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1049581849,
+    "tipe_el": "way",
+    "nama": "RS Sari Asih Cipondoh",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.676098,
+     -6.184132
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1049821606,
+    "tipe_el": "way",
+    "nama": "SMPIT Yayasan Asy Syukriyyah Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.658606,
+     -6.186851
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1049862709,
+    "tipe_el": "way",
+    "nama": "MA Negeri 14 Kota Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.655817,
+     -6.148429
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1063350619,
+    "tipe_el": "way",
+    "nama": "SMP Negeri 12 Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.599516,
+     -6.170778
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1090450384,
+    "tipe_el": "way",
+    "nama": "Pasar Induk Tanah Tinggi",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.645592,
+     -6.173933
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1090450394,
+    "tipe_el": "way",
+    "nama": "Politeknik Ilmu Pemasyarakatan & Politeknik Imigrasi",
+    "jenis": "sekolah",
+    "amenity": "college",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.641964,
+     -6.173447
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1090450395,
+    "tipe_el": "way",
+    "nama": "Pasar Induk Beras Tangerang",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.643202,
+     -6.173117
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1188527651,
+    "tipe_el": "way",
+    "nama": "SMP Negeri 9 Kota Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.592749,
+     -6.171795
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1188527652,
+    "tipe_el": "way",
+    "nama": "Puskesmas Gebang Raya",
+    "jenis": "faskes",
+    "amenity": "clinic",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.592964,
+     -6.171456
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1188529016,
+    "tipe_el": "way",
+    "nama": "TK, SD, SMP Baithul Akham",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.594033,
+     -6.171277
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1283827487,
+    "tipe_el": "way",
+    "nama": "Yayasan Anak Terang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.658788,
+     -6.179967
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1309158550,
+    "tipe_el": "way",
+    "nama": "Pasar Modern Banjar Wijaya",
+    "jenis": "pasar",
+    "amenity": "marketplace",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.653708,
+     -6.205266
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1339962317,
+    "tipe_el": "way",
+    "nama": "GEDUNG B SMAN 4 KOTA TANGERANG",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.61768,
+     -6.164556
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1339962650,
+    "tipe_el": "way",
+    "nama": "GEDUNG C SMAN 4 KOTA TANGERANG",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.617765,
+     -6.165077
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1339963247,
+    "tipe_el": "way",
+    "nama": "GEDUNG A SMAN 4 KOTA TANGERANG",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.617372,
+     -6.16477
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1339963450,
+    "tipe_el": "way",
+    "nama": "MASJID AT-TAQWA SMAN 4 KOTA TANGERANG",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.617433,
+     -6.165001
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1339963579,
+    "tipe_el": "way",
+    "nama": "GEDUNG LAB IPA SMAN 4 KOTA TANGERANG",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.617557,
+     -6.165161
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1339963753,
+    "tipe_el": "way",
+    "nama": "KANTIN SMAN NEGERI 4 KOTA TANGERANG",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.617409,
+     -6.165126
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1376906078,
+    "tipe_el": "way",
+    "nama": "SMAN 6 Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.645618,
+     -6.161467
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1385346598,
+    "tipe_el": "way",
+    "nama": "SD Negeri Cikokol 1",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.62787,
+     -6.200355
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1385346613,
+    "tipe_el": "way",
+    "nama": "Universitas Raharja",
+    "jenis": "sekolah",
+    "amenity": "university",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.634472,
+     -6.195537
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1385346615,
+    "tipe_el": "way",
+    "nama": "Kompleks Pendidikan Yuppentek Cikokol",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.63241,
+     -6.191749
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1423093877,
+    "tipe_el": "way",
+    "nama": "RS Hermina Periuk",
+    "jenis": "faskes",
+    "amenity": "hospital",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.593674,
+     -6.151309
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1424347425,
+    "tipe_el": "way",
+    "nama": "Pondok Pesantren Mumtaz Ibadurrahman",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.685022,
+     -6.193836
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1443852990,
+    "tipe_el": "way",
+    "nama": "SMK Negeri 1 Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.629914,
+     -6.192778
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1443852999,
+    "tipe_el": "way",
+    "nama": "STMIK PGRI Tangerang, SMK PGRI 1 Tangerang, SMP PGRI 1 Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.629145,
+     -6.192787
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1443853005,
+    "tipe_el": "way",
+    "nama": "Sekolah Tinggi Ilmu Syariah Nahdlatul Ulama (STISNU) Nusantara Tangerang",
+    "jenis": "sekolah",
+    "amenity": "college",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.629111,
+     -6.19334
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1444078566,
+    "tipe_el": "way",
+    "nama": "SMK Abdi Negara",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.628554,
+     -6.193248
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1444078575,
+    "tipe_el": "way",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "university",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.630855,
+     -6.192467
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1444078576,
+    "tipe_el": "way",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.631399,
+     -6.192468
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1444078586,
+    "tipe_el": "way",
+    "nama": "MTs Negeri 1 Kota Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.631019,
+     -6.192843
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1444078600,
+    "tipe_el": "way",
+    "nama": "SMP Negeri 7 Kota Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.631867,
+     -6.192642
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1444078618,
+    "tipe_el": "way",
+    "nama": "SMP - SMK - STKIP - PKBM Pancakarya",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.630761,
+     -6.191819
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1444078648,
+    "tipe_el": "way",
+    "nama": "SMK Gema Wisata",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.628809,
+     -6.19381
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1445684272,
+    "tipe_el": "way",
+    "nama": "SMP Negeri 27 Kota Tangerang",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.592325,
+     -6.171214
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1466130187,
+    "tipe_el": "way",
+    "nama": "",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.674043,
+     -6.173417
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1527246275,
+    "tipe_el": "way",
+    "nama": "Pondok Pesantren Nurul Iman",
+    "jenis": "sekolah",
+    "amenity": "school",
+    "jam_padat": "",
+    "sumber": "OpenStreetMap",
+    "lisensi": "ODbL",
+    "catatan": "jam_padat belum diisi; perlu konfirmasi pengelola/petugas"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     106.669255,
+     -6.207119
+    ]
+   }
+  }
+ ]
+}

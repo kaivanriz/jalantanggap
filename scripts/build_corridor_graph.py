@@ -1,7 +1,8 @@
-"""Fetch the corridor road network and build a compact junction routing graph.
+"""Fetch drivable road network for the study corridor and build junction graph.
 
-Uses real OSM node IDs, so ways share nodes at junctions. Degree-2 OSM nodes are
-then contracted per street. Data (c) OpenStreetMap contributors, ODbL.
+All road classes are needed: an arterial-only graph fragments into ~1000
+disconnected components, so local streets act as the connectors between
+arterial segments. Data (c) OpenStreetMap contributors, ODbL.
 """
 import csv
 import json
@@ -12,11 +13,13 @@ from collections import defaultdict
 from pathlib import Path
 
 OUT = Path(__file__).resolve().parents[1] / 'data' / 'real-tangerang' / 'osm'
-# Core study corridor: Karawaci (M. Toha) - Otista - Neglasari.
-BBOX = (-6.210, 106.585, -6.135, 106.685)
+# Karawaci (M. Toha / Teuku Umar) - Neglasari (Iskandar Muda, Sitanala,
+# Surya Darma) - Otista/Periuk side. Covers the official August-2026 works.
+BBOX = (-6.210, 106.585, -6.115, 106.700)
 KEEP = {'motorway', 'trunk', 'primary', 'secondary', 'tertiary',
         'unclassified', 'residential', 'living_street', 'service', 'road',
-        'motorway_link', 'trunk_link', 'primary_link', 'secondary_link', 'tertiary_link'}
+        'motorway_link', 'trunk_link', 'primary_link', 'secondary_link',
+        'tertiary_link'}
 ENDPOINTS = ('https://overpass.kumi.systems/api/interpreter',
              'https://overpass-api.de/api/interpreter')
 
@@ -34,71 +37,86 @@ def overpass(query):
     raise SystemExit(f'Overpass gagal: {last}')
 
 
-def haversine(a, b):
-    return 111195 * math.hypot(b['lat'] - a['lat'],
-                               (b['lon'] - a['lon']) * math.cos(math.radians(a['lat'])))
-
-
 def main():
     s, w, n, e = BBOX
     data = overpass(f'[out:json][timeout:180];way["highway"]({s},{w},{n},{e});out geom;')
-    OUT.mkdir(parents=True, exist_ok=True)
-    coord = {}
-    ways = []
+    coord, ways = {}, []
     for el in data['elements']:
         tags = el.get('tags', {})
-        if el.get('type') != 'way' or 'geometry' not in el or tags.get('highway') not in KEEP:
+        if el.get('type') != 'way' or tags.get('highway') not in KEEP:
             continue
-        nodes = el.get('nodes', [])
-        geom = el['geometry']
-        if len(nodes) != len(geom):
+        nodes, geom = el.get('nodes', []), el.get('geometry', [])
+        if not nodes or len(nodes) != len(geom):
             continue
         for nid, p in zip(nodes, geom):
-            coord[nid] = {'lat': p['lat'], 'lon': p['lon']}
-        ways.append({'osm_id': el['id'], 'nodes': nodes, 'tags': tags})
+            coord[nid] = (p['lon'], p['lat'])
+        ways.append({'id': el['id'], 'nodes': nodes, 'tags': tags})
 
-    # A node is "significant" if it is a way endpoint or shared by multiple ways.
-    way_count = defaultdict(int)
-    significant = set()
+    endpoints, shared = set(), {}
     for way in ways:
+        endpoints.update({way['nodes'][0], way['nodes'][-1]})
         for nid in way['nodes']:
-            way_count[nid] += 1
-        significant.update({way['nodes'][0], way['nodes'][-1]})
-    significant.update(nid for nid, count in way_count.items() if count > 1)
+            shared[nid] = shared.get(nid, 0) + 1
+    junction = endpoints | {nid for nid, c in shared.items() if c > 1}
 
     edges = []
     for way in ways:
         nodes, tags = way['nodes'], way['tags']
         oneway = tags.get('oneway', '')
-        forward = oneway not in ('yes', 'true', '1', '-1')
-        backward = oneway not in ('yes', 'true', '1') or oneway == '-1'
-        segment_start = nodes[0]
-        length = 0.0
+        fwd = oneway not in ('yes', 'true', '1', '-1')
+        bwd = oneway in ('-1',) or (oneway not in ('yes', 'true', '1'))
+        start, length = nodes[0], 0.0
         for a, b in zip(nodes, nodes[1:]):
-            length += haversine(coord[a], coord[b])
-            if b not in significant:
+            la, lo = coord[a], coord[b]
+            length += 111195 * math.hypot(lo[1]-la[1], (lo[0]-la[0])*math.cos(math.radians(la[1])))
+            if b not in junction:
                 continue
-            segment = {'from': segment_start, 'to': b, 'name': tags.get('name', ''),
-                       'highway': tags['highway'], 'length_m': round(length, 1),
-                       'osm_id': way['osm_id']}
-            if forward:
-                edges.append(segment)
-            if backward:
-                edges.append(dict(segment, **{'from': b, 'to': segment_start}))
-            segment_start, length = b, 0.0
+            if b == start:
+                length = 0.0
+                continue
+            seg = {'from': start, 'to': b, 'name': tags.get('name', ''),
+                   'highway': tags['highway'], 'length_m': round(length, 1),
+                   'osm_id': way['id']}
+            if fwd:
+                edges.append(seg)
+            if bwd:
+                edges.append(dict(seg, **{'from': b, 'to': start}))
+            start, length = b, 0.0
 
     used = {x for edge in edges for x in (edge['from'], edge['to'])}
     with (OUT / 'koridor_nodes.csv').open('w', newline='', encoding='utf-8') as fh:
         wtr = csv.DictWriter(fh, fieldnames=['id', 'lon', 'lat'])
         wtr.writeheader()
         for nid in used:
-            wtr.writerow({'id': nid, 'lon': coord[nid]['lon'], 'lat': coord[nid]['lat']})
+            wtr.writerow({'id': nid, 'lon': coord[nid][0], 'lat': coord[nid][1]})
     with (OUT / 'koridor_edges.csv').open('w', newline='', encoding='utf-8') as fh:
         wtr = csv.DictWriter(fh, fieldnames=['id', 'from', 'to', 'name', 'highway', 'length_m', 'osm_id'])
         wtr.writeheader()
         for i, edge in enumerate(edges):
             wtr.writerow({'id': f'E{i:05d}', **edge})
-    print(f'{len(used)} nodes, {len(edges)} directed edges')
+    print(f'{len(ways)} way -> {len(used)} node, {len(edges)} edge')
+    und = defaultdict(set)
+    for edge in edges:
+        und[edge['from']].add(edge['to'])
+        und[edge['to']].add(edge['from'])
+    labeled = {}
+    comp_size = []
+    for start in list(und):
+        if start in labeled:
+            continue
+        cid = len(comp_size)
+        seen, stack = {start}, [start]
+        labeled[start] = cid
+        while stack:
+            cur = stack.pop()
+            for nxt in und[cur]:
+                if nxt not in seen:
+                    seen.add(nxt)
+                    labeled[nxt] = cid
+                    stack.append(nxt)
+        comp_size.append(len(seen))
+    comp_size.sort(reverse=True)
+    print(f'komponen: {len(comp_size)} | terbesar {comp_size[0]} | ke-2 {comp_size[1] if len(comp_size) > 1 else 0} node')
 
 
 if __name__ == '__main__':

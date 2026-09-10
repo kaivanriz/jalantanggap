@@ -68,12 +68,10 @@ def main():
     nodes, adj, names = load()
     print('graf koridor:', len(nodes), 'node,', sum(len(v) for v in adj.values()), 'edge')
     results = []
-    run(nodes, adj, names, 'Barat->Timur koridor',
-        (106.5880, -6.1900), (106.6800, -6.1600), results)
-    run(nodes, adj, names, 'Wangsakara->Santika',
+    run(nodes, adj, names, 'Wangsakara->Santika (jalur alternatif resmi)',
         (106.6045, -6.1800), (106.6160, -6.1778), results)
-    run(nodes, adj, names, 'Wangsakara->Otista (arah kota)',
-        (106.6045, -6.1800), (106.6300, -6.1900), results)
+    run(nodes, adj, names, 'Wangsakara->Sitanala (Neglasari)',
+        (106.6045, -6.1800), (106.6340, -6.1620), results)
     out = ROOT / 'analisis_rute.json'
     out.write_text(json.dumps({
         'sumber': 'OpenStreetMap (c) kontributor, ODbL',

@@ -1,0 +1,119 @@
+{
+  "perhatian": "Pemetaan nama -> way OSM untuk ditinjau petugas, bukan poligon penutupan terverifikasi.",
+  "pekerjaan": [
+    {
+      "id_pekerjaan": "CT01",
+      "pekerjaan": "Jalan Raya M. Toha (Karawaci)",
+      "osm": [
+        "Jalan Muhammad Thoha",
+        "Jalan Toha Raya"
+      ],
+      "status_pemetaan": "cocok",
+      "catatan": "OSM mencatat jalan utama dengan ejaan \"Jalan Muhammad Thoha\" (bukan nama resmi \"M. Toha\"). Temuan 10 Sep 2026.",
+      "jumlah_way_osm": 10,
+      "osm_ids": [
+        "72536926",
+        "72537040",
+        "72537041",
+        "562964223",
+        "697679333",
+        "773670078",
+        "773677541",
+        "773677542",
+        "1049258667",
+        "1291381005"
+      ]
+    },
+    {
+      "id_pekerjaan": "CT02",
+      "pekerjaan": "Jalan Iskandar Muda (Neglasari)",
+      "osm": [
+        "Jalan Iskandar Muda"
+      ],
+      "status_pemetaan": "cocok",
+      "catatan": "Bedakan dari \"Jalan Sultan Iskandar Muda\" (koridor timur, trunk).",
+      "jumlah_way_osm": 19,
+      "osm_ids": [
+        "239449232",
+        "239449235",
+        "239449239",
+        "480579114",
+        "564903975",
+        "566856213",
+        "566856214",
+        "566921918",
+        "673343740",
+        "673343741",
+        "696216017",
+        "696216018",
+        "696732481",
+        "747469234",
+        "1098290847",
+        "1098345345",
+        "1098385942",
+        "1372045733",
+        "1372045734"
+      ]
+    },
+    {
+      "id_pekerjaan": "CT03",
+      "pekerjaan": "Jalan Marsekal Suryadarma (Neglasari)",
+      "osm": [
+        "Jalan Marsekal Surya Darma",
+        "Jalan Surya Darma"
+      ],
+      "status_pemetaan": "cocok_alias",
+      "catatan": "Nama resmi \"Marsekal Suryadarma\"; di OSM tercatat sebagai \"Jalan Surya Darma\" (tanpa kata Marsekal). Verifikasi manual tetap diperlukan.",
+      "jumlah_way_osm": 3,
+      "osm_ids": [
+        "264106346",
+        "673360116",
+        "673360117"
+      ]
+    },
+    {
+      "id_pekerjaan": "CT04",
+      "pekerjaan": "Jalan Dokter Sitanala (Neglasari)",
+      "osm": [
+        "Jalan Dokter Sitanala",
+        "Jalan Doktor Sitanala"
+      ],
+      "status_pemetaan": "cocok",
+      "catatan": "Pelebaran 146 m; skema tidak mengubah akses.",
+      "jumlah_way_osm": 4,
+      "osm_ids": [
+        "27946607",
+        "28997177",
+        "698735349",
+        "1318810178"
+      ]
+    },
+    {
+      "id_pekerjaan": "CT05",
+      "pekerjaan": "Jalan Teuku Umar (Karawaci)",
+      "osm": [
+        "Jalan Teuku Umar",
+        "Jalan Teuku Umar Raya"
+      ],
+      "status_pemetaan": "parsial",
+      "catatan": "Nama sama dipakai di wilayah lain Tangerang; hanya segmen dalam bbox koridor yang dipetakan.",
+      "jumlah_way_osm": 0,
+      "osm_ids": []
+    },
+    {
+      "id_pekerjaan": "CT06",
+      "pekerjaan": "Jalan Garuda (Batuceper)",
+      "osm": [
+        "Jalan Garuda"
+      ],
+      "status_pemetaan": "di_luar_koridor",
+      "catatan": "Batuceper berada di luar bbox koridor Karawaci-Neglasari.",
+      "jumlah_way_osm": 3,
+      "osm_ids": [
+        "566875290",
+        "567256315",
+        "567256483"
+      ]
+    }
+  ]
+}
