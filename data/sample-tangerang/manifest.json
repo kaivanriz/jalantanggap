@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "is_simulation": true,
+  "context": "Tangerang–Rajeg / pengalaman M. Toha",
+  "provenance": "Seluruh data dan geometri dibuat sintetis; bukan OSM, survei, atau data pemerintah.",
+  "timezone": "Asia/Jakarta",
+  "coordinate_system": "EPSG:4326",
+  "counts": {
+    "nodes": 25,
+    "segmen": 40,
+    "laporan": 100,
+    "label_llm": 100,
+    "penilaian": 20,
+    "proyek": 4,
+    "pembatasan": 3,
+    "aktivitas": 12,
+    "traffic": 237
+  },
+  "generated_by": "scripts/generate_sample.py",
+  "photos": "Tidak tersedia; kolom foto kosong, tidak ada bukti foto buatan."
+}

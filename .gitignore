@@ -6,3 +6,5 @@ __pycache__/
 *.pyc
 .opencode/
 data/private/
+.playwright-mcp/
+data/real-tangerang/osm/osm_raw.json

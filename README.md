@@ -30,6 +30,8 @@ Versi awal menilai **risiko konflik lalu lintas**, bukan menjanjikan prediksi wa
 
 ## Dokumentasi
 
+- [Data nyata Kota Tangerang (sumber resmi + OSM)](data/real-tangerang/README.md)
+- [Data sampel Tangerang–Rajeg (simulasi)](data/sample-tangerang/README.md)
 - [Rencana proyek dan rencana kerja](Rencana-Proyek.md)
 - [Kebutuhan data](Kebutuhan-Data.md)
 - [Presentasi konsep di Notion](https://www.notion.so/3d7237742b4381ce8e80e08ac6906cc5)

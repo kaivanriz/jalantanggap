@@ -1,0 +1,36 @@
+[
+  {
+    "id": "BASE",
+    "waktu": "2026-09-10T17:00:00+07:00",
+    "closures": [],
+    "expected_route": true
+  },
+  {
+    "id": "UTAMA",
+    "waktu": "2026-09-10T17:00:00+07:00",
+    "closures": [
+      "B01"
+    ],
+    "expected_route": true
+  },
+  {
+    "id": "KONFLIK",
+    "waktu": "2026-09-10T17:00:00+07:00",
+    "closures": [
+      "B01",
+      "B02",
+      "B03"
+    ],
+    "expected_route": false
+  },
+  {
+    "id": "SETELAH",
+    "waktu": "2026-09-10T18:00:00+07:00",
+    "closures": [
+      "B01",
+      "B02",
+      "B03"
+    ],
+    "expected_route": true
+  }
+]

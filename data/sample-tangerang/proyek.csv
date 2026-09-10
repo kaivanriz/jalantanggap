@@ -1,0 +1,5 @@
+id_proyek,nama,status,updated_at,pic,is_simulation
+P01,Pekerjaan jalan utama simulasi,usulan,2026-09-10T08:00:00+07:00,PETUGAS_SIMULASI,True
+P02,Pekerjaan jalur alternatif simulasi,aktif,2026-09-10T08:00:00+07:00,PETUGAS_SIMULASI,True
+P03,Pembatasan parsial simulasi,aktif,2026-09-10T08:00:00+07:00,PETUGAS_SIMULASI,True
+P04,Pekerjaan lama simulasi,selesai,2026-09-10T08:00:00+07:00,PETUGAS_SIMULASI,True

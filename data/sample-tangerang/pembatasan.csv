@@ -1,0 +1,4 @@
+id_pembatasan,id_proyek,id_segmen,mulai,selesai,jenis,capacity_factor,scope,is_simulation
+B01,P01,S00,2026-09-10T16:00:00+07:00,2026-09-10T20:00:00+07:00,total,0,candidate,True
+B02,P02,S01,2026-09-10T16:00:00+07:00,2026-09-10T18:00:00+07:00,total,0,active,True
+B03,P03,S09,2026-09-10T16:00:00+07:00,2026-09-10T20:00:00+07:00,parsial,0.5,active,True

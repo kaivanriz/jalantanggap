@@ -1,0 +1,1165 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S00",
+        "from_node": "N00",
+        "to_node": "N01",
+        "nama": "Jalan simulasi Tangerang 00",
+        "panjang_m": 2764,
+        "arah": "both",
+        "lebar_m": 4,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.51,
+            -6.18
+          ],
+          [
+            106.535,
+            -6.18
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S01",
+        "from_node": "N00",
+        "to_node": "N05",
+        "nama": "Jalan simulasi Tangerang 01",
+        "panjang_m": 2002,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.51,
+            -6.18
+          ],
+          [
+            106.51,
+            -6.162
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S02",
+        "from_node": "N01",
+        "to_node": "N02",
+        "nama": "Jalan simulasi Tangerang 02",
+        "panjang_m": 2764,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.535,
+            -6.18
+          ],
+          [
+            106.56,
+            -6.18
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S03",
+        "from_node": "N01",
+        "to_node": "N06",
+        "nama": "Jalan simulasi Tangerang 03",
+        "panjang_m": 2002,
+        "arah": "forward",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.535,
+            -6.18
+          ],
+          [
+            106.535,
+            -6.162
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S04",
+        "from_node": "N02",
+        "to_node": "N03",
+        "nama": "Jalan simulasi Tangerang 04",
+        "panjang_m": 2764,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.56,
+            -6.18
+          ],
+          [
+            106.585,
+            -6.18
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S05",
+        "from_node": "N02",
+        "to_node": "N07",
+        "nama": "Jalan simulasi Tangerang 05",
+        "panjang_m": 2002,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.56,
+            -6.18
+          ],
+          [
+            106.56,
+            -6.162
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S06",
+        "from_node": "N03",
+        "to_node": "N04",
+        "nama": "Jalan simulasi Tangerang 06",
+        "panjang_m": 2764,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.585,
+            -6.18
+          ],
+          [
+            106.61,
+            -6.18
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S07",
+        "from_node": "N03",
+        "to_node": "N08",
+        "nama": "Jalan simulasi Tangerang 07",
+        "panjang_m": 2002,
+        "arah": "both",
+        "lebar_m": 4,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.585,
+            -6.18
+          ],
+          [
+            106.585,
+            -6.162
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S08",
+        "from_node": "N04",
+        "to_node": "N09",
+        "nama": "Jalan simulasi Tangerang 08",
+        "panjang_m": 2002,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.61,
+            -6.18
+          ],
+          [
+            106.61,
+            -6.162
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S09",
+        "from_node": "N05",
+        "to_node": "N06",
+        "nama": "Jalan simulasi Tangerang 09",
+        "panjang_m": 2764,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.51,
+            -6.162
+          ],
+          [
+            106.535,
+            -6.162
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S10",
+        "from_node": "N05",
+        "to_node": "N10",
+        "nama": "Jalan simulasi Tangerang 10",
+        "panjang_m": 2002,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.51,
+            -6.162
+          ],
+          [
+            106.51,
+            -6.144
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S11",
+        "from_node": "N06",
+        "to_node": "N07",
+        "nama": "Jalan simulasi Tangerang 11",
+        "panjang_m": 2764,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.535,
+            -6.162
+          ],
+          [
+            106.56,
+            -6.162
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S12",
+        "from_node": "N06",
+        "to_node": "N11",
+        "nama": "Jalan simulasi Tangerang 12",
+        "panjang_m": 2002,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.535,
+            -6.162
+          ],
+          [
+            106.535,
+            -6.144
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S13",
+        "from_node": "N07",
+        "to_node": "N08",
+        "nama": "Jalan simulasi Tangerang 13",
+        "panjang_m": 2764,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.56,
+            -6.162
+          ],
+          [
+            106.585,
+            -6.162
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S14",
+        "from_node": "N07",
+        "to_node": "N12",
+        "nama": "Jalan simulasi Tangerang 14",
+        "panjang_m": 2002,
+        "arah": "both",
+        "lebar_m": 4,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.56,
+            -6.162
+          ],
+          [
+            106.56,
+            -6.144
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S15",
+        "from_node": "N08",
+        "to_node": "N09",
+        "nama": "Jalan simulasi Tangerang 15",
+        "panjang_m": 2764,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.585,
+            -6.162
+          ],
+          [
+            106.61,
+            -6.162
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S16",
+        "from_node": "N08",
+        "to_node": "N13",
+        "nama": "Jalan simulasi Tangerang 16",
+        "panjang_m": 2002,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.585,
+            -6.162
+          ],
+          [
+            106.585,
+            -6.144
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S17",
+        "from_node": "N09",
+        "to_node": "N14",
+        "nama": "Jalan simulasi Tangerang 17",
+        "panjang_m": 2002,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.61,
+            -6.162
+          ],
+          [
+            106.61,
+            -6.144
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S18",
+        "from_node": "N10",
+        "to_node": "N11",
+        "nama": "Jalan simulasi Tangerang 18",
+        "panjang_m": 2764,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.51,
+            -6.144
+          ],
+          [
+            106.535,
+            -6.144
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S19",
+        "from_node": "N10",
+        "to_node": "N15",
+        "nama": "Jalan simulasi Tangerang 19",
+        "panjang_m": 2002,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.51,
+            -6.144
+          ],
+          [
+            106.51,
+            -6.126
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S20",
+        "from_node": "N11",
+        "to_node": "N12",
+        "nama": "Jalan simulasi Tangerang 20",
+        "panjang_m": 2764,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.535,
+            -6.144
+          ],
+          [
+            106.56,
+            -6.144
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S21",
+        "from_node": "N11",
+        "to_node": "N16",
+        "nama": "Jalan simulasi Tangerang 21",
+        "panjang_m": 2002,
+        "arah": "both",
+        "lebar_m": 4,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.535,
+            -6.144
+          ],
+          [
+            106.535,
+            -6.126
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S22",
+        "from_node": "N12",
+        "to_node": "N13",
+        "nama": "Jalan simulasi Tangerang 22",
+        "panjang_m": 2764,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.56,
+            -6.144
+          ],
+          [
+            106.585,
+            -6.144
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S23",
+        "from_node": "N12",
+        "to_node": "N17",
+        "nama": "Jalan simulasi Tangerang 23",
+        "panjang_m": 2002,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.56,
+            -6.144
+          ],
+          [
+            106.56,
+            -6.126
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S24",
+        "from_node": "N13",
+        "to_node": "N14",
+        "nama": "Jalan simulasi Tangerang 24",
+        "panjang_m": 2764,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.585,
+            -6.144
+          ],
+          [
+            106.61,
+            -6.144
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S25",
+        "from_node": "N13",
+        "to_node": "N18",
+        "nama": "Jalan simulasi Tangerang 25",
+        "panjang_m": 2002,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.585,
+            -6.144
+          ],
+          [
+            106.585,
+            -6.126
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S26",
+        "from_node": "N14",
+        "to_node": "N19",
+        "nama": "Jalan simulasi Tangerang 26",
+        "panjang_m": 2002,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.61,
+            -6.144
+          ],
+          [
+            106.61,
+            -6.126
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S27",
+        "from_node": "N15",
+        "to_node": "N16",
+        "nama": "Jalan simulasi Tangerang 27",
+        "panjang_m": 2764,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.51,
+            -6.126
+          ],
+          [
+            106.535,
+            -6.126
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S28",
+        "from_node": "N15",
+        "to_node": "N20",
+        "nama": "Jalan simulasi Tangerang 28",
+        "panjang_m": 2002,
+        "arah": "both",
+        "lebar_m": 4,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.51,
+            -6.126
+          ],
+          [
+            106.51,
+            -6.108
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S29",
+        "from_node": "N16",
+        "to_node": "N17",
+        "nama": "Jalan simulasi Tangerang 29",
+        "panjang_m": 2764,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.535,
+            -6.126
+          ],
+          [
+            106.56,
+            -6.126
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S30",
+        "from_node": "N16",
+        "to_node": "N21",
+        "nama": "Jalan simulasi Tangerang 30",
+        "panjang_m": 2002,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.535,
+            -6.126
+          ],
+          [
+            106.535,
+            -6.108
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S31",
+        "from_node": "N17",
+        "to_node": "N18",
+        "nama": "Jalan simulasi Tangerang 31",
+        "panjang_m": 2764,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.56,
+            -6.126
+          ],
+          [
+            106.585,
+            -6.126
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S32",
+        "from_node": "N17",
+        "to_node": "N22",
+        "nama": "Jalan simulasi Tangerang 32",
+        "panjang_m": 2002,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.56,
+            -6.126
+          ],
+          [
+            106.56,
+            -6.108
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S33",
+        "from_node": "N18",
+        "to_node": "N19",
+        "nama": "Jalan simulasi Tangerang 33",
+        "panjang_m": 2764,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.585,
+            -6.126
+          ],
+          [
+            106.61,
+            -6.126
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S34",
+        "from_node": "N18",
+        "to_node": "N23",
+        "nama": "Jalan simulasi Tangerang 34",
+        "panjang_m": 2002,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.585,
+            -6.126
+          ],
+          [
+            106.585,
+            -6.108
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S35",
+        "from_node": "N19",
+        "to_node": "N24",
+        "nama": "Jalan simulasi Tangerang 35",
+        "panjang_m": 2002,
+        "arah": "both",
+        "lebar_m": 4,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.61,
+            -6.126
+          ],
+          [
+            106.61,
+            -6.108
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S36",
+        "from_node": "N20",
+        "to_node": "N21",
+        "nama": "Jalan simulasi Tangerang 36",
+        "panjang_m": 2764,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.51,
+            -6.108
+          ],
+          [
+            106.535,
+            -6.108
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S37",
+        "from_node": "N21",
+        "to_node": "N22",
+        "nama": "Jalan simulasi Tangerang 37",
+        "panjang_m": 2764,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.535,
+            -6.108
+          ],
+          [
+            106.56,
+            -6.108
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S38",
+        "from_node": "N22",
+        "to_node": "N23",
+        "nama": "Jalan simulasi Tangerang 38",
+        "panjang_m": 2764,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.56,
+            -6.108
+          ],
+          [
+            106.585,
+            -6.108
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id_segmen": "S39",
+        "from_node": "N23",
+        "to_node": "N24",
+        "nama": "Jalan simulasi Tangerang 39",
+        "panjang_m": 2764,
+        "arah": "both",
+        "lebar_m": 7,
+        "kendaraan": "mobil;motor",
+        "kewenangan": "belum_diverifikasi",
+        "surface": "aspal_simulasi",
+        "is_simulation": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.585,
+            -6.108
+          ],
+          [
+            106.61,
+            -6.108
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "scenarios": [
+    {
+      "scenario": "BASE",
+      "route": {
+        "distance_m": 19064,
+        "segments": [
+          "S00",
+          "S02",
+          "S04",
+          "S07",
+          "S15",
+          "S17",
+          "S26",
+          "S35"
+        ]
+      },
+      "is_simulation": true
+    },
+    {
+      "scenario": "UTAMA",
+      "route": {
+        "distance_m": 19064,
+        "segments": [
+          "S01",
+          "S09",
+          "S11",
+          "S13",
+          "S15",
+          "S17",
+          "S26",
+          "S35"
+        ]
+      },
+      "is_simulation": true
+    },
+    {
+      "scenario": "KONFLIK",
+      "route": null,
+      "is_simulation": true
+    },
+    {
+      "scenario": "SETELAH",
+      "route": {
+        "distance_m": 19064,
+        "segments": [
+          "S01",
+          "S09",
+          "S11",
+          "S13",
+          "S15",
+          "S17",
+          "S26",
+          "S35"
+        ]
+      },
+      "is_simulation": true
+    }
+  ]
+}

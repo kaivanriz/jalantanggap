@@ -1,0 +1,13 @@
+id_aktivitas,nama,id_segmen,jenis,mulai,selesai,is_simulation
+A00,sekolah simulasi 0,S00,sekolah,2026-09-10T16:00:00+07:00,2026-09-10T18:00:00+07:00,True
+A01,pasar simulasi 1,S01,pasar,2026-09-10T16:00:00+07:00,2026-09-10T18:00:00+07:00,True
+A02,faskes simulasi 2,S02,faskes,2026-09-10T16:00:00+07:00,2026-09-10T18:00:00+07:00,True
+A03,pulang_kerja simulasi 3,S03,pulang_kerja,2026-09-10T16:00:00+07:00,2026-09-10T18:00:00+07:00,True
+A04,sekolah simulasi 4,S04,sekolah,2026-09-10T16:00:00+07:00,2026-09-10T18:00:00+07:00,True
+A05,pasar simulasi 5,S05,pasar,2026-09-10T16:00:00+07:00,2026-09-10T18:00:00+07:00,True
+A06,faskes simulasi 6,S06,faskes,2026-09-10T16:00:00+07:00,2026-09-10T18:00:00+07:00,True
+A07,pulang_kerja simulasi 7,S07,pulang_kerja,2026-09-10T16:00:00+07:00,2026-09-10T18:00:00+07:00,True
+A08,sekolah simulasi 8,S08,sekolah,2026-09-10T16:00:00+07:00,2026-09-10T18:00:00+07:00,True
+A09,pasar simulasi 9,S09,pasar,2026-09-10T16:00:00+07:00,2026-09-10T18:00:00+07:00,True
+A10,faskes simulasi 10,S10,faskes,2026-09-10T16:00:00+07:00,2026-09-10T18:00:00+07:00,True
+A11,pulang_kerja simulasi 11,S11,pulang_kerja,2026-09-10T16:00:00+07:00,2026-09-10T18:00:00+07:00,True

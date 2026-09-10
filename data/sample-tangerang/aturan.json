@@ -1,0 +1,38 @@
+{
+  "is_simulation": true,
+  "origin": "N00",
+  "destination": "N24",
+  "vehicle": "mobil",
+  "interval": "[mulai, selesai)",
+  "weights": {
+    "kerusakan": 0.4,
+    "dampak_akses": 0.3,
+    "peran_jalan": 0.2,
+    "pelapor": 0.1
+  },
+  "reporter_window": [
+    "2026-08-12T00:00:00+07:00",
+    "2026-09-11T00:00:00+07:00"
+  ],
+  "reporter_score_bands": [
+    {
+      "max": 2,
+      "score": 1
+    },
+    {
+      "max": 5,
+      "score": 2
+    },
+    {
+      "max": 10,
+      "score": 3
+    },
+    {
+      "max": 20,
+      "score": 4
+    }
+  ],
+  "reporter_score_above_20": 5,
+  "turn_restrictions": [],
+  "note": "Tidak ada larangan belok dalam graf sintetis ini; tidak boleh diasumsikan untuk peta nyata."
+}
