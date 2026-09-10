@@ -19,6 +19,9 @@
 | traffic_history.csv | 9.954 baris time-series per ruas/jam (Fase 4): speed, free_flow_speed, volume, congestion_index, source, quality_flag |
 | traffic_ai_dataset.csv | 34 baris pasangan baseline vs event untuk training XGBoost: fitur (hop, lajur, jam sibuk, fasilitas, overlap) + target (delta_volume, delta_speed, congestion) |
 | skenario.json | Empat kombinasi penutupan dengan hasil ada/tidak ada rute |
+| waze_feed_contoh.json | **Contoh simulasi** struktur feed Waze for Cities (bukan data Waze asli) |
+| contoh_mapping_jalan.csv | Contoh pemetaan nama jalan → id_segmen untuk konverter Waze |
+| traffic_history_from_waze.csv | Hasil uji konverter Waze → skema traffic_history (volume kosong: Waze tidak menyediakan) |
 | aturan.json | Bobot contoh, jendela pelaporan, kendaraan, dan pasangan asal–tujuan |
 | manifest.json | Sumber, versi, label simulasi, dan jumlah record |
 | hasil_validasi.json | Hasil rute yang benar-benar dihitung validator |

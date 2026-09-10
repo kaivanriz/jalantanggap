@@ -1,0 +1,54 @@
+{
+  "_catatan": "CONTOH SIMULASI struktur feed Waze for Cities (bukan data Waze asli). Dipakai untuk menguji scripts/waze_feed_to_traffic_history.py.",
+  "_sumber_struktur": "https://support.google.com/waze/partners/answer/13458165",
+  "jams": [
+    {
+      "country": "ID",
+      "city": "Tangerang",
+      "street": "Jalan simulasi Tangerang 01",
+      "roadType": 7,
+      "level": 4,
+      "speed": 4.2,
+      "speedKPH": 15,
+      "length": 620,
+      "delay": 240,
+      "uuid": 990001,
+      "line": [{"x": 106.6100, "y": -6.1750}, {"x": 106.6125, "y": -6.1735}],
+      "pubMillis": 1786000000000
+    },
+    {
+      "country": "ID",
+      "city": "Tangerang",
+      "street": "Jalan simulasi Tangerang 09",
+      "roadType": 6,
+      "level": 2,
+      "speed": 8.1,
+      "speedKPH": 29,
+      "length": 310,
+      "delay": 70,
+      "uuid": 990002,
+      "line": [{"x": 106.6050, "y": -6.1810}, {"x": 106.6062, "y": -6.1801}],
+      "pubMillis": 1786000000000
+    }
+  ],
+  "irregularities": [
+    {
+      "id": 770001,
+      "street": "Jalan simulasi Tangerang 01",
+      "city": "Tangerang",
+      "country": "ID",
+      "type": "LARGE",
+      "speed": 12.0,
+      "regularSpeed": 41.0,
+      "delaySeconds": 520,
+      "length": 780,
+      "trend": 1,
+      "severity": 4.4,
+      "jamLevel": 4,
+      "driversCount": 63,
+      "alertsCount": 3,
+      "line": [{"x": 106.6102, "y": -6.1748}, {"x": 106.6130, "y": -6.1730}],
+      "detectionDateMillis": 1786000000000
+    }
+  ]
+}

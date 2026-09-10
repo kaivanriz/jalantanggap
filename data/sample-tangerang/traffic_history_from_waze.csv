@@ -1,0 +1,4 @@
+timestamp,id_segmen,direction,speed_kmh,free_flow_speed_kmh,volume_veh_per_jam,congestion_index,source,quality_flag,is_simulation
+2026-08-06T14:06:40+07:00,S01,,15.0,,,,WAZE_WFC,waze_jam,False
+2026-08-06T14:06:40+07:00,S09,,29.0,,,,WAZE_WFC,waze_jam,False
+2026-08-06T14:06:40+07:00,S01,,12.0,41.0,,0.71,WAZE_WFC,waze_irregularity,False
