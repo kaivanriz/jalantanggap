@@ -355,6 +355,8 @@ Jalur alternatif tetap dapat dikembangkan sebagai **fitur pendukung**, tetapi bu
 
 ## Dokumentasi
 
+
+- [Sumber data eksternal (OSM, Google Maps, Dishub)](SUMBER-DATA-EKSTERNAL.md)
 - **[ROADMAP.md](ROADMAP.md)** — acuan utama urutan pengembangan dan Definition of Done.
 - [Rencana-Proyek.md](Rencana-Proyek.md) — rancangan proyek dan arsitektur.
 - [Kebutuhan-Data.md](Kebutuhan-Data.md) — kebutuhan dataset setiap komponen.
