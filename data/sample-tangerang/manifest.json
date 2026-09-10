@@ -1,24 +1,46 @@
 {
-  "version": 2,
+  "version": 3,
   "is_simulation": true,
-  "context": "Tangerang-Rajeg / pengalaman M. Toha",
-  "skema": "traffic_history/roadworks_events/traffic_ai_dataset mengikuti Kebutuhan-Data.md Fase 4",
-  "provenance": "Seluruh data dan geometri dibuat sintetis; bukan OSM, survei, atau data pemerintah.",
+  "context": "JalanTanggap synthetic development fixtures",
+  "provenance": "Seluruh data dan geometri dibuat sintetis; bukan OSM, survei, pengaduan warga, atau data pemerintah yang sebenarnya.",
   "timezone": "Asia/Jakarta",
   "coordinate_system": "EPSG:4326",
-  "counts": {
-    "nodes": 25,
-    "segmen": 40,
-    "laporan": 100,
-    "label_llm": 100,
-    "penilaian": 20,
-    "proyek": 4,
-    "pembatasan": 3,
-    "aktivitas": 12,
-    "roadworks_events": 2,
-    "traffic_history": 9954,
-    "traffic_ai_dataset": 34
+  "roadmap_source": "ROADMAP.md",
+  "phase1": {
+    "status": "active_development_fixture",
+    "generator": "scripts/generate_phase1_sample.py",
+    "outputs": {
+      "laporan_fase1.csv": 100,
+      "ground_truth_fase1.csv": 100,
+      "survey_fase1.csv": 20,
+      "aturan_fase1.json": 1
+    },
+    "purpose": [
+      "map_matching",
+      "bert_nlp",
+      "sbert_semantic_similarity",
+      "duplicate_detection",
+      "survey_verification",
+      "saw_priority"
+    ],
+    "important": "laporan_fase1.csv adalah raw model input. Ground truth disimpan terpisah untuk mencegah label leakage. Jalankan generator Phase 1 untuk meregenerasi dua CSV evaluasi/input secara deterministik."
   },
-  "generated_by": "scripts/generate_sample.py",
+  "legacy_and_phase4": {
+    "generator": "scripts/generate_sample.py",
+    "schema": "traffic_history/roadworks_events/traffic_ai_dataset mengikuti Kebutuhan-Data.md Fase 4",
+    "counts": {
+      "nodes": 25,
+      "segmen": 40,
+      "laporan": 100,
+      "label_llm": 100,
+      "penilaian": 20,
+      "proyek": 4,
+      "pembatasan": 3,
+      "aktivitas": 12,
+      "roadworks_events": 2,
+      "traffic_history": 9954,
+      "traffic_ai_dataset": 34
+    }
+  },
   "photos": "Tidak tersedia; kolom foto kosong, tidak ada bukti foto buatan."
 }
