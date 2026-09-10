@@ -10,3 +10,7 @@ data/private/
 data/real-tangerang/osm/osm_raw.json
 data/real-tangerang/osm/koridor_raw.json
 data/real-tangerang/osm/koridor_jaringan.geojson
+data/real-tangerang/traffic_history_waze.csv
+# Regenerasi deterministik via scripts/generate_phase1_sample.py (lihat manifest.json)
+data/sample-tangerang/laporan_fase1.csv
+data/sample-tangerang/ground_truth_fase1.csv

@@ -19,9 +19,11 @@ def load(name):
 
 def main():
     manifest = json.loads((ROOT/'manifest.json').read_text(encoding='utf-8'))
-    tables = {name: load(name) for name in manifest['counts']}
+    # Manifest v3 memindahkan tabel lama ke legacy_and_phase4.counts.
+    counts = manifest.get('counts') or manifest.get('legacy_and_phase4', {}).get('counts', {})
+    tables = {name: load(name) for name in counts}
     for name, rows in tables.items():
-        assert len(rows) == manifest['counts'][name], name
+        assert len(rows) == counts[name], name
         assert all(None not in row and None not in row.values() for row in rows), name
         assert all(row['is_simulation'] == 'True' for row in rows), name
 

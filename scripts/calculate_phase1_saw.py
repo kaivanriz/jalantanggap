@@ -6,6 +6,8 @@ Inputs:
 
 For the current synthetic fixture, each of the 20 segments has two deduplicated
 complaint incidents, so jumlah_laporan_valid=2 for every segment.
+
+Deterministic: rerunning reproduces hasil_saw_fase1.csv byte-for-byte.
 """
 import csv
 import json
@@ -23,60 +25,50 @@ def main():
 
     criteria = rules["saw"]["criteria"]
     numeric_fields = {c["name"] for c in criteria}
-    for row in surveys:
-        for field in numeric_fields:
-            if field == "jumlah_laporan_valid":
-                row[field] = 2
-            else:
-                row[field] = float(row[field])
 
-    max_values = {
-        c["name"]: max(float(r[c["name"]]) for r in surveys)
-        for c in criteria
-    }
+    def value(row, field):
+        return 2.0 if field == "jumlah_laporan_valid" else float(row[field])
+
+    max_values = {c["name"]: max(value(r, c["name"]) for r in surveys) for c in criteria}
 
     results = []
     for row in surveys:
         score = 0.0
         for c in criteria:
             name = c["name"]
-            value = float(row[name])
+            v = value(row, name)
             if c["type"] == "benefit":
-                normalized = value / max_values[name] if max_values[name] else 0
+                normalized = v / max_values[name] if max_values[name] else 0.0
             else:
-                positive = [float(r[name]) for r in surveys if float(r[name]) > 0]
-                normalized = min(positive) / value if value and positive else 0
+                positive = [value(r, name) for r in surveys if value(r, name) > 0]
+                normalized = min(positive) / v if v and positive else 0.0
             score += normalized * float(c["weight"])
-
-        sid = row["id_segmen"]
-        results.append({
-            "id_segmen": sid,
-            "nama_jalan": f"Jalan simulasi Tangerang {sid[1:]}",
-            "saw_score": score,
-            **{c["name"]: row[c["name"]] for c in criteria},
-        })
+        out = {c["name"]: (2 if c["name"] == "jumlah_laporan_valid" else row[c["name"]])
+               for c in criteria}
+        out.update(id_segmen=row["id_segmen"], saw_score=score,
+                   is_simulation=row.get("is_simulation", "True"))
+        results.append(out)
 
     results.sort(key=lambda x: x["saw_score"], reverse=True)
     for rank, row in enumerate(results, 1):
         row["rank"] = rank
         row["rekomendasi"] = "prioritas_top_10" if rank <= 10 else "cadangan"
 
-    out = DATA / "hasil_saw_fase1.csv"
-    fields = [
-        "rank", "id_segmen", "nama_jalan", "saw_score",
-        "tingkat_kerusakan", "dampak_akses", "peran_jalan",
-        "panjang_rusak_m", "jumlah_laporan_valid", "fasilitas_kritis",
-        "lama_tidak_ditangani_hari", "rekomendasi"
-    ]
-    with out.open("w", newline="", encoding="utf-8") as f:
+    out_path = DATA / "hasil_saw_fase1.csv"
+    fields = ["rank", "id_segmen", "nama_jalan", "saw_score",
+              "tingkat_kerusakan", "dampak_akses", "peran_jalan",
+              "panjang_rusak_m", "jumlah_laporan_valid", "fasilitas_kritis",
+              "lama_tidak_ditangani_hari", "rekomendasi", "is_simulation"]
+    with out_path.open("w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fields)
         writer.writeheader()
         for row in results:
             row["saw_score"] = f"{row['saw_score']:.4f}"
+            row.setdefault("nama_jalan", f"Jalan simulasi Tangerang {row['id_segmen'][1:]}")
             writer.writerow({k: row[k] for k in fields})
 
     for row in results[:10]:
-        print(f"{row['rank']:>2}. {row['nama_jalan']:<31} {row['saw_score']:.4f}")
+        print(f"{row['rank']:>2}. {row['nama_jalan']:<31} {row['saw_score']}")
 
 
 if __name__ == "__main__":
