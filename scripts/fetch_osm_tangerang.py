@@ -9,10 +9,12 @@ from pathlib import Path
 
 OUT = Path(__file__).resolve().parents[1] / 'data' / 'real-tangerang' / 'osm'
 # Bounding box (south, west, north, east) around Kota Tangerang.
-BBOX = (-6.26, 106.55, -6.08, 106.72)
-NAMES = ('M. Toha|Muhammad Toha|Teuku Umar|Iskandar Muda|Marsekal Suryadarma|'
-         'Sitanala|Arya Wangsakara|Arya Santikan|Otista|Bayur|Kedaung Barat|'
-         'Tangga Abu|Garuda|Prabu Kian Santang')
+BBOX = (-6.30, 106.50, -6.05, 106.90)
+NAMES = ('M. Toha|Muhammad Toha|Toha Raya|Teuku Umar|Iskandar Muda|'
+         'Marsekal Surya|Sitanala|Aria Wangsakara|Arya Wangsakara|RD. Aria Wangsakara|'
+         'Aria Santika|Arya Santikan|Aria Jaya Santika|Otista|Otto Iskandar|'
+         'Husein Sastranegara|Sangego|Prabu Kian Santang|Kedaung Barat|Bayur|'
+         'Tangga Abu|Garuda|Sultan Iskandar Muda')
 ENDPOINTS = ('https://overpass-api.de/api/interpreter',
              'https://overpass.kumi.systems/api/interpreter')
 

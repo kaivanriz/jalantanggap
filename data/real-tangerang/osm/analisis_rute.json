@@ -1,0 +1,31 @@
+{
+  "sumber": "OpenStreetMap (c) kontributor, ODbL",
+  "catatan": "Rute dihitung dari graf koridor hasil scripts/build_corridor_graph.py. Belum ada penutupan pekerjaan nyata; ini uji keterhubungan.",
+  "hasil": [
+    {
+      "uji": "Barat->Timur koridor",
+      "rute": false
+    },
+    {
+      "uji": "Wangsakara->Santika",
+      "rute": true,
+      "jarak_km": 3.44,
+      "nama_jalan": [
+        "Jalan Taman Teratai VII",
+        "Jalan Aria Wangsakara",
+        "Jalan Aria Santika",
+        "Jalan RHM Noeradji",
+        "Jalan Samaun",
+        "Gang Samaun 1"
+      ],
+      "jalan_alternatif_resmi": [
+        "Jalan Aria Wangsakara",
+        "Jalan Aria Santika"
+      ]
+    },
+    {
+      "uji": "Wangsakara->Otista (arah kota)",
+      "rute": false
+    }
+  ]
+}

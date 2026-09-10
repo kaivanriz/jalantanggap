@@ -1,0 +1,3319 @@
+{
+ "type": "FeatureCollection",
+ "attribution": "(c) OpenStreetMap contributors (ODbL)",
+ "note": "Koridor nama resmi jalur alternatif M. Toha (nama OSM), belum termasuk titik pekerjaan.",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 97906909,
+    "name": "Jalan Otista V",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.869366,
+      -6.2404344
+     ],
+     [
+      106.8693908,
+      -6.2404326
+     ],
+     [
+      106.8694029,
+      -6.2404318
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 98090606,
+    "name": "Jalan Otista III Komplek I",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8737686,
+      -6.2314669
+     ],
+     [
+      106.8737738,
+      -6.231547
+     ],
+     [
+      106.8737898,
+      -6.2318349
+     ],
+     [
+      106.8737884,
+      -6.2319227
+     ],
+     [
+      106.8737933,
+      -6.2320575
+     ],
+     [
+      106.8737951,
+      -6.2321055
+     ],
+     [
+      106.8738046,
+      -6.2323651
+     ],
+     [
+      106.8738085,
+      -6.2327223
+     ],
+     [
+      106.8737886,
+      -6.2333902
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 98090612,
+    "name": "Jalan Otista III Komplek IV",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8754426,
+      -6.2319601
+     ],
+     [
+      106.8754788,
+      -6.2327103
+     ],
+     [
+      106.8754972,
+      -6.2331312
+     ],
+     [
+      106.8754858,
+      -6.2336194
+     ],
+     [
+      106.8755098,
+      -6.2337003
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 98090613,
+    "name": "Jalan Otista III Komplek X",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8742935,
+      -6.2335255
+     ],
+     [
+      106.8743103,
+      -6.2335806
+     ],
+     [
+      106.8743238,
+      -6.2336033
+     ],
+     [
+      106.8743469,
+      -6.2336246
+     ],
+     [
+      106.8743741,
+      -6.2336353
+     ],
+     [
+      106.8743956,
+      -6.2336374
+     ],
+     [
+      106.8748522,
+      -6.2336396
+     ],
+     [
+      106.8754858,
+      -6.2336194
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 98090616,
+    "name": "Jalan Otista III Komplek XI",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8747926,
+      -6.2340558
+     ],
+     [
+      106.8748452,
+      -6.2340511
+     ],
+     [
+      106.8748772,
+      -6.2340524
+     ],
+     [
+      106.8753798,
+      -6.2340488
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 98090618,
+    "name": "Jalan Otista III Komplek VII",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8738085,
+      -6.2327223
+     ],
+     [
+      106.8742811,
+      -6.2327069
+     ],
+     [
+      106.8749534,
+      -6.2327175
+     ],
+     [
+      106.8754788,
+      -6.2327103
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 98090620,
+    "name": "Jalan Otista III Komplek VIII",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8754972,
+      -6.2331312
+     ],
+     [
+      106.8754077,
+      -6.2331343
+     ],
+     [
+      106.8743576,
+      -6.2331707
+     ],
+     [
+      106.874341,
+      -6.2331743
+     ],
+     [
+      106.8743287,
+      -6.2331826
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 98090625,
+    "name": "Jalan Otista III Komplek III",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8749306,
+      -6.2319071
+     ],
+     [
+      106.8749329,
+      -6.2319475
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 98090627,
+    "name": "Jalan Otista III Komplek II",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.874269,
+      -6.2319065
+     ],
+     [
+      106.8742704,
+      -6.2319681
+     ],
+     [
+      106.8742811,
+      -6.2327069
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 98090632,
+    "name": "Jalan Otista III Komplek 6",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8732098,
+      -6.2323591
+     ],
+     [
+      106.8732157,
+      -6.2324525
+     ],
+     [
+      106.8732363,
+      -6.2327451
+     ],
+     [
+      106.8732569,
+      -6.2330388
+     ],
+     [
+      106.8732854,
+      -6.233186
+     ],
+     [
+      106.8733229,
+      -6.233264
+     ],
+     [
+      106.8734028,
+      -6.2333273
+     ],
+     [
+      106.8734554,
+      -6.2333355
+     ],
+     [
+      106.8736505,
+      -6.2333723
+     ],
+     [
+      106.8737886,
+      -6.2333902
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 98090641,
+    "name": "Jalan Otista III Komplek XI",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8737673,
+      -6.2345758
+     ],
+     [
+      106.8738133,
+      -6.2345663
+     ],
+     [
+      106.8738782,
+      -6.2345452
+     ],
+     [
+      106.8739838,
+      -6.2345025
+     ],
+     [
+      106.874202,
+      -6.2343445
+     ],
+     [
+      106.874373,
+      -6.2342459
+     ],
+     [
+      106.8743897,
+      -6.2342254
+     ],
+     [
+      106.8744005,
+      -6.2341979
+     ],
+     [
+      106.8743791,
+      -6.2340772
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 256835058,
+    "name": "Jalan Aria Wangsakara",
+    "highway": "tertiary",
+    "oneway": "",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.6048275,
+      -6.1879744
+     ],
+     [
+      106.6048224,
+      -6.1878681
+     ],
+     [
+      106.6047373,
+      -6.1872681
+     ],
+     [
+      106.6047283,
+      -6.1871962
+     ],
+     [
+      106.6046884,
+      -6.1868981
+     ],
+     [
+      106.6046553,
+      -6.1861554
+     ],
+     [
+      106.6046541,
+      -6.1858915
+     ],
+     [
+      106.6045957,
+      -6.1854407
+     ],
+     [
+      106.6045509,
+      -6.1853455
+     ],
+     [
+      106.6043776,
+      -6.1851017
+     ],
+     [
+      106.6042068,
+      -6.1849048
+     ],
+     [
+      106.6040764,
+      -6.1846961
+     ],
+     [
+      106.6040441,
+      -6.1844668
+     ],
+     [
+      106.6040117,
+      -6.1841768
+     ],
+     [
+      106.6039735,
+      -6.1840328
+     ],
+     [
+      106.6037717,
+      -6.1836402
+     ],
+     [
+      106.6037469,
+      -6.1833655
+     ],
+     [
+      106.6037615,
+      -6.1832568
+     ],
+     [
+      106.6038745,
+      -6.1828335
+     ],
+     [
+      106.603942,
+      -6.1826082
+     ],
+     [
+      106.6039931,
+      -6.1825118
+     ],
+     [
+      106.6043242,
+      -6.1820775
+     ],
+     [
+      106.604461,
+      -6.1818309
+     ],
+     [
+      106.6046886,
+      -6.1814729
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 256835083,
+    "name": "Jalan Aria Santika",
+    "highway": "tertiary",
+    "oneway": "",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.6139108,
+      -6.1780004
+     ],
+     [
+      106.6142274,
+      -6.1780681
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 382403074,
+    "name": "Jalan Aria Santika",
+    "highway": "tertiary",
+    "oneway": "",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.6056439,
+      -6.1789129
+     ],
+     [
+      106.6057612,
+      -6.1789316
+     ],
+     [
+      106.605961,
+      -6.1789463
+     ],
+     [
+      106.6063821,
+      -6.1789849
+     ],
+     [
+      106.6066141,
+      -6.1790063
+     ],
+     [
+      106.6067335,
+      -6.1790129
+     ],
+     [
+      106.6069816,
+      -6.1790296
+     ],
+     [
+      106.6071372,
+      -6.1790163
+     ],
+     [
+      106.6072492,
+      -6.1788749
+     ],
+     [
+      106.6072968,
+      -6.1788569
+     ],
+     [
+      106.6078557,
+      -6.1789224
+     ],
+     [
+      106.6080498,
+      -6.178941
+     ],
+     [
+      106.6082275,
+      -6.1789596
+     ],
+     [
+      106.608318,
+      -6.1789343
+     ],
+     [
+      106.6083409,
+      -6.1789025
+     ],
+     [
+      106.6083898,
+      -6.1786803
+     ],
+     [
+      106.6084571,
+      -6.1786206
+     ],
+     [
+      106.6085044,
+      -6.1786166
+     ],
+     [
+      106.6088122,
+      -6.1786623
+     ],
+     [
+      106.6089584,
+      -6.1786369
+     ],
+     [
+      106.6090596,
+      -6.1785403
+     ],
+     [
+      106.6092722,
+      -6.1783156
+     ],
+     [
+      106.6093913,
+      -6.178246
+     ],
+     [
+      106.610042,
+      -6.1780243
+     ],
+     [
+      106.610105,
+      -6.1779696
+     ],
+     [
+      106.6101392,
+      -6.1778636
+     ],
+     [
+      106.6101674,
+      -6.1778136
+     ],
+     [
+      106.6102351,
+      -6.1777769
+     ],
+     [
+      106.610449,
+      -6.1777616
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 447489935,
+    "name": "Jalan Otista V",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8702404,
+      -6.2403857
+     ],
+     [
+      106.8702807,
+      -6.2403845
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 447489937,
+    "name": "Jalan Otista V",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8702807,
+      -6.2403845
+     ],
+     [
+      106.8702944,
+      -6.2403836
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 473699902,
+    "name": "Jalan Otista III Dalam",
+    "highway": "living_street",
+    "oneway": "no",
+    "lanes": "",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8755334,
+      -6.2313821
+     ],
+     [
+      106.8754729,
+      -6.2313803
+     ],
+     [
+      106.8753715,
+      -6.2313806
+     ],
+     [
+      106.8752047,
+      -6.231381
+     ],
+     [
+      106.8749758,
+      -6.2313733
+     ],
+     [
+      106.8748835,
+      -6.2313828
+     ],
+     [
+      106.8746842,
+      -6.2314042
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 484448055,
+    "name": "Jalan Otista IV",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8699561,
+      -6.2396373
+     ],
+     [
+      106.8700842,
+      -6.2396245
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 484448056,
+    "name": "Jalan Otista IV",
+    "highway": "living_street",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8693271,
+      -6.2396499
+     ],
+     [
+      106.8694035,
+      -6.239649
+     ],
+     [
+      106.8699561,
+      -6.2396373
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 484862893,
+    "name": "Jalan Otista Raya 149",
+    "highway": "living_street",
+    "oneway": "no",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8691488,
+      -6.2384247
+     ],
+     [
+      106.8692111,
+      -6.2384123
+     ],
+     [
+      106.8694941,
+      -6.2383707
+     ],
+     [
+      106.8695458,
+      -6.238362
+     ],
+     [
+      106.8696302,
+      -6.2383494
+     ],
+     [
+      106.8696413,
+      -6.2383454
+     ],
+     [
+      106.8696456,
+      -6.2383327
+     ],
+     [
+      106.8696456,
+      -6.2382934
+     ],
+     [
+      106.8696507,
+      -6.2382813
+     ],
+     [
+      106.8696617,
+      -6.2382754
+     ],
+     [
+      106.8697288,
+      -6.2382774
+     ],
+     [
+      106.8697365,
+      -6.2382747
+     ],
+     [
+      106.8697427,
+      -6.238271
+     ],
+     [
+      106.8697481,
+      -6.238267
+     ],
+     [
+      106.8697513,
+      -6.2382627
+     ],
+     [
+      106.8697643,
+      -6.2380614
+     ],
+     [
+      106.8697694,
+      -6.2379248
+     ],
+     [
+      106.8697695,
+      -6.2379044
+     ],
+     [
+      106.8697749,
+      -6.2378899
+     ],
+     [
+      106.8697821,
+      -6.2378843
+     ],
+     [
+      106.8697922,
+      -6.2378819
+     ],
+     [
+      106.8698575,
+      -6.2378804
+     ],
+     [
+      106.869872,
+      -6.2378783
+     ],
+     [
+      106.8698827,
+      -6.2378733
+     ],
+     [
+      106.869887,
+      -6.2378604
+     ],
+     [
+      106.8698875,
+      -6.2378393
+     ],
+     [
+      106.869876,
+      -6.2377728
+     ],
+     [
+      106.8698388,
+      -6.2376201
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 484862912,
+    "name": "Jalan Otista Raya Gang Salihun",
+    "highway": "living_street",
+    "oneway": "",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8675984,
+      -6.2334601
+     ],
+     [
+      106.8680153,
+      -6.2334126
+     ],
+     [
+      106.8681702,
+      -6.2334019
+     ],
+     [
+      106.8683223,
+      -6.2333982
+     ],
+     [
+      106.8684458,
+      -6.2333952
+     ],
+     [
+      106.8684819,
+      -6.2333928
+     ],
+     [
+      106.8687002,
+      -6.2333782
+     ],
+     [
+      106.8688347,
+      -6.2333692
+     ],
+     [
+      106.869113,
+      -6.2333612
+     ],
+     [
+      106.8692029,
+      -6.2333513
+     ],
+     [
+      106.8692387,
+      -6.2333443
+     ],
+     [
+      106.869282,
+      -6.2333359
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 484871508,
+    "name": "Gang Otista 2",
+    "highway": "living_street",
+    "oneway": "no",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8684781,
+      -6.2305395
+     ],
+     [
+      106.868506,
+      -6.2305262
+     ],
+     [
+      106.8685339,
+      -6.2305216
+     ],
+     [
+      106.8687911,
+      -6.2305193
+     ],
+     [
+      106.8688195,
+      -6.2305146
+     ],
+     [
+      106.8688433,
+      -6.2305054
+     ],
+     [
+      106.8688852,
+      -6.230483
+     ],
+     [
+      106.8689255,
+      -6.230471
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 484871555,
+    "name": "Jalan Otista I A",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8650382,
+      -6.2256219
+     ],
+     [
+      106.8649366,
+      -6.2256351
+     ],
+     [
+      106.8648783,
+      -6.2256341
+     ],
+     [
+      106.8648226,
+      -6.2256324
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 484871556,
+    "name": "Jalan Otista I A",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8660441,
+      -6.2258787
+     ],
+     [
+      106.8662274,
+      -6.2258674
+     ],
+     [
+      106.8663079,
+      -6.2258621
+     ],
+     [
+      106.8663796,
+      -6.2258474
+     ],
+     [
+      106.8664928,
+      -6.2258145
+     ],
+     [
+      106.8666246,
+      -6.2257492
+     ],
+     [
+      106.8667289,
+      -6.2256787
+     ],
+     [
+      106.866751,
+      -6.2256638
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 484871561,
+    "name": "Jalan Otista I A",
+    "highway": "residential",
+    "oneway": "yes",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8668539,
+      -6.2260288
+     ],
+     [
+      106.8667873,
+      -6.2260405
+     ],
+     [
+      106.8666848,
+      -6.2260551
+     ],
+     [
+      106.866497,
+      -6.2260857
+     ],
+     [
+      106.8663757,
+      -6.2261004
+     ],
+     [
+      106.8662724,
+      -6.2261183
+     ],
+     [
+      106.8661651,
+      -6.2261284
+     ],
+     [
+      106.8660651,
+      -6.2261383
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 484871562,
+    "name": "Jalan Otista I A",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8660441,
+      -6.2258787
+     ],
+     [
+      106.8660651,
+      -6.2261383
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 484871567,
+    "name": "Jalan Otista I A",
+    "highway": "residential",
+    "oneway": "yes",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8650382,
+      -6.2256219
+     ],
+     [
+      106.8651622,
+      -6.2255931
+     ],
+     [
+      106.8653879,
+      -6.2255568
+     ],
+     [
+      106.8654871,
+      -6.2255361
+     ],
+     [
+      106.8655683,
+      -6.2255298
+     ],
+     [
+      106.8656005,
+      -6.2255311
+     ],
+     [
+      106.8656112,
+      -6.2255355
+     ],
+     [
+      106.8656213,
+      -6.2255541
+     ],
+     [
+      106.8656519,
+      -6.2257706
+     ],
+     [
+      106.8656628,
+      -6.2258474
+     ],
+     [
+      106.8656698,
+      -6.2258618
+     ],
+     [
+      106.8656889,
+      -6.2258747
+     ],
+     [
+      106.8657063,
+      -6.22588
+     ],
+     [
+      106.8657243,
+      -6.2258819
+     ],
+     [
+      106.8658927,
+      -6.2258781
+     ],
+     [
+      106.8659739,
+      -6.2258768
+     ],
+     [
+      106.8660441,
+      -6.2258787
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 484871574,
+    "name": "Jalan Otista I A",
+    "highway": "residential",
+    "oneway": "yes",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8660651,
+      -6.2261383
+     ],
+     [
+      106.8660698,
+      -6.2262463
+     ],
+     [
+      106.8660642,
+      -6.2262688
+     ],
+     [
+      106.866045,
+      -6.2262997
+     ],
+     [
+      106.8660257,
+      -6.2263263
+     ],
+     [
+      106.8660041,
+      -6.226347
+     ],
+     [
+      106.8659422,
+      -6.2263821
+     ],
+     [
+      106.8658679,
+      -6.2264017
+     ],
+     [
+      106.8657091,
+      -6.2264123
+     ],
+     [
+      106.8655548,
+      -6.226429
+     ],
+     [
+      106.8654274,
+      -6.226445
+     ],
+     [
+      106.8653194,
+      -6.226463
+     ],
+     [
+      106.8651056,
+      -6.226491
+     ],
+     [
+      106.8650987,
+      -6.226489
+     ],
+     [
+      106.8650791,
+      -6.2264834
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 484871595,
+    "name": "Jalan Otista Gang Mangga",
+    "highway": "living_street",
+    "oneway": "no",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8664548,
+      -6.2295918
+     ],
+     [
+      106.8664556,
+      -6.2294812
+     ],
+     [
+      106.8664652,
+      -6.2294018
+     ],
+     [
+      106.8664702,
+      -6.2293788
+     ],
+     [
+      106.8665235,
+      -6.2293431
+     ],
+     [
+      106.8665463,
+      -6.2293221
+     ],
+     [
+      106.8665484,
+      -6.2293111
+     ],
+     [
+      106.8665491,
+      -6.2292972
+     ],
+     [
+      106.8665478,
+      -6.2291205
+     ],
+     [
+      106.8665464,
+      -6.2290192
+     ],
+     [
+      106.8665451,
+      -6.2289252
+     ],
+     [
+      106.8665438,
+      -6.2288862
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 484871596,
+    "name": "Jalan Otista Gang Mangga",
+    "highway": "living_street",
+    "oneway": "no",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8649726,
+      -6.2292565
+     ],
+     [
+      106.864963,
+      -6.2292801
+     ],
+     [
+      106.8649607,
+      -6.2292899
+     ],
+     [
+      106.8649598,
+      -6.2293198
+     ],
+     [
+      106.8649607,
+      -6.2293268
+     ],
+     [
+      106.8649639,
+      -6.2293318
+     ],
+     [
+      106.8649689,
+      -6.2293353
+     ],
+     [
+      106.8650256,
+      -6.2293405
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 484871597,
+    "name": "Jalan Otista Gang Mangga",
+    "highway": "living_street",
+    "oneway": "no",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8660528,
+      -6.2295188
+     ],
+     [
+      106.8660824,
+      -6.2293212
+     ],
+     [
+      106.8661205,
+      -6.2291305
+     ],
+     [
+      106.8661286,
+      -6.2291035
+     ],
+     [
+      106.8661414,
+      -6.2289712
+     ],
+     [
+      106.8661307,
+      -6.2289566
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 484871598,
+    "name": "Jalan Otista Gang Mangga",
+    "highway": "living_street",
+    "oneway": "no",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8653565,
+      -6.2293354
+     ],
+     [
+      106.8653723,
+      -6.2292475
+     ],
+     [
+      106.8653911,
+      -6.2291748
+     ],
+     [
+      106.8654018,
+      -6.2290798
+     ],
+     [
+      106.8654038,
+      -6.2290362
+     ],
+     [
+      106.8654044,
+      -6.2289662
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 484871599,
+    "name": "Jalan Otista Gang Mangga",
+    "highway": "living_street",
+    "oneway": "no",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8652783,
+      -6.2293244
+     ],
+     [
+      106.8652508,
+      -6.2292924
+     ],
+     [
+      106.8651687,
+      -6.2292761
+     ],
+     [
+      106.8650832,
+      -6.2292661
+     ],
+     [
+      106.8650104,
+      -6.2292605
+     ],
+     [
+      106.8649726,
+      -6.2292565
+     ],
+     [
+      106.8649572,
+      -6.2292552
+     ],
+     [
+      106.8649299,
+      -6.2292543
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 484871609,
+    "name": "Jalan Otista Gang Mangga",
+    "highway": "living_street",
+    "oneway": "no",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8652783,
+      -6.2293244
+     ],
+     [
+      106.8653512,
+      -6.229335
+     ],
+     [
+      106.8653565,
+      -6.2293354
+     ],
+     [
+      106.8654118,
+      -6.2293491
+     ],
+     [
+      106.8655741,
+      -6.2294135
+     ],
+     [
+      106.8657659,
+      -6.2294574
+     ],
+     [
+      106.8658443,
+      -6.2294848
+     ],
+     [
+      106.8659006,
+      -6.2295035
+     ],
+     [
+      106.8660528,
+      -6.2295188
+     ],
+     [
+      106.8660924,
+      -6.2295425
+     ],
+     [
+      106.8661924,
+      -6.2295838
+     ],
+     [
+      106.8662929,
+      -6.2295905
+     ],
+     [
+      106.8663647,
+      -6.229593
+     ],
+     [
+      106.8664548,
+      -6.2295918
+     ],
+     [
+      106.8665081,
+      -6.2295924
+     ],
+     [
+      106.8665219,
+      -6.2295997
+     ],
+     [
+      106.8665296,
+      -6.2296117
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 485280711,
+    "name": "Jalan Otista I",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8671532,
+      -6.2254015
+     ],
+     [
+      106.8673639,
+      -6.2253859
+     ],
+     [
+      106.8676948,
+      -6.2253587
+     ],
+     [
+      106.8681582,
+      -6.2253207
+     ],
+     [
+      106.8684219,
+      -6.2253169
+     ],
+     [
+      106.8690039,
+      -6.2252889
+     ],
+     [
+      106.869126,
+      -6.2252912
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 486051247,
+    "name": "Jalan Otista IV",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8700842,
+      -6.2396245
+     ],
+     [
+      106.8701687,
+      -6.2396189
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 487617564,
+    "name": "Jalan Otista III Komplek XII",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8748452,
+      -6.2340511
+     ],
+     [
+      106.8748466,
+      -6.234353
+     ],
+     [
+      106.8748565,
+      -6.2344678
+     ],
+     [
+      106.8749074,
+      -6.2345721
+     ],
+     [
+      106.8752102,
+      -6.235073
+     ],
+     [
+      106.8752367,
+      -6.2351671
+     ],
+     [
+      106.8752468,
+      -6.2351984
+     ],
+     [
+      106.8752635,
+      -6.235227
+     ],
+     [
+      106.8755414,
+      -6.2353147
+     ],
+     [
+      106.8757889,
+      -6.2354058
+     ],
+     [
+      106.8758516,
+      -6.2354291
+     ],
+     [
+      106.8759102,
+      -6.2354632
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 557895726,
+    "name": "Jalan Otista III Komplek VII",
+    "highway": "residential",
+    "oneway": "",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8732363,
+      -6.2327451
+     ],
+     [
+      106.8738085,
+      -6.2327223
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 588518187,
+    "name": "Jalan Aria Wangsakara",
+    "highway": "tertiary",
+    "oneway": "",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.6056439,
+      -6.1789129
+     ],
+     [
+      106.6056405,
+      -6.1785903
+     ],
+     [
+      106.6054869,
+      -6.178135
+     ],
+     [
+      106.6054455,
+      -6.1777767
+     ],
+     [
+      106.6054283,
+      -6.1776277
+     ],
+     [
+      106.605434,
+      -6.177373
+     ],
+     [
+      106.6054112,
+      -6.177161
+     ],
+     [
+      106.6052423,
+      -6.176639
+     ],
+     [
+      106.6052229,
+      -6.1765162
+     ],
+     [
+      106.6052429,
+      -6.1762323
+     ],
+     [
+      106.605275,
+      -6.1759583
+     ],
+     [
+      106.6052657,
+      -6.175703
+     ],
+     [
+      106.6053049,
+      -6.1755444
+     ],
+     [
+      106.6054444,
+      -6.1751736
+     ],
+     [
+      106.6055934,
+      -6.1747432
+     ],
+     [
+      106.6056056,
+      -6.1743943
+     ],
+     [
+      106.6055742,
+      -6.1741752
+     ],
+     [
+      106.6054184,
+      -6.1741011
+     ],
+     [
+      106.6053605,
+      -6.1740403
+     ],
+     [
+      106.6052724,
+      -6.173627
+     ],
+     [
+      106.6052475,
+      -6.1734454
+     ],
+     [
+      106.60521,
+      -6.173087
+     ],
+     [
+      106.6051999,
+      -6.1723017
+     ],
+     [
+      106.6052131,
+      -6.171387
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 588518188,
+    "name": "Jalan Aria Wangsakara",
+    "highway": "tertiary",
+    "oneway": "",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.6046886,
+      -6.1814729
+     ],
+     [
+      106.6047362,
+      -6.1814068
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 688712481,
+    "name": "Jalan Otista II",
+    "highway": "residential",
+    "oneway": "yes",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8694891,
+      -6.2309089
+     ],
+     [
+      106.8694965,
+      -6.2307356
+     ],
+     [
+      106.8694961,
+      -6.2306457
+     ],
+     [
+      106.8694904,
+      -6.2306122
+     ],
+     [
+      106.8694666,
+      -6.230597
+     ],
+     [
+      106.8694362,
+      -6.2305843
+     ],
+     [
+      106.8693995,
+      -6.230581
+     ],
+     [
+      106.8693808,
+      -6.2305683
+     ],
+     [
+      106.8693624,
+      -6.2305269
+     ],
+     [
+      106.8692985,
+      -6.230428
+     ],
+     [
+      106.8692665,
+      -6.2303702
+     ],
+     [
+      106.869256,
+      -6.2303417
+     ],
+     [
+      106.8692487,
+      -6.2303103
+     ],
+     [
+      106.869241,
+      -6.2302596
+     ],
+     [
+      106.8692555,
+      -6.2300903
+     ],
+     [
+      106.8692796,
+      -6.2299529
+     ],
+     [
+      106.8692983,
+      -6.2298216
+     ],
+     [
+      106.8693002,
+      -6.2298045
+     ],
+     [
+      106.8693118,
+      -6.2297217
+     ],
+     [
+      106.8693171,
+      -6.2296851
+     ],
+     [
+      106.8693259,
+      -6.229647
+     ],
+     [
+      106.8693372,
+      -6.2296057
+     ],
+     [
+      106.8693465,
+      -6.2295629
+     ],
+     [
+      106.8693849,
+      -6.229399
+     ],
+     [
+      106.8693983,
+      -6.2293203
+     ],
+     [
+      106.8693949,
+      -6.229179
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 733026225,
+    "name": "Jalan Otista III Komplek I",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8737886,
+      -6.2333902
+     ],
+     [
+      106.8737955,
+      -6.2334411
+     ],
+     [
+      106.8738104,
+      -6.2334733
+     ],
+     [
+      106.8738413,
+      -6.2334993
+     ],
+     [
+      106.8738855,
+      -6.2335227
+     ],
+     [
+      106.8739643,
+      -6.2335413
+     ],
+     [
+      106.8742132,
+      -6.2335286
+     ],
+     [
+      106.8742935,
+      -6.2335255
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 762915091,
+    "name": "Jalan Otista II",
+    "highway": "residential",
+    "oneway": "yes",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.869577,
+      -6.2317258
+     ],
+     [
+      106.869577,
+      -6.2316904
+     ],
+     [
+      106.8695763,
+      -6.2315018
+     ],
+     [
+      106.869571,
+      -6.2312365
+     ],
+     [
+      106.8695589,
+      -6.2310992
+     ],
+     [
+      106.8695404,
+      -6.2310403
+     ],
+     [
+      106.86952,
+      -6.2309851
+     ],
+     [
+      106.8694891,
+      -6.2309089
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 762915795,
+    "name": "Jalan Otista II",
+    "highway": "residential",
+    "oneway": "yes",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8693949,
+      -6.229179
+     ],
+     [
+      106.869393,
+      -6.2291507
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 765441676,
+    "name": "Jalan Otista I",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8669948,
+      -6.2254209
+     ],
+     [
+      106.8671532,
+      -6.2254015
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 816169770,
+    "name": "Jalan RD. Aria Wangsakara",
+    "highway": "residential",
+    "oneway": "",
+    "lanes": "",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.6520024,
+      -6.2872522
+     ],
+     [
+      106.6519743,
+      -6.2874815
+     ],
+     [
+      106.6519354,
+      -6.2877281
+     ],
+     [
+      106.6518898,
+      -6.2878854
+     ],
+     [
+      106.6518201,
+      -6.288028
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 818446949,
+    "name": "Jalan Otista II",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8673235,
+      -6.230971
+     ],
+     [
+      106.8675414,
+      -6.2309604
+     ],
+     [
+      106.8675701,
+      -6.230959
+     ],
+     [
+      106.8678037,
+      -6.2309527
+     ],
+     [
+      106.8683286,
+      -6.2309506
+     ],
+     [
+      106.8691233,
+      -6.2309362
+     ],
+     [
+      106.8694891,
+      -6.2309089
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 922343464,
+    "name": "Otista 2",
+    "highway": "living_street",
+    "oneway": "",
+    "lanes": "",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8700343,
+      -6.2302054
+     ],
+     [
+      106.8697965,
+      -6.230221
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 947682484,
+    "name": "Jalan Otista I A",
+    "highway": "residential",
+    "oneway": "yes",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8669515,
+      -6.2260076
+     ],
+     [
+      106.8668539,
+      -6.2260288
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 947690761,
+    "name": "Jalan Otista Raya Gang Salihun",
+    "highway": "living_street",
+    "oneway": "no",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8675597,
+      -6.2334621
+     ],
+     [
+      106.8675984,
+      -6.2334601
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 979199439,
+    "name": "Otista 2",
+    "highway": "living_street",
+    "oneway": "no",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8700343,
+      -6.2302054
+     ],
+     [
+      106.8700394,
+      -6.2301922
+     ],
+     [
+      106.8700467,
+      -6.2301849
+     ],
+     [
+      106.870057,
+      -6.230178
+     ],
+     [
+      106.8701667,
+      -6.2301666
+     ],
+     [
+      106.8701739,
+      -6.230162
+     ],
+     [
+      106.870195,
+      -6.2301485
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1101756134,
+    "name": "Jalan Aria Santika",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.6139108,
+      -6.1780004
+     ],
+     [
+      106.6133474,
+      -6.1779276
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1101756135,
+    "name": "Jalan Aria Santika",
+    "highway": "tertiary",
+    "oneway": "",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.610449,
+      -6.1777616
+     ],
+     [
+      106.6105607,
+      -6.1777441
+     ],
+     [
+      106.610622,
+      -6.1777409
+     ],
+     [
+      106.6109714,
+      -6.1777749
+     ],
+     [
+      106.6113516,
+      -6.1777663
+     ],
+     [
+      106.6114046,
+      -6.1777683
+     ],
+     [
+      106.6117147,
+      -6.1777907
+     ],
+     [
+      106.6125137,
+      -6.1778483
+     ],
+     [
+      106.6130747,
+      -6.1778923
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1188529018,
+    "name": "Jalan Aria Santika",
+    "highway": "tertiary",
+    "oneway": "",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.6142274,
+      -6.1780681
+     ],
+     [
+      106.6143862,
+      -6.1780963
+     ],
+     [
+      106.6145155,
+      -6.1781185
+     ],
+     [
+      106.6147871,
+      -6.1781682
+     ],
+     [
+      106.6148928,
+      -6.1781876
+     ],
+     [
+      106.6149743,
+      -6.1782061
+     ],
+     [
+      106.6151986,
+      -6.1782509
+     ],
+     [
+      106.6152837,
+      -6.1782303
+     ],
+     [
+      106.6154366,
+      -6.1781776
+     ],
+     [
+      106.6155808,
+      -6.1781729
+     ],
+     [
+      106.6156646,
+      -6.1781849
+     ],
+     [
+      106.6161162,
+      -6.1782436
+     ],
+     [
+      106.6163626,
+      -6.1782756
+     ],
+     [
+      106.6165383,
+      -6.1782889
+     ],
+     [
+      106.6170285,
+      -6.1783436
+     ],
+     [
+      106.6172364,
+      -6.1783563
+     ],
+     [
+      106.6175576,
+      -6.1783156
+     ],
+     [
+      106.6177453,
+      -6.1782203
+     ],
+     [
+      106.6179489,
+      -6.1780439
+     ],
+     [
+      106.6181583,
+      -6.1779756
+     ],
+     [
+      106.61843,
+      -6.1779043
+     ],
+     [
+      106.6186666,
+      -6.177877
+     ],
+     [
+      106.6187183,
+      -6.1778736
+     ],
+     [
+      106.6189161,
+      -6.1778763
+     ],
+     [
+      106.6193352,
+      -6.1778869
+     ],
+     [
+      106.6195938,
+      -6.1778688
+     ],
+     [
+      106.6200215,
+      -6.1777739
+     ],
+     [
+      106.6209251,
+      -6.1774663
+     ],
+     [
+      106.6211801,
+      -6.1773499
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1188529020,
+    "name": "Jalan Aria Santika",
+    "highway": "tertiary",
+    "oneway": "yes",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.6133474,
+      -6.1779276
+     ],
+     [
+      106.6130747,
+      -6.1778923
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1233010930,
+    "name": "Jalan Otista I A",
+    "highway": "residential",
+    "oneway": "yes",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8650791,
+      -6.2264834
+     ],
+     [
+      106.8650744,
+      -6.226471
+     ],
+     [
+      106.8650573,
+      -6.2263467
+     ],
+     [
+      106.865052,
+      -6.226285
+     ],
+     [
+      106.8650499,
+      -6.226212
+     ],
+     [
+      106.8650485,
+      -6.226165
+     ],
+     [
+      106.8650426,
+      -6.2260184
+     ],
+     [
+      106.8650425,
+      -6.2259297
+     ],
+     [
+      106.8650412,
+      -6.225811
+     ],
+     [
+      106.8650431,
+      -6.2256931
+     ],
+     [
+      106.8650382,
+      -6.2256219
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1291381004,
+    "name": "Jalan Aria Wangsakara",
+    "highway": "tertiary",
+    "oneway": "",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.6047362,
+      -6.1814068
+     ],
+     [
+      106.604868,
+      -6.1811916
+     ],
+     [
+      106.6051859,
+      -6.1806189
+     ],
+     [
+      106.605417,
+      -6.1800898
+     ],
+     [
+      106.605548,
+      -6.1797256
+     ],
+     [
+      106.6055822,
+      -6.1794876
+     ],
+     [
+      106.6056385,
+      -6.1792596
+     ],
+     [
+      106.6056439,
+      -6.1789129
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1297874060,
+    "name": "Jalan Otista I A",
+    "highway": "living_street",
+    "oneway": "no",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8648226,
+      -6.2256324
+     ],
+     [
+      106.8647696,
+      -6.2256271
+     ],
+     [
+      106.86473,
+      -6.2256231
+     ],
+     [
+      106.8646932,
+      -6.2256205
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1425743684,
+    "name": "Jalan Otista III Dalam",
+    "highway": "living_street",
+    "oneway": "no",
+    "lanes": "",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8758221,
+      -6.2315188
+     ],
+     [
+      106.8758131,
+      -6.2314112
+     ],
+     [
+      106.87581,
+      -6.2313985
+     ],
+     [
+      106.8757926,
+      -6.2313869
+     ],
+     [
+      106.8757693,
+      -6.2313884
+     ],
+     [
+      106.8756928,
+      -6.231386
+     ],
+     [
+      106.8755334,
+      -6.2313821
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1425744334,
+    "name": "Jalan Otista III Dalam",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8746842,
+      -6.2314042
+     ],
+     [
+      106.8743958,
+      -6.2314351
+     ],
+     [
+      106.8741443,
+      -6.2314679
+     ],
+     [
+      106.8739677,
+      -6.2314904
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1445904238,
+    "name": "Jalan Otista III Komplek IV",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8755098,
+      -6.2337003
+     ],
+     [
+      106.8754861,
+      -6.2339686
+     ],
+     [
+      106.8754625,
+      -6.2340299
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1499735241,
+    "name": "Jalan Otista V",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8702944,
+      -6.2403836
+     ],
+     [
+      106.870385,
+      -6.240381
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1499735242,
+    "name": "Jalan Otista V",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8694029,
+      -6.2404318
+     ],
+     [
+      106.8702404,
+      -6.2403857
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1499983583,
+    "name": "Jalan Otista III Komplek III",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8749329,
+      -6.2319475
+     ],
+     [
+      106.8749534,
+      -6.2327175
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1499983584,
+    "name": "Jalan Otista III Komplek IV",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8754373,
+      -6.231879
+     ],
+     [
+      106.8754426,
+      -6.2319601
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1502076009,
+    "name": "Jalan Otista III Dalam",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8739677,
+      -6.2314904
+     ],
+     [
+      106.8739305,
+      -6.231498
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1502662765,
+    "name": "Jalan Otista I A",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.866751,
+      -6.2256638
+     ],
+     [
+      106.86678,
+      -6.2256428
+     ],
+     [
+      106.8668333,
+      -6.2256104
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1528535394,
+    "name": "Jalan Otista III Komplek VIII",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8743287,
+      -6.2331826
+     ],
+     [
+      106.8743236,
+      -6.2331913
+     ],
+     [
+      106.8743221,
+      -6.2332047
+     ],
+     [
+      106.8742935,
+      -6.2335255
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1528545400,
+    "name": "Jalan Otista III Komplek XI",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "2",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8743791,
+      -6.2340772
+     ],
+     [
+      106.8747926,
+      -6.2340558
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "osm_id": 1528545401,
+    "name": "Jalan Otista III Komplek XI",
+    "highway": "residential",
+    "oneway": "no",
+    "lanes": "1",
+    "maxspeed": "",
+    "source": "OpenStreetMap",
+    "license": "ODbL"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      106.8735904,
+      -6.2346016
+     ],
+     [
+      106.8736318,
+      -6.2345956
+     ],
+     [
+      106.8737673,
+      -6.2345758
+     ]
+    ]
+   }
+  }
+ ]
+}

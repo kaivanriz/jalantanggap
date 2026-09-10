@@ -8,8 +8,11 @@ Wilayah studi: **Kota Tangerang**. Diakses 10 September 2026. Isi folder ini ber
 |---|---|
 | pekerjaan_resmi.csv | Enam ruas pekerjaan dari berita resmi Pemkot Tangerang: jadwal, panjang, skema lalu lintas, status |
 | jalur_alternatif_resmi.csv | Jalur alternatif dan imbauan resmi Dishub |
-| osm/jalan_tangerang.geojson | Geometri jalan asli dari OpenStreetMap untuk koridor studi |
-| osm/osm_raw.json | Respons mentah Overpass API |
+| analisis_koridor.md | Analisis koridor: temuan, cara membuat ulang, keterbatasan |
+| osm/jalan_tangerang.geojson | Geometri jalan bernama dari OpenStreetMap untuk koridor studi |
+| osm/koridor_nodes.csv + osm/koridor_edges.csv | Graf persimpangan siap-rute hasil OSM asli |
+| osm/analisis_rute.json | Hasil rute uji (termasuk jalur alternatif resmi) |
+| osm/koridor_detour_mtoha.geojson | Way OSM untuk nama jalur alternatif resmi M. Toha |
 
 ## Temuan utama
 
@@ -49,7 +52,9 @@ Wilayah studi: **Kota Tangerang**. Diakses 10 September 2026. Isi folder ini ber
 ## Mengambil ulang geometri OSM
 
 ```powershell
-uv run python scripts/fetch_osm_tangerang.py
+uv run python scripts/build_corridor_graph.py   # graf persimpangan koridor
+uv run python scripts/route_corridor.py         # uji rute + analisis_rute.json
+uv run python scripts/fetch_osm_tangerang.py    # jalan bernama se-Kota (opsional)
 ```
 
 Data © OpenStreetMap contributors (ODbL). Wajib atribusi. Atribut `lanes`, `oneway`, dan `maxspeed` sering kosong dan harus diverifikasi untuk rute nyata.

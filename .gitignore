@@ -8,3 +8,5 @@ __pycache__/
 data/private/
 .playwright-mcp/
 data/real-tangerang/osm/osm_raw.json
+data/real-tangerang/osm/koridor_raw.json
+data/real-tangerang/osm/koridor_jaringan.geojson
