@@ -1,61 +1,63 @@
 # Kebutuhan Data JalanTanggap
 
-## Rekomendasi Paket Perbaikan + AI Traffic Impact + Optimization
+## Data dari Smart Reporting sampai Intelligent Planning
 
-Dokumen ini mendefinisikan data untuk menjawab dua pertanyaan:
+> **Acuan fase:** [ROADMAP.md](ROADMAP.md). Kebutuhan data dikumpulkan bertahap sesuai roadmap; tidak semua dataset harus tersedia untuk memulai Fase 1.
 
-1. **Dari seluruh jalan yang membutuhkan penanganan, ruas mana yang sebaiknya masuk paket 10/20 ruas atau paket sesuai anggaran?**
-2. **Jika ruas tersebut dikerjakan, apa dampaknya terhadap lalu lintas dan pekerjaan lain?**
+## 1. Peta Data per Fase
 
----
-
-## 1. Ringkasan Data
-
-| Kategori | Fungsi | Sumber utama |
+| Fase | Data utama | Digunakan untuk |
 |---|---|---|
-| Laporan warga | aspirasi dan dampak yang dirasakan | form/sistem pengaduan |
-| Kondisi ruas | dasar kebutuhan teknis | PUPR/survei/verifikasi |
-| Riwayat penanganan | umur penanganan dan outcome | PUPR |
-| Biaya & durasi | constraint optimizer | perencanaan teknis |
-| Fasilitas/aktivitas | dampak pelayanan | data daerah/OSM/verifikasi |
-| Jaringan jalan | relasi spasial dan graph | GIS/OSM |
-| Historical traffic | baseline dan training AI | Dishub/ATCS/CCTV/provider |
-| Historical roadworks | label efek pekerjaan | PUPR/Dishub |
-| Pekerjaan aktif/rencana | konflik multi-proyek | PUPR/pengawas |
-| Outcome pelaksanaan | evaluasi dan retraining | sistem + lapangan |
+| 1 | laporan warga, hasil NLP, survey jalan, ruas, fasilitas dasar | BERT/SBERT + SAW |
+| 2 | histori keputusan, skor SAW, dipilih/tidak, outcome | AI Prioritization |
+| 3 | biaya, durasi, budget, resource, constraint | Multi-Project Optimization |
+| 4 | historical traffic, historical roadworks, road graph | Traffic Impact AI |
+| 5 | seluruh data + konflik + outcome traffic | Intelligent Planning |
 
----
+## 2. Fase 1 — Laporan Warga dan NLP
 
-## 2. Laporan Warga
+Field minimum laporan:
 
 ```text
 id_laporan
 waktu_laporan
 koordinat
-id_segmen
-nama_jalan
+id_segmen jika sudah dipetakan
+nama_jalan/deskripsi_lokasi
 deskripsi
 foto
-dampak_dilaporkan
 status_verifikasi
-id_cluster_duplikat
-hasil_ekstraksi_llm
-hasil_verifikasi
+```
+
+Simpan hasil NLP secara terstruktur, jangan hanya teks hasil model:
+
+```text
+nlp_model
+nlp_model_version
+kategori_prediksi
+confidence_kategori
+masalah_terekstrak
+dampak_dilaporkan
+landmark_terekstrak
+embedding_model
+embedding_version
+cluster_id
+similarity_score
+candidate_duplicate_of
+nlp_processed_at
 ```
 
 Aturan:
-- laporan harus dihubungkan ke ruas setelah verifikasi;
-- laporan duplikat tidak dihitung sebagai kejadian kerusakan berbeda;
-- jumlah laporan menjadi salah satu sinyal, bukan penentu tunggal;
-- identitas warga tidak digunakan sebagai fitur prioritas kecuali kebutuhan operasional yang sah dan terpisah.
+- BERT/IndoBERT digunakan untuk klasifikasi/ekstraksi sesuai hasil benchmark;
+- SBERT/sentence embedding digunakan untuk semantic similarity/clustering/deduplikasi kandidat;
+- similarity teks dikombinasikan dengan lokasi dan waktu;
+- hasil NLP bukan keputusan teknis;
+- cluster/duplikasi final diverifikasi petugas;
+- identitas warga tidak digunakan sebagai fitur prioritas tanpa kebutuhan operasional yang sah.
 
-LLM dapat membantu ekstraksi lokasi/keluhan dan mendeteksi kandidat duplikasi, tetapi hasilnya diverifikasi.
+## 3. Fase 1 — Survey dan Kondisi Ruas
 
----
-
-## 3. Kondisi Ruas
-
-| Field | Contoh/keterangan |
+| Field | Keterangan |
 |---|---|
 | `id_segmen` | ID konsisten lintas dataset |
 | `geometry` | LineString PostGIS |
@@ -65,18 +67,50 @@ LLM dapat membantu ekstraksi lokasi/keluhan dan mendeteksi kandidat duplikasi, t
 | `panjang_m` | panjang segmen |
 | `lebar_m` | jika tersedia |
 | `jumlah_lajur` | jika tersedia |
-| `tingkat_kerusakan` | hasil survei/verifikasi |
+| `tingkat_kerusakan` | hasil survey/verifikasi |
 | `panjang_rusak_m` | panjang terdampak |
-| `jenis_kerusakan` | lubang/retak/dll sesuai data teknis |
-| `dampak_akses` | normal/terganggu/sulit/terputus |
-| `tanggal_survei` | freshness data |
+| `jenis_kerusakan` | klasifikasi teknis |
+| `dampak_akses` | hasil verifikasi |
+| `tanggal_survei` | freshness |
 | `verified_by` | audit internal |
 
-Nilai kondisi teknis harus berasal dari sumber/verifikasi teknis, bukan inferensi LLM.
+Nilai teknis berasal dari survei/verifikasi, bukan inferensi NLP.
 
----
+## 4. Fase 1 — Data SAW
 
-## 4. Riwayat Penanganan
+Contoh kriteria:
+
+```text
+tingkat_kerusakan
+panjang_rusak
+dampak_akses
+kelas_fungsi_jalan
+jumlah_laporan_valid
+umur_laporan_tertua
+lama_sejak_penanganan
+jumlah_fasilitas_kritis
+```
+
+Simpan konfigurasi agar audit dapat dilakukan:
+
+```text
+saw_version
+criterion
+weight
+attribute_type  # benefit/cost
+normalization_method
+raw_value
+normalized_value
+weighted_value
+final_score
+calculated_at
+```
+
+Bobot harus terdokumentasi dan disepakati dengan petugas teknis.
+
+## 5. Riwayat Penanganan dan Outcome
+
+Mulai dikumpulkan sejak Fase 1 karena menjadi fondasi Fase 2.
 
 ```text
 id_penanganan
@@ -84,37 +118,108 @@ id_segmen
 tanggal_mulai
 tanggal_selesai
 jenis_penanganan
+estimasi_biaya
 biaya_realisasi
 kondisi_sebelum
 kondisi_sesudah
 umur_manfaat_jika_tersedia
 ```
 
-Dipakai untuk melihat lama belum ditangani, frekuensi kerusakan berulang, biaya historis, dan outcome.
+Simpan juga keputusan per periode:
 
----
+```text
+planning_period
+id_segmen
+saw_score
+expert_priority
+decision_selected
+selection_reason
+override_reason
+budget_context
+outcome_score jika tersedia
+```
 
-## 5. Data Biaya dan Durasi Kandidat
+## 6. Fase 2 — Dataset AI Prioritization
 
-Diperlukan agar mode `berdasarkan anggaran` benar-benar dapat dioptimalkan.
+Training dataset dibentuk dari data historis yang sudah diverifikasi.
+
+Kandidat feature:
+- kondisi teknis;
+- laporan valid/terdeduplikasi;
+- lama laporan;
+- fungsi jalan;
+- fasilitas penting;
+- riwayat penanganan;
+- biaya historis;
+- konteks akses;
+- feature lain yang tersedia sebelum keputusan dibuat.
+
+Kandidat target/label:
+- expert priority terverifikasi;
+- keputusan paket yang telah dikaji kualitasnya;
+- outcome/manfaat setelah penanganan.
+
+Jangan menggunakan skor SAW sebagai satu-satunya target karena model hanya akan belajar meniru formula SAW.
+
+Untuk mencegah leakage, field yang baru diketahui setelah keputusan/pelaksanaan tidak boleh menjadi feature untuk memprediksi keputusan sebelumnya. Split temporal lebih disarankan untuk evaluasi historis.
+
+Simpan metadata model:
+
+```text
+model_name
+model_version
+training_period
+feature_schema_version
+dataset_version
+metrics
+prediction
+prediction_confidence
+explanation
+```
+
+## 7. Fase 3 — Data Optimization
+
+Data kandidat:
 
 ```text
 id_kandidat
 id_segmen
-jenis_penanganan_usulan
-estimasi_biaya
-estimasi_durasi_hari
-jumlah_lajur_terdampak
-jenis_pembatasan
-opsi_waktu_mulai
-batasan_teknis
+ai_priority_score
+estimated_cost
+estimated_duration
+allowed_periods
+required_periods
+resource_requirement
+technical_constraints
 ```
 
-Tanpa estimasi biaya, sistem hanya dapat mengoptimalkan berdasarkan jumlah ruas atau constraint lain.
+Parameter skenario:
 
----
+```text
+target_project_count
+budget_limit
+planning_start
+planning_end
+max_simultaneous_projects
+available_crews
+available_equipment
+```
 
-## 6. Fasilitas dan Aktivitas Sekitar
+Simpan hasil optimizer:
+
+```text
+scenario_id
+optimizer_version
+objective_value
+selected
+assigned_period
+constraint_reason
+input_snapshot_version
+```
+
+Optimization adalah optimisasi matematis; AI Priority Score menjadi salah satu inputnya.
+
+## 8. Fasilitas dan Aktivitas Sekitar
 
 ```text
 id_fasilitas
@@ -124,17 +229,12 @@ geometry
 jam_aktif
 jam_padat
 akses_kritis
+source
 ```
 
-Contoh: sekolah, pasar, puskesmas, rumah sakit, terminal, layanan pemerintahan, kawasan aktivitas tinggi.
+Contoh: sekolah, pasar, puskesmas, rumah sakit, terminal, layanan pemerintahan. Data ini dapat digunakan sebagai konteks prioritas dan kemudian konteks traffic impact.
 
-Digunakan sebagai konteks manfaat dan dampak. Keberadaan fasilitas tidak otomatis menentukan prioritas; bobot/aturan harus terdokumentasi.
-
----
-
-## 7. Jaringan Jalan / Graph
-
-Data minimum:
+## 9. Fase 4 — Jaringan Jalan / Graph
 
 ```text
 id_segmen
@@ -148,26 +248,17 @@ lanes
 width
 access
 turn_restriction
-speed_limit jika tersedia
-capacity jika tersedia
+speed_limit
+capacity
 ```
 
-Sumber awal dapat menggunakan OSM, kemudian atribut penting diverifikasi/dilengkapi dari data daerah.
+Graph digunakan untuk graph distance/hop, identifikasi koridor penerima dampak, feature engineering Traffic AI, conflict analysis, dan routing opsional.
 
-Graph dipakai untuk:
-- hubungan antar-ruas;
-- jarak/hop dari lokasi pekerjaan;
-- identifikasi koridor penerima dampak;
-- feature engineering traffic AI;
-- jalur alternatif opsional.
+Sumber awal dapat menggunakan OSM, tetapi atribut kritis perlu diverifikasi/dilengkapi dari data daerah.
 
----
+## 10. Fase 4 — Historical Traffic
 
-## 8. Historical Traffic
-
-Ini data utama untuk **AI Traffic Impact Prediction**.
-
-### Format time-series per ruas
+Format time-series per ruas:
 
 ```text
 timestamp
@@ -176,29 +267,17 @@ direction
 speed
 free_flow_speed
 volume
-occupancy jika tersedia
+occupancy
 congestion_index
 source
 quality_flag
 ```
 
-Idealnya interval konsisten, misalnya 5/10/15 menit sesuai sumber.
-
-Sumber kandidat:
-- ATCS Dishub;
-- traffic counter;
-- CCTV + vehicle counting;
-- survei lalu lintas;
-- traffic provider jika tersedia;
-- collector berkala JalanTanggap.
+Interval dapat 5/10/15 menit sesuai sumber dan kebutuhan. Sumber kandidat: ATCS Dishub, traffic counter, CCTV + vehicle counting, survei, provider, atau collector JalanTanggap.
 
 Jangan mencampur sumber tanpa menyimpan `source` dan indikator kualitas.
 
----
-
-## 9. Historical Roadworks / Gangguan
-
-Agar model dapat belajar efek pekerjaan, histori traffic harus dapat dipasangkan dengan histori gangguan.
+## 11. Fase 4 — Historical Roadworks / Gangguan
 
 ```text
 id_event
@@ -210,77 +289,25 @@ jenis_pembatasan
 jumlah_lajur_ditutup
 arah_terdampak
 severity
-segmen_pengalihan jika diketahui
 ```
 
-Training sample kemudian dapat membandingkan baseline dengan kondisi saat event.
+Histori event harus dapat dipasangkan dengan traffic sebelum/saat/setelah pekerjaan.
 
-Contoh label turunan:
+Contoh training sample turunan:
 
 ```text
 source_project = P001
 target_segment = S015
 time_window = 07:00-08:00
-delta_volume = +420 veh/hour
-delta_speed = -12 km/hour
+graph_distance = 3
+delta_volume = +420
+delta_speed = -12
 congestion = 1
 ```
 
----
-
-## 10. Pekerjaan Aktif dan Terjadwal
-
-```text
-id_proyek
-id_segmen
-status
-periode_mulai
-periode_selesai
-jam_pembatasan
-jenis_pembatasan
-jumlah_lajur_ditutup
-estimasi_biaya
-progress
-```
-
-Digunakan untuk mendeteksi konflik dengan paket baru.
-
----
-
-## 11. Dataset Priority / Need Scoring
-
-### Baseline MVP
-
-Fitur dapat mencakup:
-
-```text
-tingkat_kerusakan
-panjang_rusak
-dampak_akses
-kelas_jalan
-jumlah_laporan_valid
-umur_laporan_tertua
-lama_sejak_penanganan
-jumlah_fasilitas_kritis
-estimasi_biaya
-```
-
-Pada MVP, gunakan aturan/SAW yang disepakati petugas dan simpan komponen skor agar dapat diaudit.
-
-### Jika menggunakan ML
-
-Diperlukan target/label yang jelas. Contoh yang mungkin setelah data tersedia:
-- prioritas ahli terverifikasi;
-- outcome/manfaat setelah penanganan;
-- keputusan paket historis yang telah dikaji kualitasnya.
-
-Tidak disarankan mengklaim priority scoring sebagai AI jika hanya menggunakan bobot manual.
-
----
-
 ## 12. Dataset Traffic AI
 
-### Feature per pasangan pekerjaan → target ruas
+Feature kandidat per pasangan pekerjaan → target ruas:
 
 ```text
 project_segment
@@ -301,7 +328,7 @@ facility_activity
 weather_optional
 ```
 
-### Target
+Target:
 
 ```text
 delta_volume
@@ -310,45 +337,61 @@ congestion_probability
 risk_class
 ```
 
-Untuk MVP, XGBoost/Random Forest dapat diuji. Pemilihan model final berdasarkan hasil validasi, bukan nama algoritma.
+Model awal dapat mengevaluasi XGBoost/Random Forest. Model final dipilih berdasarkan validasi, bukan nama algoritma.
 
----
+## 13. Pekerjaan Aktif dan Terjadwal
 
-## 13. Data untuk Optimizer
+```text
+id_proyek
+id_segmen
+status
+periode_mulai
+periode_selesai
+jam_pembatasan
+jenis_pembatasan
+jumlah_lajur_ditutup
+estimasi_biaya
+progress
+```
 
-Optimizer membutuhkan hasil dari mesin sebelumnya ditambah constraint perencanaan:
+Data ini penting pada Fase 4–5 untuk traffic context dan konflik antarproyek.
+
+## 14. Fase 5 — Data Integrated Planning
+
+Optimizer akhir dapat menggunakan:
 
 ```text
 id_kandidat
-need_score
+ai_priority_score
 estimated_cost
 estimated_duration
 traffic_risk
-uncertainty
+traffic_uncertainty
+affected_segments
 allowed_periods
-required_periods
 conflicting_project_ids
 resource_requirement
 ```
 
-Parameter skenario:
+Output:
 
 ```text
-target_project_count = 10 / 20 / null
-budget_limit
-planning_start
-planning_end
-max_simultaneous_projects
-max_acceptable_traffic_risk
+scenario_id
+selected_projects
+project_stage
+project_schedule
+objective_value
+budget_used
+predicted_traffic_impact
+conflicts_avoided
+uncertainty
+human_decision
+human_override_reason
 ```
 
-Output optimizer harus menyimpan objective score dan alasan constraint yang membuat kandidat tidak masuk/berpindah tahap.
+## 15. Outcome Setelah Pelaksanaan
 
----
-
-## 14. Outcome Setelah Pelaksanaan
-
-Bagian ini penting agar sistem dapat belajar.
+Outcome menjadi feedback loop untuk Fase 2 dan Fase 4:
 
 ```text
 id_proyek
@@ -358,22 +401,16 @@ actual_cost
 actual_closure
 actual_traffic_per_affected_segment
 complaints_during_work
-incident_count jika tersedia
+incident_count
 condition_after
 operator_notes
 ```
 
-Outcome dipakai untuk:
-- menguji prediksi;
-- memperbaiki dataset;
-- retraining;
-- mengetahui apakah rekomendasi paket benar-benar memberikan hasil baik.
+Digunakan untuk evaluasi rekomendasi, evaluasi Traffic AI, retraining, dan pengukuran manfaat nyata.
 
----
+## 16. Contoh CSV Minimum Fase 1
 
-## 15. Contoh CSV Minimum
-
-### `laporan.csv`
+### laporan.csv
 
 ```csv
 id_laporan,waktu,id_segmen,deskripsi,status
@@ -381,7 +418,7 @@ L001,2026-09-01 08:12,S001,"Lubang besar dan mengganggu kendaraan",Valid
 L002,2026-09-02 10:30,S001,"Jalan rusak depan sekolah",Valid
 ```
 
-### `segmen_jalan.csv`
+### segmen_jalan.csv
 
 ```csv
 id_segmen,nama_jalan,tingkat_kerusakan,panjang_rusak_m,dampak_akses,jumlah_lajur
@@ -389,68 +426,63 @@ S001,Jalan A,5,120,Sulit,2
 S002,Jalan B,3,40,Terganggu,2
 ```
 
-### `traffic_history.csv`
+### saw_input.csv
 
 ```csv
-timestamp,id_segmen,speed,free_flow_speed,volume,congestion_index,source
-2026-09-10 07:00,S001,18,40,1250,0.72,DISHUB
-2026-09-10 07:05,S001,16,40,1320,0.78,DISHUB
+id_segmen,tingkat_kerusakan,panjang_rusak,jumlah_laporan_valid,dampak_akses
+S001,5,120,8,4
+S002,3,40,2,2
 ```
 
-### `kandidat_pekerjaan.csv`
+## 17. Urutan Pengumpulan Data Sesuai Roadmap
 
-```csv
-id_kandidat,id_segmen,estimasi_biaya,estimasi_durasi_hari,jumlah_lajur_terdampak
-K001,S001,500000000,14,1
-K002,S002,300000000,7,1
-```
+### Fase 1
+1. master ruas dan geometry;
+2. laporan warga;
+3. output/version NLP dan embedding;
+4. hasil deduplikasi + verifikasi;
+5. survey kondisi jalan;
+6. kriteria/bobot/hasil SAW;
+7. keputusan petugas;
+8. outcome mulai dicatat.
 
----
+### Fase 2
+9. historical decisions;
+10. expert labels;
+11. outcome penanganan;
+12. versioned ML training dataset.
 
-## 16. Urutan Pengumpulan Data
+### Fase 3
+13. estimasi biaya/durasi;
+14. budget/resource;
+15. technical constraints;
+16. historical optimizer scenarios.
 
-### Wajib untuk Recommendation MVP
-1. ruas dan kondisi jalan;
-2. laporan warga terverifikasi;
-3. kandidat pekerjaan;
-4. estimasi biaya/durasi;
-5. jaringan jalan;
-6. pekerjaan aktif.
+### Fase 4
+17. road graph;
+18. historical traffic;
+19. historical roadworks/gangguan;
+20. traffic outcome per pekerjaan.
 
-### Wajib untuk Traffic AI yang layak
-7. historical traffic per ruas;
-8. historical roadworks/gangguan;
-9. pasangan baseline vs kondisi saat gangguan;
-10. validasi outcome.
+### Fase 5
+21. pekerjaan aktif/terjadwal;
+22. conflict data;
+23. integrated scenario/outcome history;
+24. realtime/CCTV/cuaca sebagai pengayaan bila tersedia.
 
-### Pengayaan
-11. fasilitas/aktivitas;
-12. cuaca;
-13. CCTV vehicle counting;
-14. data realtime.
+## 18. Data Quality dan Governance
 
----
+Setiap dataset penting sebaiknya memiliki `source`, timestamp pembaruan, status verifikasi, quality/confidence flag, ID ruas konsisten, dan version/audit trail.
 
-## 17. Data Quality
+Periksa missing value, koordinat salah, ruas ganda, timestamp/timezone, perubahan ID OSM, laporan duplikat, kondisi kedaluwarsa, label bias, dan data leakage.
 
-Setiap dataset sebaiknya memiliki:
-- `source`;
-- waktu pembaruan;
-- status verifikasi;
-- quality/confidence flag;
-- ID ruas yang konsisten;
-- version/audit trail untuk perubahan penting.
-
-Masalah utama yang perlu diperiksa: missing value, koordinat salah, ruas ganda, timestamp/timezone tidak konsisten, data traffic kosong, perubahan ID OSM, laporan duplikat, dan data kondisi yang sudah kedaluwarsa.
-
----
-
-## 18. Batasan
+## 19. Batasan
 
 1. Banyak laporan tidak otomatis berarti ruas paling rusak.
-2. Wilayah dengan partisipasi warga rendah tidak boleh otomatis mendapat skor rendah.
-3. Tanpa historical traffic + event pekerjaan yang memadai, dampak kemacetan hanya dapat dinilai sebagai baseline/risk scoring.
-4. Prediksi AI tidak menggantikan survei teknis atau keputusan pejabat.
-5. Estimasi biaya dan kapasitas harus berasal dari sumber teknis.
-6. Contoh data dalam dokumentasi adalah ilustrasi.
-7. Data pribadi warga tidak diperlukan untuk training model rekomendasi.
+2. Wilayah dengan partisipasi warga rendah tidak boleh otomatis mendapat prioritas rendah.
+3. NLP tidak menghasilkan nilai teknis kondisi jalan.
+4. Tanpa historical labels/outcome, AI Priority belum layak menggantikan SAW.
+5. Tanpa historical traffic + roadworks yang memadai, Traffic AI belum dapat diklaim tervalidasi.
+6. Prediksi AI tidak menggantikan keputusan pejabat atau survei teknis.
+7. Estimasi biaya/resource harus berasal dari sumber teknis.
+8. Data pribadi warga tidak diperlukan sebagai feature model rekomendasi.
