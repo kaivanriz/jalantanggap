@@ -1,0 +1,35 @@
+name: Generate LAKSA synthetic fixture
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/generate_laksa_synthetic_xlsx.py'
+      - '.github/workflows/generate-laksa-fixture.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install openpyxl
+      - run: python scripts/generate_laksa_synthetic_xlsx.py
+      - name: Commit generated fixture
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/sample-tangerang/laporan_laksa_sintetis_fase1.xlsx
+          git add data/sample-tangerang/ground_truth_laksa_sintetis_fase1.csv
+          if git diff --cached --quiet; then
+            echo "No fixture changes"
+          else
+            git commit -m "data: generate LAKSA synthetic phase 1 fixture"
+            git push
+          fi
