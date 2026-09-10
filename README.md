@@ -1,124 +1,139 @@
 # 🛣️ JalanTanggap
 
-## Prediksi dampak perbaikan jalan sebelum kemacetan berpindah ke tempat lain
+## Pilih jalan yang paling perlu diperbaiki, tanpa membuat masalah lalu lintas baru
 
-Ide ini berawal dari pengalaman pulang kerja menuju Rajeg. Di Jalan M. Toha ada perbaikan jalan dan kendaraan diarahkan melalui jalur alternatif. Ternyata, di jalur alternatif tersebut juga terdapat pekerjaan jalan.
+JalanTanggap adalah rancangan **sistem rekomendasi paket perbaikan jalan berbasis data dan AI**. Sistem membantu pemerintah menjawab pertanyaan:
 
-Masalah yang ingin dijawab JalanTanggap kemudian diperluas:
+> **Dari seluruh ruas yang rusak dan laporan warga, jika hanya 10 atau 20 lokasi yang dapat diperbaiki, lokasi mana yang sebaiknya dipilih dan bagaimana pelaksanaannya agar manfaatnya tinggi tetapi dampak kemacetannya tetap terkendali?**
 
-> **Jika pemerintah memiliki beberapa rencana perbaikan jalan, ruas atau kawasan mana yang berpotensi mengalami penumpukan kendaraan, pekerjaan mana yang aman dilaksanakan bersamaan, dan pekerjaan mana yang sebaiknya dipisahkan waktunya?**
-
-JalanTanggap merupakan rancangan sistem pendukung keputusan berbasis peta dengan **AI Traffic Impact Prediction**. Sistem membantu petugas menganalisis dampak rencana pekerjaan jalan terhadap jaringan jalan di sekitarnya sebelum pekerjaan dilaksanakan.
+Sistem tidak hanya membuat ranking jalan. JalanTanggap menggabungkan **kondisi jalan + aspirasi warga + AI Traffic Impact Prediction + optimization** untuk menghasilkan paket pekerjaan yang dapat dipertanggungjawabkan.
 
 ## Skenario utama
 
-Misalnya terdapat **10 rencana perbaikan jalan**. Sistem menganalisis setiap pekerjaan berdasarkan lokasi, waktu, jenis penutupan, kondisi jaringan jalan, pekerjaan lain, dan histori lalu lintas.
+Misalnya tersedia 100 kandidat ruas rusak, sedangkan kapasitas program hanya 20 ruas atau dibatasi anggaran tertentu.
 
-Keluaran yang diharapkan antara lain:
+```text
+Data kerusakan + laporan warga + konteks pelayanan
+                    ↓
+        Priority / Need Scoring
+                    ↓
+           Kandidat perbaikan
+                    ↓
+       AI Traffic Impact Prediction
+                    ↓
+ Dampak tiap kandidat ke jaringan sekitar
+                    ↓
+       Multi-Project Optimization
+                    ↓
+   Paket 10 / 20 ruas / sesuai anggaran
+                    ↓
+ Tahapan pelaksanaan + peta dampak + alasan
+```
 
-- ruas/kawasan yang diprediksi mengalami peningkatan kepadatan;
-- tingkat risiko dampak per ruas;
-- heatmap zona terdampak;
-- pekerjaan yang memiliki area dampak saling tumpang tindih;
-- pekerjaan yang relatif aman dilakukan bersamaan;
-- pekerjaan yang sebaiknya dipisahkan jadwalnya;
-- perbandingan skenario waktu pengerjaan;
-- jalur alternatif sebagai fitur pendukung bila diperlukan.
+Contoh hasil:
+
+| Ruas | Kebutuhan | Risiko traffic | Keputusan |
+|---|---:|---|---|
+| Jalan A | 94% | Sedang | Dipilih — Tahap 1 |
+| Jalan B | 91% | Tinggi | Tetap prioritas, tetapi jangan bersamaan dengan A |
+| Jalan C | 88% | Rendah | Dipilih — Tahap 1 |
+| Jalan F | 86% | Rendah | Dipilih — Tahap 1 |
+
+Jalan dengan skor kebutuhan tinggi tidak otomatis dikeluarkan hanya karena berdampak pada lalu lintas. Sistem dapat merekomendasikan **waktu/tahap berbeda**.
+
+## Tiga mesin keputusan
+
+### 1. Priority / Need Scoring
+Menilai seberapa penting suatu ruas ditangani berdasarkan data terverifikasi, misalnya tingkat dan panjang kerusakan, dampak akses, fungsi jalan, lama belum ditangani, fasilitas publik, serta laporan warga yang valid.
+
+Pada MVP, bila belum tersedia label historis yang memadai, scoring dapat menggunakan SAW/rule-based yang transparan. Setelah tersedia data keputusan dan outcome historis, model ML dapat dikembangkan untuk membantu priority prediction.
+
+### 2. AI Traffic Impact Prediction
+Memprediksi efek pekerjaan pada ruas sekitar berdasarkan histori lalu lintas, karakteristik jaringan, waktu pekerjaan, kapasitas/lajur, pekerjaan aktif, dan aktivitas sekitar.
 
 Contoh:
 
 ```text
-Rencana: Perbaikan Jalan A
-Waktu: Senin 07.00–16.00
-Penutupan: 1 dari 2 lajur
+Perbaikan Jalan A — Senin 07.00–16.00 — 1 lajur ditutup
 
-Prediksi dampak:
-🔴 Simpang X       risiko 92%
-🔴 Jalan B         risiko 87%
-🟡 Jalan D         risiko 64%
-🟢 Jalan E         risiko 18%
-
-Konflik:
-⚠ Perbaikan Jalan D memiliki area dampak yang sama.
-
-Rekomendasi:
-Pisahkan jadwal Jalan A dan Jalan D atau pilih waktu di luar jam sibuk.
+🔴 Simpang X    risiko 92%
+🔴 Jalan K      risiko 87%
+🟡 Jalan D      risiko 64%
+🟢 Jalan E      risiko 18%
 ```
 
-## Cara kerjanya
+Untuk MVP, model yang disarankan adalah **XGBoost atau Random Forest**. Jika kelak tersedia histori sensor/CCTV yang besar, dapat dikembangkan ke model spatio-temporal graph.
 
-1. Data rencana pekerjaan dimasukkan: lokasi, waktu, durasi, jenis pekerjaan, dan pembatasan lajur.
-2. Sistem mengambil karakteristik ruas dan konektivitas jaringan jalan.
-3. Data historis lalu lintas per ruas digunakan sebagai baseline kondisi normal dan pola kemacetan.
-4. Model AI/ML memprediksi perubahan volume, kecepatan, atau probabilitas kemacetan pada ruas sekitar.
-5. Graph analysis membantu menganalisis penyebaran dampak melalui jaringan jalan.
-6. Sistem membandingkan beberapa rencana pekerjaan dan mendeteksi area dampak yang saling bertumpuk.
-7. Dashboard menampilkan heatmap, ranking area terdampak, matriks konflik, dan skenario jadwal.
-8. Petugas meninjau rekomendasi dan tetap menjadi pengambil keputusan akhir.
+### 3. Multi-Project Optimization
+Memilih kombinasi pekerjaan terbaik, bukan sekadar mengambil ranking 10/20 teratas.
 
-## Posisi AI
+Optimizer mempertimbangkan manfaat, risiko lalu lintas, konflik antarpekerjaan, jumlah proyek, anggaran, periode pelaksanaan, dan constraint teknis.
 
-**SAW (Simple Additive Weighting) bukan AI.** SAW dapat tetap digunakan secara opsional untuk prioritas administratif kebutuhan perbaikan, tetapi bukan komponen AI utama.
-
-Komponen AI utama JalanTanggap adalah **Traffic Impact Prediction**.
-
-Untuk MVP, model yang disarankan adalah **XGBoost atau Random Forest** karena cocok untuk data tabular, relatif mudah dijelaskan, dan lebih realistis dibanding langsung menggunakan model deep learning.
-
-Contoh fitur model:
-
-- histori volume dan kecepatan per ruas;
-- hari dan jam;
-- kapasitas dan jumlah lajur;
-- jumlah lajur yang ditutup;
-- jenis penutupan;
-- durasi pekerjaan;
-- kelas/lebar jalan;
-- jarak dan konektivitas dari lokasi pekerjaan;
-- pekerjaan lain yang aktif;
-- aktivitas sekolah, pasar, atau fasilitas penting;
-- cuaca jika tersedia.
-
-Target model dapat berupa `delta_volume`, `delta_speed`, `congestion_probability`, atau kelas risiko rendah/sedang/tinggi.
-
-Jika di kemudian hari tersedia data sensor/CCTV dalam jumlah besar dan historis panjang, model dapat dikembangkan ke **Spatio-Temporal Graph Neural Network** untuk mempelajari penyebaran kemacetan antar-ruas dari waktu ke waktu.
-
-## Data historis kemacetan
-
-Data sebaiknya dikumpulkan sebagai time-series per ruas:
+Secara konseptual:
 
 ```text
-timestamp
-id_segmen
-speed
-free_flow_speed
-volume
-congestion_index
-source
+maximize:
+  manfaat_perbaikan - risiko_kemacetan - konflik_proyek
+
+subject to:
+  jumlah_proyek <= target
+  total_biaya <= anggaran
+  proyek_berkonflik tidak dijalankan bersamaan
 ```
 
-Sumber dapat berasal dari Dishub (ATCS, traffic counter, CCTV, survei), penyedia data traffic bila tersedia, atau pengumpulan berkala oleh sistem sendiri.
+Metode yang dapat digunakan: **Mixed Integer Programming / constraint optimization**.
 
-Riwayat pekerjaan jalan juga penting agar model dapat belajar hubungan antara sebuah penutupan dan perubahan kondisi ruas di sekitarnya.
+## Masukan sistem
 
-## Jika data AI belum cukup
+- laporan/aspirasi warga;
+- hasil verifikasi kondisi jalan;
+- tingkat dan panjang kerusakan;
+- kelas/fungsi/kewenangan jalan;
+- fasilitas penting di sekitar;
+- riwayat penanganan;
+- estimasi biaya dan durasi pekerjaan;
+- jaringan jalan;
+- histori volume, kecepatan, dan kepadatan;
+- pekerjaan aktif/terjadwal;
+- jenis dan waktu pembatasan lajur;
+- aktivitas sekolah, pasar, faskes, atau event.
 
-Versi awal dapat menggunakan **baseline risk scoring** berbasis graph dan aturan seperti kapasitas jalan, volume normal, jarak dari pekerjaan, overlap pekerjaan, jam sibuk, dan aktivitas sekitar.
+## Keluaran utama
 
-Baseline tersebut harus disebut **risk scoring**, bukan prediksi AI. Setelah data historis mencukupi, hasil baseline dibandingkan dengan model machine learning.
+Petugas dapat memilih mode **Top 10**, **Top 20**, atau **berdasarkan anggaran**. Sistem menghasilkan:
 
-## Jalur alternatif
+- paket ruas yang direkomendasikan;
+- alasan pemilihan dan faktor dominan;
+- kandidat penting yang belum dipilih beserta alasannya;
+- heatmap dampak lalu lintas;
+- ranking ruas/kawasan terdampak;
+- matriks konflik antarpekerjaan;
+- pekerjaan yang relatif aman dilakukan bersamaan;
+- pekerjaan yang perlu dipisahkan tahap/waktunya;
+- skenario jadwal;
+- confidence/ketidakpastian model;
+- jalur alternatif sebagai fitur pendukung bila diperlukan.
 
-Pencarian jalur alternatif menggunakan Dijkstra/A* tetap dapat disediakan, tetapi menjadi fitur pendukung. Fokus utama JalanTanggap adalah **memprediksi efek domino pekerjaan jalan dan membantu penjadwalan beberapa pekerjaan agar tidak menciptakan titik kemacetan baru**.
+## Peran AI dan non-AI
 
-## Dokumentasi
+| Komponen | Fungsi | AI? |
+|---|---|---|
+| LLM | Ekstraksi dan klarifikasi laporan warga, penjelasan hasil | Ya |
+| XGBoost / Random Forest | Traffic Impact Prediction | Ya |
+| Priority ML | Pengembangan lanjutan bila label historis tersedia | Ya |
+| SAW / rule scoring | Baseline prioritas yang transparan | Tidak |
+| Graph analysis | Konektivitas dan penyebaran dampak | Tidak harus AI |
+| Optimization | Memilih paket dan tahapan dengan constraint | Optimisasi matematis |
+| Dijkstra / A* | Jalur alternatif opsional | Tidak |
 
-- [Konsep AI Traffic Impact Prediction](AI-Traffic-Impact.md)
-- [Data nyata Kota Tangerang (sumber resmi + OSM)](data/real-tangerang/README.md)
-- [Analisis koridor Kota Tangerang](data/real-tangerang/analisis_koridor.md)
-- [Data sampel Tangerang–Rajeg (simulasi)](data/sample-tangerang/README.md)
-- [Rencana proyek dan rencana kerja](Rencana-Proyek.md)
-- [Kebutuhan data](Kebutuhan-Data.md)
-- [Presentasi konsep di Notion](https://www.notion.so/3d7237742b4381ce8e80e08ac6906cc5)
+## Prinsip penting
+
+- **Manusia tetap pengambil keputusan akhir.**
+- Jumlah laporan warga tidak boleh menjadi satu-satunya penentu prioritas.
+- LLM tidak boleh menebak kondisi teknis, volume, biaya, atau kapasitas jalan.
+- Jika histori traffic belum cukup, keluaran harus disebut **risk scoring/baseline**, bukan prediksi AI.
+- Model AI harus divalidasi sebelum digunakan untuk rekomendasi operasional.
+- Ruas yang sangat mendesak tetap dapat direkomendasikan walaupun berdampak tinggi, dengan mitigasi jadwal/tahapan.
 
 ## Teknologi yang direncanakan
 
@@ -128,13 +143,22 @@ Pencarian jalur alternatif menggunakan Dijkstra/A* tetap dapat disediakan, tetap
 | Database spasial | PostgreSQL + PostGIS |
 | Peta | Leaflet / OpenStreetMap |
 | Jaringan jalan | OSMnx / NetworkX |
-| AI Traffic Prediction | XGBoost / Random Forest (MVP) |
-| Analisis spasial | Graph analysis |
+| AI Traffic Impact | XGBoost / Random Forest |
+| Optimizer | OR-Tools / Pyomo atau solver setara |
+| Priority baseline | SAW / rule-based |
+| LLM | Ekstraksi laporan dan penjelasan |
 | Rute opsional | Dijkstra / A* |
-| Prioritas administratif | SAW opsional |
-| Bahasa | API LLM untuk ekstraksi laporan dan penjelasan |
-| Visualisasi | Heatmap dampak, timeline, matriks konflik |
+| Visualisasi | Heatmap, timeline, matriks konflik, paket rekomendasi |
+
+## Dokumentasi
+
+- [Rencana proyek](Rencana-Proyek.md)
+- [Kebutuhan data](Kebutuhan-Data.md)
+- [AI Traffic Impact Prediction](AI-Traffic-Impact.md)
+- [Data nyata Kota Tangerang](data/real-tangerang/README.md)
+- [Analisis koridor Kota Tangerang](data/real-tangerang/analisis_koridor.md)
+- [Data sampel Tangerang–Rajeg](data/sample-tangerang/README.md)
 
 ## Status
 
-Tahap **perencanaan dan dokumentasi**; aplikasi belum diimplementasikan. Data historis lalu lintas, data pekerjaan jalan, lokasi studi, dan target model perlu divalidasi sebelum model AI digunakan untuk rekomendasi operasional. Contoh angka dalam dokumentasi merupakan ilustrasi, bukan hasil pengukuran nyata.
+Tahap **perencanaan dan dokumentasi**. Angka pada contoh merupakan ilustrasi, bukan hasil pengukuran nyata. Prioritas awal dapat dibangun dengan metode transparan sambil mengumpulkan histori yang diperlukan untuk model AI.
