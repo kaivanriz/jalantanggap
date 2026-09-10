@@ -1,79 +1,185 @@
-# Data demo Tangerang–Rajeg
+# Data Demo JalanTanggap — Tangerang
 
-**SIMULASI, bukan data kondisi jalan Tangerang sebenarnya.** Konteks berasal dari cerita perjalanan M. Toha menuju Rajeg. Seluruh koordinat, jalan, fasilitas, laporan, proyek, dan lalu lintas dibuat untuk uji aplikasi. Garis GeoJSON adalah jaringan skematis di area geografis Tangerang, bukan hasil digitasi jalan nyata. Jangan digunakan untuk navigasi atau keputusan pekerjaan nyata.
+> **SIMULASI.** Seluruh koordinat, nama jalan, laporan, survey, proyek, dan lalu lintas pada folder ini dibuat untuk pengujian. Bukan data kondisi jalan Kota Tangerang yang sebenarnya dan tidak boleh digunakan untuk keputusan lapangan atau navigasi.
 
-## Isi paket
+Folder ini sekarang memiliki dua kelompok fixture: **fixture Fase 1** untuk Smart Reporting → NLP → map matching → deduplikasi → survey → SAW, serta **fixture legacy/Fase 4** yang sebelumnya dipakai untuk routing dan Traffic Impact AI.
 
-| File | Isi / penggunaan |
+## Fixture Fase 1 — direkomendasikan untuk pengembangan saat ini
+
+Generator:
+
+```bash
+python scripts/generate_phase1_sample.py
+```
+
+Generator tersebut menghasilkan:
+
+| File | Fungsi |
 |---|---|
-| nodes.csv | 25 simpul koordinat; latitude/longitude terpisah |
-| segmen.csv | 40 ruas terhubung, arah, panjang, akses kendaraan, lebar |
-| jaringan.geojson | Garis untuk peta Leaflet; koordinat [longitude, latitude] |
-| laporan.csv | 100 laporan, termasuk duplikat dan lokasi yang belum jelas |
-| label_llm.csv | Label referensi buatan manusia lewat template generator, bukan hasil model |
-| penilaian.csv | 20 penilaian kondisi untuk input SAW |
-| proyek.csv | 4 proyek usulan, aktif, dan selesai |
-| pembatasan.csv | Penutupan total dan parsial; usulan terpisah dari kondisi aktif |
-| aktivitas.csv | 12 aktivitas sekolah, pasar, fasilitas kesehatan, dan pulang kerja |
-| roadworks_events.csv | 2 event pekerjaan historis (tutup total S01, lajur ditutup S09) + segmen terdampak |
-| traffic_history.csv | 9.954 baris time-series per ruas/jam (Fase 4): speed, free_flow_speed, volume, congestion_index, source, quality_flag |
-| traffic_ai_dataset.csv | 34 baris pasangan baseline vs event untuk training XGBoost: fitur (hop, lajur, jam sibuk, fasilitas, overlap) + target (delta_volume, delta_speed, congestion) |
-| skenario.json | Empat kombinasi penutupan dengan hasil ada/tidak ada rute |
-| waze_feed_contoh.json | **Contoh simulasi** struktur feed Waze for Cities (bukan data Waze asli) |
-| contoh_mapping_jalan.csv | Contoh pemetaan nama jalan → id_segmen untuk konverter Waze |
-| traffic_history_from_waze.csv | Hasil uji konverter Waze → skema traffic_history (volume kosong: Waze tidak menyediakan) |
+| `laporan_fase1.csv` | input mentah pengaduan: deskripsi + latitude/longitude; tidak membawa jawaban `id_segmen` atau label duplikasi |
+| `ground_truth_fase1.csv` | ground truth terpisah untuk evaluasi map matching, NLP, dan deduplikasi |
+| `survey_fase1.csv` | hasil survey teknis sintetis untuk 20 segmen kandidat |
+| `aturan_fase1.json` | aturan pengujian map matching, deduplikasi, dan bobot SAW demo |
 
-## Uji pengumpul Waze tanpa token
+### Mengapa dipisah?
 
-```powershell
-uv run python scripts/collect_waze_feed.py --url "file://data/sample-tangerang/waze_feed_contoh.json" --mapping data/sample-tangerang/contoh_mapping_jalan.csv --iterations 2 --interval 0
+Fixture lama `laporan.csv` sudah mengandung `id_segmen`, `status`, dan `id_cluster_duplikat`. Itu berguna untuk demo lama tetapi dapat menyebabkan **label leakage** jika langsung dipakai sebagai input model.
+
+Pada fixture Fase 1, input model hanya menerima data yang secara realistis tersedia dari aplikasi pengaduan:
+
+```text
+id_laporan
+id_pelapor
+waktu
+latitude
+longitude
+deskripsi
+foto_url
+status=submitted
 ```
 
-Perintah di atas memakai `waze_feed_contoh.json` (simulasi) sehingga bisa diuji tanpa kredensial Waze. Hasil nyata nanti memerlukan URL feed dari Partner Hub.
-| aturan.json | Bobot contoh, jendela pelaporan, kendaraan, dan pasangan asal–tujuan |
-| manifest.json | Sumber, versi, label simulasi, dan jumlah record |
-| hasil_validasi.json | Hasil rute yang benar-benar dihitung validator |
+Jawaban yang diharapkan disimpan terpisah di `ground_truth_fase1.csv`.
 
-## Cara memakai
+## Desain data pengaduan Fase 1
 
-```powershell
-uv run python scripts/generate_sample.py
-uv run python scripts/validate_sample.py
+Dataset generator membuat **100 pengaduan sintetis pada 20 ruas**. Setiap ruas memiliki dua kejadian sintetis pada posisi berbeda. Satu kejadian memiliki 3 laporan dan satu kejadian memiliki 2 laporan, sehingga semantic deduplication dapat diuji tanpa menganggap semua laporan pada satu ruas adalah kejadian yang sama.
+
+Koordinat:
+- selalu tersedia, mengikuti kondisi aplikasi pengaduan existing;
+- dibuat dekat geometri ruas sintetis;
+- diberi offset/jitter hingga sekitar 15 meter dari garis ruas;
+- titik kejadian dijauhkan dari simpang agar ground truth map matching tidak ambigu.
+
+Teks laporan memiliki variasi seperti:
+- lubang;
+- retak memanjang;
+- aspal mengelupas;
+- permukaan bergelombang;
+- genangan;
+- aspal amblas.
+
+Terdapat parafrasa pada satu kejadian agar SBERT/sentence embedding dapat diuji untuk semantic similarity.
+
+## Ground truth Fase 1
+
+`ground_truth_fase1.csv` tidak boleh dimasukkan sebagai feature saat inferensi. File tersebut hanya untuk evaluasi dan berisi antara lain:
+
+```text
+expected_id_segmen
+expected_category
+expected_indication
+expected_impact
+expected_landmark
+expected_duplicate_group
+expected_is_duplicate
+split
 ```
 
-Generator deterministik dan akan menimpa file hasil generate dalam direktori ini. Edit generator untuk mengubah fixture. Tidak memerlukan API, token, maupun library tambahan.
+Dengan pemisahan ini kita dapat menghitung metrik secara jujur:
+- accuracy map matching `coordinate → id_segmen`;
+- classification/extraction NLP;
+- precision/recall/F1 kandidat duplikasi.
 
-## Cerita demo
+## Survey Fase 1
 
-- BASE: jaringan sebelum penutupan, rute tersedia.
-- UTAMA: jalan keluar pertama ditutup, pengalihan masih tersedia.
-- KONFLIK: jalan utama dan jalan keluar alternatif ditutup bersamaan; tidak ada rute dari asal. Sistem harus memberi tahu bahwa pengalihan tidak layak.
-- SETELAH: tepat pukul 18.00 penutupan alternatif berakhir; jalan utama masih ditutup, tetapi rute tersedia kembali.
+`survey_fase1.csv` berisi 20 survey sintetis dengan:
 
-Semua waktu memakai WIB (+07:00). Interval adalah **[mulai, selesai)**: pada waktu selesai, pembatasan sudah tidak aktif. Pembatasan parsial tetap dapat dilalui pada fixture ini; kapasitasnya berkurang, tetapi validator tidak memprediksi antrean.
+```text
+tingkat_kerusakan
+jenis_kerusakan
+panjang_rusak_m
+dampak_akses
+peran_jalan
+fasilitas_kritis
+lama_tidak_ditangani_hari
+```
 
-## Relasi dan aturan data
+Survey merupakan sumber nilai teknis. **NLP laporan warga tidak boleh menetapkan tingkat kerusakan teknis final.**
 
-- segmen.from_node/to_node → nodes.id_node.
-- laporan, penilaian, aktivitas, pembatasan.id_segmen → segmen.id_segmen.
-- pembatasan.id_proyek → proyek.id_proyek.
-- label_llm.id_laporan → laporan.id_laporan; laporan.id_cluster_duplikat menandai laporan sejenis (satu cluster = satu segmen).
-- roadworks_events.id_segmen_pekerjaan & segmen_terdampak → segmen.id_segmen.
-- traffic_ai_dataset.id_event → roadworks_events.id_event; source_pekerjaan & target_segment → segmen.id_segmen.
-- Nilai kosong berarti belum tersedia, bukan nol. foto_url sengaja kosong karena tidak ada bukti foto.
-- Scope candidate baru diterapkan jika dipilih dalam skenario; jangan otomatis menutup usulan pada kondisi dasar.
-- Hitung pelapor unik hanya dari laporan valid untuk segmen dan jendela waktu yang dipilih. Duplikat dan laporan tanpa lokasi tidak ikut skor.
-- Gunakan penilaian terbaru per segmen. Bobot 40/30/20/10 adalah contoh. Nilai kerusakan 1–5, dampak 1–4, peran 1–3 adalah skala demo, bukan standar teknis PUPR.
-- Normalisasi SAW benefit dengan maksimum setiap kriteria; tangani kolom maksimum nol secara eksplisit. Jangan menilai segmen yang belum memiliki penilaian lengkap.
-- traffic_history memakai mobil penumpang/jam/arah. Angka bukan kapasitas standar, hasil survei, atau konversi resmi satuan kendaraan campuran.
-- Baseline dataset dihitung dari hari tanpa event (1–2 dan 8–9 September); event aktif 3–7 September pukul 16.00–17.00. `quality_flag` menandai kondisi (`ok`, `penutupan_total`, `lajur_ditutup`, `penerima_pengalihan`, digabung `+` bila beririsan).
+## SAW Fase 1
 
-## Batas penggunaan dan pengembangan
+`aturan_fase1.json` menggunakan bobot demo:
 
-Label development/test membantu uji alur, tetapi teks sengaja berbasis template dan mirip. Jangan memakai akurasi fixture ini sebagai klaim kualitas LLM terhadap laporan warga nyata. Evaluasi nyata perlu laporan beragam dengan split berdasarkan lokasi/kejadian dan label independen.
+| Kriteria | Bobot |
+|---|---:|
+| tingkat kerusakan | 30% |
+| dampak akses | 20% |
+| peran jalan | 15% |
+| panjang rusak | 15% |
+| jumlah laporan valid | 10% |
+| fasilitas kritis | 5% |
+| lama tidak ditangani | 5% |
 
-**Kesesuaian roadmap:** `traffic_history.csv`, `roadworks_events.csv`, dan `traffic_ai_dataset.csv` mengikuti skema Fase 4 di `Kebutuhan-Data.md` dan `AI-Traffic-Impact.md` (time-series per ruas + pasangan baseline vs gangguan). Model XGBoost/Random Forest bisa diuji langsung pada `traffic_ai_dataset.csv`, tetapi angka di sini **sintetis** sehingga hanya membuktikan pipeline berjalan, bukan kualitas prediksi nyata.
+Jumlah laporan valid dihitung **setelah map matching, NLP/deduplikasi, dan verifikasi**, bukan dari jumlah baris mentah. Bobot dan skala hanya fixture pengembangan, bukan standar teknis PUPR.
 
-Graf memiliki satu arah dan satu ruas khusus motor. Daftar larangan belok kosong secara sengaja; peta nyata tetap membutuhkan pemrosesan pembatasan belok. Kewenangan jalan belum diverifikasi. Jalur pengalihan resmi dan proporsi perpindahan arus belum tersedia: rute yang dihitung adalah kandidat, bukan pengalihan yang disetujui.
+## Pipeline uji Fase 1
 
-Untuk pilot Tangerang sungguhan, ganti graf dengan OSM/data GIS yang diverifikasi, isi lokasi M. Toha dan jalur alternatif yang sebenarnya, konfirmasi jadwal proyek dari instansi berwenang, lalu kumpulkan data aktivitas/lalu lintas. Pertahankan provenance dan waktu pembaruan setiap sumber.
+```text
+laporan_fase1.csv
+        ↓
+Map Matching koordinat → segmen.csv / jaringan.geojson
+        ↓
+BERT/IndoBERT → klasifikasi & ekstraksi
+        ↓
+SBERT → semantic similarity
+        +
+jarak koordinat + selisih waktu
+        ↓
+Candidate Duplicate
+        ↓
+Verifikasi
+        +
+survey_fase1.csv
+        ↓
+SAW (aturan_fase1.json)
+        ↓
+Ranking Top 10 / Top 20
+```
+
+Target awal map matching adalah `expected_id_segmen` pada ground truth. Untuk duplicate detection, target cluster adalah `expected_duplicate_group`.
+
+## Fixture lama / kompatibilitas
+
+File-file berikut tetap dipertahankan agar demo dan validator lama tidak rusak:
+
+| File | Fungsi lama |
+|---|---|
+| `nodes.csv` | 25 simpul jaringan skematis |
+| `segmen.csv` | 40 ruas sintetis |
+| `jaringan.geojson` | geometri jaringan untuk Leaflet/map matching |
+| `laporan.csv` | fixture laporan legacy; mengandung label/hasil yang tidak cocok sebagai raw input ML |
+| `label_llm.csv` | label NLP legacy berbasis template |
+| `penilaian.csv` | penilaian SAW legacy |
+| `aturan.json` | aturan SAW/routing legacy |
+| `proyek.csv`, `pembatasan.csv`, `aktivitas.csv` | fixture proyek/aktivitas |
+| `roadworks_events.csv` | historical roadworks sintetis Fase 4 |
+| `traffic_history.csv` | historical traffic sintetis Fase 4 |
+| `traffic_ai_dataset.csv` | dataset Traffic AI sintetis Fase 4 |
+| `skenario.json`, `hasil_validasi.json` | skenario/hasil routing demo lama |
+| `waze_feed_contoh.json` | contoh struktur feed sintetis |
+
+Generator lama tetap tersedia:
+
+```bash
+python scripts/generate_sample.py
+python scripts/validate_sample.py
+```
+
+`generate_sample.py` dapat menimpa fixture legacy. Fixture Fase 1 baru dikelola oleh `generate_phase1_sample.py` agar perubahan untuk roadmap saat ini tidak merusak demo Traffic AI yang sudah ada.
+
+## Relasi data
+
+```text
+segmen.from_node/to_node → nodes.id_node
+survey_fase1.id_segmen → segmen.id_segmen
+ground_truth_fase1.expected_id_segmen → segmen.id_segmen
+ground_truth_fase1.id_laporan → laporan_fase1.id_laporan
+```
+
+`jaringan.geojson` menggunakan koordinat GeoJSON `[longitude, latitude]`, sedangkan CSV laporan menyimpan `latitude` dan `longitude` sebagai kolom terpisah.
+
+## Batas penggunaan
+
+Fixture sintetis hanya membuktikan pipeline dapat berjalan. Akurasi pada fixture ini **bukan** bukti performa terhadap laporan warga nyata. Sebelum pilot, diperlukan data pengaduan nyata yang dianonimkan sesuai kebutuhan, data ruas/GIS yang diverifikasi, survey teknis, serta evaluasi dengan label independen.
+
+Roadmap utama proyek tetap berada di [`ROADMAP.md`](../../ROADMAP.md).
