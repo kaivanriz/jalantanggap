@@ -1,7 +1,8 @@
 {
-  "version": 1,
+  "version": 2,
   "is_simulation": true,
-  "context": "Tangerang–Rajeg / pengalaman M. Toha",
+  "context": "Tangerang-Rajeg / pengalaman M. Toha",
+  "skema": "traffic_history/roadworks_events/traffic_ai_dataset mengikuti Kebutuhan-Data.md Fase 4",
   "provenance": "Seluruh data dan geometri dibuat sintetis; bukan OSM, survei, atau data pemerintah.",
   "timezone": "Asia/Jakarta",
   "coordinate_system": "EPSG:4326",
@@ -14,7 +15,9 @@
     "proyek": 4,
     "pembatasan": 3,
     "aktivitas": 12,
-    "traffic": 237
+    "roadworks_events": 2,
+    "traffic_history": 9954,
+    "traffic_ai_dataset": 34
   },
   "generated_by": "scripts/generate_sample.py",
   "photos": "Tidak tersedia; kolom foto kosong, tidak ada bukti foto buatan."

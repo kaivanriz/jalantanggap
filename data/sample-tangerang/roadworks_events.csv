@@ -1,0 +1,3 @@
+id_event,id_segmen_pekerjaan,waktu_mulai,waktu_selesai,jenis_pekerjaan,jenis_pembatasan,jumlah_lajur_ditutup,arah_terdampak,severity,segmen_terdampak,is_simulation
+RV01,S01,2026-09-03T16:00:00+07:00,2026-09-07T18:00:00+07:00,rekonstruksi,tutup_total,2,dua_arah,tinggi,S00;S09;S10,True
+RV02,S09,2026-09-03T16:00:00+07:00,2026-09-05T18:00:00+07:00,perbaikan_berkala,lajur_ditutup,1,satu_arah,sedang,S01;S10;S03;S11,True

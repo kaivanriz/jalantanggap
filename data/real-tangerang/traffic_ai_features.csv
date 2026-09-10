@@ -1,0 +1,648 @@
+id_pekerjaan,nama_pekerjaan,target_segment,target_nama,hop_dari_pekerjaan,panjang_m,road_class,jumlah_lajur,volume_baseline,speed_baseline,delta_volume,delta_speed,congestion,catatan
+CT01,Jalan Raya M. Toha (Karawaci),562928275,,0,373.1,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1443846332,,0,306.1,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),256835105,,0,302.3,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562928374,,0,160.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964243,,0,157.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),566853977,,0,155.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),431508087,,0,148.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1288238292,,0,137.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),256835024,Jalan Benua Raya,0,136.2,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),565201256,Jalan Empang 2,0,130.5,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964237,,0,128.3,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1284112203,Gang Abah Na'ain,0,127.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),565201297,Gang Setia Warga 2,0,127.6,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),894168973,,0,126.9,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964254,,0,126.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964073,,0,116.3,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),565201284,Gang Toha 1,0,116.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),566853676,,0,114.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562936656,Gang Kisarwi,0,109.6,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),588518187,Jalan Aria Wangsakara,0,101.7,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),565201295,,0,101.3,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964105,,0,99.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),361228061,,0,99.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562936680,Jalan Periuk Jaya,0,97.7,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),361228060,Jalan Empang 1,0,97.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),673845284,Jalan Raden Mas Maygua Negara,0,94.6,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562936636,,0,94.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),72537071,,0,93.6,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),566853980,,0,88.9,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562936676,,0,86.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562928262,Vila Mutiara Pluit - Vila Tomang Baru,0,86.2,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),563176822,,0,83.8,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),775168730,,0,83.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),566853979,,0,79.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),951202485,,0,79.0,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562936638,,0,78.6,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),565201261,Gang Melati,0,77.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),588264559,,0,76.3,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),949077911,,0,76.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964252,,0,73.9,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562936660,,0,73.4,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1423093909,,0,70.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964251,,0,70.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562936657,Jalan Cangkring,0,68.1,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),588269488,,0,66.2,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),588264564,,0,65.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964233,,0,63.8,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),588262149,,0,63.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),588544682,,0,63.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),988276239,,0,63.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),565201283,Gang Midan 4,0,63.2,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1126840291,,0,63.2,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964210,,0,62.3,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964074,,0,60.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096745037,,0,60.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),697661984,,0,60.0,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562936672,,0,59.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964211,,0,58.9,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),588264555,,0,57.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),697703034,,0,56.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096357427,Gang Haji Rosyio,0,54.6,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),697703031,Jalan Haji Sadikin II,0,53.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562936658,,0,51.2,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),563176828,,0,48.6,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),431508074,,0,47.7,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),697713980,Jalan Ki. Boih,0,47.2,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562936637,,0,46.6,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964240,,0,44.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562936659,,0,43.2,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),697703063,,0,42.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),697661985,,0,42.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),565201260,Gang Mawar,0,41.7,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),914573865,,0,41.6,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096384982,Gang Toha 1,0,41.5,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),563176838,,0,41.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),698914031,Jalan Empang 3,0,41.0,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096773672,Gang Bahagia,0,39.8,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),565187337,,0,37.4,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),563176848,,0,34.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),588577447,,0,31.7,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),697672291,,0,30.2,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964082,,0,30.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562936670,,0,27.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1190694304,Gang Haji Nurmin,0,27.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),697672293,,0,25.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),563221649,,0,25.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964242,,0,23.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096745036,,0,19.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964106,,0,19.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),697703060,,0,17.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964102,,0,16.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),563176835,,0,16.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562936675,,0,15.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096745038,,0,14.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096745044,,0,14.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964215,Grand Tomang,0,14.1,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096745035,,0,12.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),949076595,,0,11.9,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096153994,,0,10.3,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096751636,,0,8.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096751635,,0,7.9,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096745043,,0,7.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096751627,,0,7.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),949282281,,0,7.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096751639,,0,7.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096745042,,0,6.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),949282162,,0,6.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096339957,Jalan Raya Kuta Bumi,0,6.5,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096751629,,0,6.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),697679347,,0,6.1,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),949282366,,0,6.0,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096745032,,0,6.0,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096751640,,0,5.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096751638,,0,3.9,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),674862987,,1,241.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),431507593,,1,219.2,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1423093912,,1,182.0,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),674862991,,1,176.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),588269487,,1,169.3,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),588577452,,1,137.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),565187327,,1,132.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),361228059,Gang Pribadi 2,1,129.6,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),563176790,,1,124.1,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),361228058,Gang Pribadi 1,1,116.8,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964072,Gang Dampit,1,114.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),965823894,Jalan Empang 5,1,111.1,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),565187299,,1,104.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),431507577,Grand Tomang,1,100.7,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),588577451,,1,99.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),431507950,,1,92.5,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),566853978,,1,90.0,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),588577445,,1,89.7,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),697703035,,1,89.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),588544680,,1,81.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),588544677,,1,79.8,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),588264551,,1,71.0,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562928372,,1,70.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),565201296,,1,70.2,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),949077912,,1,69.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),563176800,,1,64.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),697672292,,1,64.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),565187302,,1,61.8,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562928274,,1,59.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),563176821,,1,59.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1451261065,,1,54.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562936671,,1,53.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964241,,1,51.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),985398652,,1,49.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),916172549,,1,47.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),563176827,,1,46.4,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),697679348,,1,45.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),913851879,,1,44.2,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964168,,1,43.8,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964075,,1,42.4,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),588264557,,1,41.5,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),697703041,,1,41.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),674862983,,1,41.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),588264563,,1,41.0,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964234,,1,39.6,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964044,,1,39.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),697703029,,1,38.9,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1245428325,,1,38.6,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964253,,1,37.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),966089207,Gang Abdurrahman,1,37.6,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096745039,,1,36.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),563176850,,1,34.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562936639,,1,34.2,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096745033,,1,34.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),563176834,,1,33.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096751628,,1,33.1,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096745040,,1,32.0,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964232,,1,31.6,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),970041308,Gang Al Barokah,1,28.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096751637,,1,27.7,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),913493989,,1,26.7,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),588264554,,1,24.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),431508020,,1,21.7,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),951202109,,1,20.3,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096745041,,1,18.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),697703059,,1,14.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1106663580,Gang Toha 1,1,13.4,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),563221662,,1,12.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1192348943,Gang Sama,1,10.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096745034,,1,7.0,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096745031,,1,4.9,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1541187232,,1,4.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),256834983,,2,490.7,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1443846341,,2,203.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562936673,,2,174.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1423093908,,2,171.9,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),565187300,,2,139.0,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),563221661,,2,127.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),565201263,Gang Pribadi 3,2,126.8,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),966714007,Gang Pribadi 4,2,107.3,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1189573857,Gang Bahagia V,2,87.1,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),256835067,,2,84.6,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),563176847,,2,72.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1423093882,,2,68.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1210927260,,2,67.3,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),588264553,,2,65.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),256835051,,2,62.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1236460318,,2,59.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964087,,2,50.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964209,,2,49.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),970053938,Gang Al Barokah,2,47.5,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),431507934,Gang Damai I,2,44.6,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),674862985,,2,43.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),697703042,,2,43.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),949281882,,2,43.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964104,,2,43.1,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1054986522,,2,41.9,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096745030,,2,41.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1196248109,,2,40.3,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),566853976,,2,35.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562936669,,2,30.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964080,,2,29.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),913493991,,2,28.7,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),949083074,,2,25.4,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096153996,,2,24.6,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),588264561,,2,24.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),965853946,Gang Wali,2,21.8,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),192219843,Jalan Mochammad Yamin,2,20.7,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964231,,2,20.7,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),966079906,Gang Misan,2,18.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),565201255,,2,16.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),431507841,Jalan Blok A8,2,15.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),256847477,,2,15.0,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),565201302,Jalan Bahagia,2,13.8,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964042,,2,12.1,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1291702475,Gang Abah Na'ain,2,11.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1443846342,,2,7.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1190599718,Gang Abah Idrus,2,7.1,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1541187233,,2,4.3,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964101,,2,3.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1423093910,,3,171.9,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1096339956,Jalan Arya Kemuning,3,149.1,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),1443846343,,3,137.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),565187326,,3,113.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964247,,3,103.5,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),913492276,,3,102.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),431508009,,3,89.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),431507920,,3,86.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),565201254,,3,84.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),297224274,Global Mansion,3,84.0,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),565201301,,3,76.6,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562928347,,3,75.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),431507729,,3,75.3,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),431507817,,3,72.1,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562936674,,3,69.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT01,Jalan Raya M. Toha (Karawaci),562964081,,3,66.3,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),590329510,,0,457.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),590329511,Gang Kedoya,0,376.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566852507,,0,328.0,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),239449363,,0,291.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566922074,Jalan Perkutut I,0,194.0,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566856215,Gang Gili 1,0,184.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),985085947,,0,178.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),782007186,,0,177.8,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),297220482,Jalan Pelita Raya,0,173.4,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566921905,Jalan Raya Rawa Kucing,0,172.6,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566922070,Jalan Rawa Kucing II,0,162.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),564903896,Gang Mandor Anang,0,158.3,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),239449377,,0,155.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566852512,,0,153.8,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),239449305,,0,153.0,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696732487,,0,147.6,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920649156,,0,130.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),239449229,Jalan AMD Manunggal X,0,129.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1098354109,,0,128.8,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1393887190,Gang Kancil,0,128.1,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566921973,,0,127.3,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566856177,,0,122.4,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566856199,,0,118.2,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920606280,Gang Masjid Al Barkah 2,0,113.7,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566921911,Jalan Mawar II,0,106.2,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378369685,,0,102.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566921947,,0,100.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),711571458,Gang Gaga,0,100.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),565316657,,0,100.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920687421,Gang Irigasi 1,0,100.2,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696345808,,0,98.9,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566922066,,0,98.7,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566852510,,0,98.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1098398432,,0,95.3,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566922062,Jalan Rawa Kucing III,0,94.6,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1098290848,,0,93.3,unclassified,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1250830363,Jalan Cluster Kedaung,0,91.3,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1098398431,,0,90.3,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1018479917,Jalan Perkutut II,0,89.0,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696727439,,0,88.9,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),239449329,Jalan Pepaya,0,87.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566922058,Jalan Perkutut III,0,84.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),239449258,Gang Menteng,0,84.2,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),674568989,Gang Masjid As Salam,0,84.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920654232,,0,80.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),590323185,Gang Haji Resin,0,80.6,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696732484,,0,79.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),564903967,,0,78.5,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566954670,Jalan Raya Rawa Kucing,0,78.2,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920604716,Gang Haji Kusnadi,0,77.7,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920607248,Gang Buntu,0,77.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),239449399,,0,76.4,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),590329507,,0,75.8,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),673344828,,0,72.7,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),590323200,,0,72.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),297219972,Gang Haji Mohammad Toha,0,71.2,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696727440,,0,70.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566921900,Gang Tanah Pasir,0,69.3,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566921925,Jalan Tangga Tehay,0,69.3,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),239449353,,0,68.0,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378354503,,0,67.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),985108954,,0,67.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),985053076,,0,65.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920605664,,0,65.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378354494,,0,64.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),985108955,,0,63.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),698735347,,0,62.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1125758346,,0,62.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566954649,,0,60.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),239449357,,0,60.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696349859,,0,60.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),673354465,,0,60.3,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),915955673,,0,60.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696218771,,0,59.9,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920653914,,0,59.9,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566922072,Jalan Mawar III,0,59.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1375862928,,0,58.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),915956449,,0,58.2,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1019897830,Jalan Kedaung Baru,0,57.7,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),916142221,,0,56.9,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696216370,,0,55.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1371190985,,0,53.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),916072997,Gang Isabella,0,53.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),915957266,Gang Vihara 1,0,51.7,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378369679,,0,50.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),239449247,,0,48.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378369692,,0,48.0,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),917372601,,0,46.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),590323186,,0,46.7,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566922047,,0,46.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1372038652,Gang Blue,0,45.5,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378369683,,0,45.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378354506,,0,45.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1371190987,,0,44.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566921917,,0,43.9,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378369686,,0,42.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),264106346,Jalan Surya Darma,0,42.0,primary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378354504,,0,41.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),239449332,,0,41.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696184732,,0,41.0,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696349860,,0,40.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696727441,,0,39.1,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378354495,,0,37.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),949911065,Gang Rawa Unto,0,37.2,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566921958,,0,36.7,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696727442,,0,35.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378369689,,0,33.9,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1371190986,,0,33.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378354493,,0,32.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378354490,,0,32.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378354508,,0,32.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378354498,,0,32.0,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378369681,,0,31.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378354499,,0,30.9,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378369687,,0,30.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696218772,,0,29.9,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378369690,,0,29.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378354501,,0,29.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378354505,,0,28.0,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),564903879,,0,27.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378354496,,0,22.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378354500,,0,22.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378369691,,0,20.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),970319946,Gang Mawar I,0,18.7,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378369682,,0,17.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566852511,,0,17.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378369678,,0,15.9,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1193504040,Gang Papi Toni,0,15.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378369688,,0,14.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378354491,,0,14.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378354492,,0,13.9,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),590323188,,0,13.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378354507,,0,13.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),762813678,,0,10.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),722092139,,0,9.8,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378354502,,0,8.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1098340089,,0,7.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),264106312,,0,5.6,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1393887191,Gang Kancil,0,4.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),772371273,,1,507.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566856198,,1,201.2,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),949911613,,1,193.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),916143009,,1,175.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),590323199,,1,152.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566921949,,1,148.5,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696196466,Jalan Perkutut II,1,147.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),847852800,,1,128.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566922060,Gang Dadali XIII,1,121.2,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),564903981,,1,120.6,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),590329509,,1,103.0,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566921899,Gang Tanah Pasir,1,102.1,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566922009,,1,100.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566954653,,1,99.2,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920603017,,1,99.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566852496,Gang Blue,1,97.2,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566856184,,1,96.0,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),239449388,,1,91.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),564934711,,1,87.0,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1092501468,Gang Pasar,1,85.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566856179,,1,83.1,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566856218,,1,82.1,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920681920,,1,74.1,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),949912125,,1,66.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),239449272,,1,65.0,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566856186,,1,60.8,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),782015886,,1,60.7,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566922043,Gang Tanah Pasir,1,59.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),913393687,,1,52.6,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378369684,,1,52.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566921971,,1,52.1,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696345809,,1,51.7,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566922007,,1,51.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),239449401,,1,51.2,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566922054,Gang Buntu I,1,50.8,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920615876,,1,49.5,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),697672287,Gang Dadali I,1,47.6,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696732490,,1,46.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),913838331,,1,44.8,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566921921,,1,43.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566954650,,1,41.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),590329508,,1,41.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1372038654,,1,40.6,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),673360116,Jalan Surya Darma,1,39.4,primary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696216369,,1,39.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566856212,,1,38.9,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),919080281,,1,38.2,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),970283685,Gang Asem,1,36.4,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696346817,,1,35.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566921969,,1,34.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),985085946,,1,33.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378369680,,1,32.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920607607,,1,32.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),264106323,,1,32.1,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),782015885,,1,31.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),913393688,,1,30.6,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),239449250,,1,27.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920604199,,1,24.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),915953696,,1,24.7,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),915953697,,1,17.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378395743,,1,16.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),567215810,Gang Perintis 8,1,15.1,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1190115300,,1,13.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566852499,,1,12.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696732480,,1,11.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),564903878,,1,11.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1374415219,,1,0.7,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),772371272,,2,242.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1374415222,,2,238.2,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),590323189,,2,181.1,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),239449236,,2,172.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),564903983,Jalan Raya Rawa Kucing,2,141.5,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),915704516,Gang Dadali XIV,2,141.3,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),239449313,,2,134.9,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),772357356,,2,129.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),673360117,Jalan Surya Darma,2,124.8,primary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),913397738,Gang Salam,2,121.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),239449274,,2,121.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),673343737,,2,114.5,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920683698,,2,106.7,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696196468,,2,98.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),239449330,,2,97.8,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1378354509,,2,97.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920608106,,2,86.6,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920616863,,2,81.9,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566852495,,2,80.0,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920688499,,2,77.0,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566922045,,2,74.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1372401152,,2,72.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920611927,,2,71.7,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),949907551,,2,68.8,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),590323205,,2,66.8,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566921953,,2,66.5,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566921967,Gang Kancil,2,63.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),697749861,,2,63.0,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696348697,,2,62.9,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920677171,,2,62.7,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696184728,,2,61.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920624517,,2,60.8,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566922019,Gang Dadali XV,2,58.8,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),970369879,Jalan Dongkel,2,58.3,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1125758542,,2,58.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),1091171962,,2,58.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),564903978,,2,56.0,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696196467,,2,54.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696727443,,2,54.4,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),913163557,,2,53.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),920713704,,2,51.1,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),564903901,,2,50.8,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),566921898,,2,50.1,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT02,Jalan Iskandar Muda (Neglasari),696349861,,2,47.0,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),921602054,Gang Sahabat,0,148.8,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),696732481,Jalan Iskandar Muda,0,101.5,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),1092501468,Gang Pasar,0,85.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),590371952,,0,83.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),566852504,,0,80.1,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),566852503,,0,79.6,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),921594045,Gang Uwa Bontot,0,79.3,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),566852506,Gang Kamsu,0,62.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),1372415345,,0,60.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),696727443,,0,54.4,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),949928358,,0,47.7,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),1378395744,,0,30.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),673354464,Soekarno Hatta Perimeter Utara,0,29.6,secondary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),1372045735,,0,27.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),722092139,,0,9.8,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),921595434,,1,74.2,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),921602638,,1,54.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),566852494,,1,45.7,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),1002891192,Gang Ceremai,1,43.7,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),696727442,,1,35.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),696727432,,1,28.9,unclassified,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),696727444,,1,23.0,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),696732480,,1,11.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),566852507,,2,125.7,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),673354465,,2,60.3,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),566852505,,2,50.1,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),566852580,Soekarno Hatta Perimeter Utara,2,42.5,secondary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),921289619,,2,39.8,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),1070830619,,2,34.8,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),696727445,,2,32.0,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),696727433,,2,23.0,unclassified,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),588328501,,3,1251.6,unclassified,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),1098385942,Jalan Iskandar Muda,3,104.8,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),719398280,Soekarno Hatta Perimeter Utara,3,31.6,secondary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT03,Jalan Marsekal Suryadarma (Neglasari),1378395743,,3,16.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),564934704,Gang Gunung Kencana,0,252.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),564953700,Gang Sitanala IV,0,137.3,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),564934702,Gang Ria,0,137.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),917644944,,0,116.2,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),913663221,,0,111.9,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),803148885,Jalan Sitanala III,0,101.3,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),564934655,Gang Sitanala I,0,85.2,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),762059226,,0,70.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),564953708,Jalan Sitanala IV,0,69.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),986103706,,0,69.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),564934729,,0,62.1,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),1091206129,Jalan Sitanala II,0,54.2,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),1103020772,,0,43.4,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),588529304,,0,41.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),565246355,,0,31.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),565246358,,0,31.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),762068652,,0,9.2,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),762068651,,0,7.7,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),913160987,,1,167.1,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),564934854,,1,117.1,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),1433190533,,1,108.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),564953699,,1,60.7,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),739721110,,1,57.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),1318810174,Gang SPG,1,53.6,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),1214994125,,1,47.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),1126419110,,1,45.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),564934727,Gang Harapan Utama,1,42.8,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),913663741,Jalan Sitanala II,1,37.7,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),1335556197,Gang Sariwangi,1,35.1,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),564934650,,1,17.2,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),565246357,,1,12.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),739710214,Gang Melati,2,133.8,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),564934857,,2,131.1,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),739721107,Gang Harapan 1,2,99.7,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),564953696,,2,96.2,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),256851931,,2,82.8,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),739710213,Gang SPG,2,75.3,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),564934795,,2,59.9,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),913159519,,2,51.0,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),565246356,,2,46.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),564953694,,2,42.1,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),1318810175,,2,28.7,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),566492017,,2,23.0,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),564953703,Gang Melati,2,16.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),564934647,Jalan Jagal Lama/Ecopark,3,141.8,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),836320016,,3,86.7,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),913463828,,3,85.7,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),913463827,,3,65.5,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),698918423,,3,57.8,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),564934789,,3,53.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),698918220,,3,40.1,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),913462348,,3,36.2,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),970026151,Gang Siswa 1,3,20.4,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),564934798,,3,12.8,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT04,Jalan Dokter Sitanala (Neglasari),1371583087,,3,5.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),567256444,Jalan Pap I,0,228.6,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),751775217,,0,47.7,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),751775218,,0,47.1,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),985106646,,0,41.0,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),567256436,,0,36.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),667829543,Jalan Pembangunan I,0,32.2,secondary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),774524034,Jalan Pembangunan I,0,27.9,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),566875295,,0,27.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),566875296,,0,26.1,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),1107437754,,0,14.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),1318442752,,0,13.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),1318467064,,0,8.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),1318466853,,0,7.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),1107437751,,0,6.1,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),1107437753,,0,5.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),1107437752,,0,5.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),915355441,Gang Titisara,1,100.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),1318442753,,1,95.5,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),985106647,,1,84.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),590314334,,1,83.9,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),567256442,,1,71.8,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),566875293,,1,67.1,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),567256487,,1,64.6,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),985095616,,1,43.0,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),566875289,,1,36.9,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),566875287,,1,34.9,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),566875288,,1,27.8,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),985106645,,1,19.2,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),985106643,,1,19.0,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),566875291,,2,90.2,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),567256425,,2,75.3,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),590308431,,2,66.7,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),566875225,,2,66.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),756271426,,2,49.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),919101753,,2,40.3,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),1411122180,,2,37.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),673325246,,2,29.0,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),566875292,,2,28.6,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),566875260,,2,27.8,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),568057912,Jalan Pembangunan I,2,15.6,secondary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),1316500971,Gang Mushollah Nurul Qomar,2,7.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),590308413,,2,3.9,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),1411122182,,2,1.5,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),1411122179,,3,135.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),566875297,,3,72.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),590308430,,3,67.1,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),566875254,,3,66.2,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),1316500972,,3,64.7,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),1454369880,Jalan Pembangunan I,3,62.7,tertiary,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),566875228,,3,60.9,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),1316500970,Gang Mushollah Nurul Qomar,3,52.5,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),1467194102,,3,36.6,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),590308432,,3,33.4,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),566875226,,3,28.5,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),698015632,,3,24.6,service,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),590314331,,3,20.6,residential,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia
+CT06,Jalan Garuda (Batuceper),697106001,,3,2.0,living_street,,,,,,,volume/speed/congestion kosong: data lalu lintas nyata belum tersedia

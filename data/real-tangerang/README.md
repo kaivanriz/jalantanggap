@@ -9,6 +9,7 @@ Wilayah studi: **Kota Tangerang**. Diakses 10 September 2026. Isi folder ini ber
 | pekerjaan_resmi.csv | Enam ruas pekerjaan dari berita resmi Pemkot Tangerang: jadwal, panjang, skema lalu lintas, status |
 | jalur_alternatif_resmi.csv | Jalur alternatif dan imbauan resmi Dishub |
 | pemetaan_pekerjaan_osm.json | Pemetaan nama pekerjaan resmi → way OSM (alias ejaan, status verifikasi) |
+| traffic_ai_features.csv | Fitur Fase 4: pasangan pekerjaan → segmen penerima (hop, kelas jalan, panjang); kolom lalu lintas sengaja kosong |
 | analisis_koridor.md | Analisis koridor: skenario penutupan, temuan nama OSM, keterbatasan |
 | osm/koridor_nodes.csv + osm/koridor_edges.csv | Graf persimpangan siap-rute dari OSM asli (semua kelas jalan) |
 | osm/skenario_penutupan.json | Hasil 5 skenario penutupan + deteksi konflik jalur alternatif |
@@ -58,6 +59,7 @@ Wilayah studi: **Kota Tangerang**. Diakses 10 September 2026. Isi folder ini ber
 uv run python scripts/build_corridor_graph.py       # graf persimpangan koridor dari OSM
 uv run python scripts/map_pekerjaan_osm.py          # pekerjaan resmi -> way OSM
 uv run python scripts/scenario_closures.py          # skenario penutupan + konflik
+uv run python scripts/export_traffic_ai_features.py # fitur Fase 4 pekerjaan -> segmen penerima
 uv run python scripts/route_corridor.py             # uji keterhubungan jalur resmi
 uv run python scripts/fetch_fasilitas_tangerang.py  # sekolah/pasar/faskes
 uv run python scripts/fetch_osm_tangerang.py        # jalan bernama se-Kota (opsional)
