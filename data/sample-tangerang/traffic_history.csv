@@ -2459,8 +2459,8 @@ timestamp,id_segmen,direction,speed_kmh,free_flow_speed_kmh,volume_veh_per_jam,c
 2026-09-03T13:00:00+07:00,S10,forward,38.2,45,220,0.28,SURVEI_SIMULASI,ok,True
 2026-09-03T14:00:00+07:00,S10,forward,37.8,45,233,0.29,SURVEI_SIMULASI,ok,True
 2026-09-03T15:00:00+07:00,S10,forward,37.3,45,250,0.31,SURVEI_SIMULASI,ok,True
-2026-09-03T16:00:00+07:00,S10,forward,14.7,45,612,0.76,SURVEI_SIMULASI,penerima_pengalihan+penerima_pengalihan,True
-2026-09-03T17:00:00+07:00,S10,forward,14.8,45,605,0.76,SURVEI_SIMULASI,penerima_pengalihan+penerima_pengalihan,True
+2026-09-03T16:00:00+07:00,S10,forward,14.7,45,612,0.76,SURVEI_SIMULASI,penerima_pengalihan,True
+2026-09-03T17:00:00+07:00,S10,forward,14.8,45,605,0.76,SURVEI_SIMULASI,penerima_pengalihan,True
 2026-09-03T18:00:00+07:00,S10,forward,35.1,45,319,0.4,SURVEI_SIMULASI,ok,True
 2026-09-03T19:00:00+07:00,S10,forward,35.3,45,312,0.39,SURVEI_SIMULASI,ok,True
 2026-09-04T06:00:00+07:00,S10,forward,37.3,45,250,0.31,SURVEI_SIMULASI,ok,True
@@ -2473,8 +2473,8 @@ timestamp,id_segmen,direction,speed_kmh,free_flow_speed_kmh,volume_veh_per_jam,c
 2026-09-04T13:00:00+07:00,S10,forward,39.1,45,191,0.24,SURVEI_SIMULASI,ok,True
 2026-09-04T14:00:00+07:00,S10,forward,37.6,45,241,0.3,SURVEI_SIMULASI,ok,True
 2026-09-04T15:00:00+07:00,S10,forward,38.0,45,227,0.28,SURVEI_SIMULASI,ok,True
-2026-09-04T16:00:00+07:00,S10,forward,15.6,45,563,0.7,SURVEI_SIMULASI,penerima_pengalihan+penerima_pengalihan,True
-2026-09-04T17:00:00+07:00,S10,forward,16.3,45,523,0.65,SURVEI_SIMULASI,penerima_pengalihan+penerima_pengalihan,True
+2026-09-04T16:00:00+07:00,S10,forward,15.6,45,563,0.7,SURVEI_SIMULASI,penerima_pengalihan,True
+2026-09-04T17:00:00+07:00,S10,forward,16.3,45,523,0.65,SURVEI_SIMULASI,penerima_pengalihan,True
 2026-09-04T18:00:00+07:00,S10,forward,33.5,45,372,0.47,SURVEI_SIMULASI,ok,True
 2026-09-04T19:00:00+07:00,S10,forward,35.1,45,321,0.4,SURVEI_SIMULASI,ok,True
 2026-09-05T06:00:00+07:00,S10,forward,37.3,45,250,0.31,SURVEI_SIMULASI,ok,True
@@ -2487,8 +2487,8 @@ timestamp,id_segmen,direction,speed_kmh,free_flow_speed_kmh,volume_veh_per_jam,c
 2026-09-05T13:00:00+07:00,S10,forward,39.1,45,192,0.24,SURVEI_SIMULASI,ok,True
 2026-09-05T14:00:00+07:00,S10,forward,37.2,45,253,0.32,SURVEI_SIMULASI,ok,True
 2026-09-05T15:00:00+07:00,S10,forward,37.9,45,231,0.29,SURVEI_SIMULASI,ok,True
-2026-09-05T16:00:00+07:00,S10,forward,15.7,45,555,0.69,SURVEI_SIMULASI,penerima_pengalihan+penerima_pengalihan,True
-2026-09-05T17:00:00+07:00,S10,forward,14.4,45,631,0.79,SURVEI_SIMULASI,penerima_pengalihan+penerima_pengalihan,True
+2026-09-05T16:00:00+07:00,S10,forward,15.7,45,555,0.69,SURVEI_SIMULASI,penerima_pengalihan,True
+2026-09-05T17:00:00+07:00,S10,forward,14.4,45,631,0.79,SURVEI_SIMULASI,penerima_pengalihan,True
 2026-09-05T18:00:00+07:00,S10,forward,33.9,45,359,0.45,SURVEI_SIMULASI,ok,True
 2026-09-05T19:00:00+07:00,S10,forward,33.6,45,367,0.46,SURVEI_SIMULASI,ok,True
 2026-09-06T06:00:00+07:00,S10,forward,38.8,45,201,0.25,SURVEI_SIMULASI,ok,True
@@ -2585,8 +2585,8 @@ timestamp,id_segmen,direction,speed_kmh,free_flow_speed_kmh,volume_veh_per_jam,c
 2026-09-03T13:00:00+07:00,S10,reverse,38.0,45,227,0.28,SURVEI_SIMULASI,ok,True
 2026-09-03T14:00:00+07:00,S10,reverse,37.3,45,249,0.31,SURVEI_SIMULASI,ok,True
 2026-09-03T15:00:00+07:00,S10,reverse,37.6,45,239,0.3,SURVEI_SIMULASI,ok,True
-2026-09-03T16:00:00+07:00,S10,reverse,15.3,45,579,0.72,SURVEI_SIMULASI,penerima_pengalihan+penerima_pengalihan,True
-2026-09-03T17:00:00+07:00,S10,reverse,15.9,45,545,0.68,SURVEI_SIMULASI,penerima_pengalihan+penerima_pengalihan,True
+2026-09-03T16:00:00+07:00,S10,reverse,15.3,45,579,0.72,SURVEI_SIMULASI,penerima_pengalihan,True
+2026-09-03T17:00:00+07:00,S10,reverse,15.9,45,545,0.68,SURVEI_SIMULASI,penerima_pengalihan,True
 2026-09-03T18:00:00+07:00,S10,reverse,33.5,45,370,0.46,SURVEI_SIMULASI,ok,True
 2026-09-03T19:00:00+07:00,S10,reverse,34.5,45,338,0.42,SURVEI_SIMULASI,ok,True
 2026-09-04T06:00:00+07:00,S10,reverse,38.1,45,222,0.28,SURVEI_SIMULASI,ok,True
@@ -2599,8 +2599,8 @@ timestamp,id_segmen,direction,speed_kmh,free_flow_speed_kmh,volume_veh_per_jam,c
 2026-09-04T13:00:00+07:00,S10,reverse,38.4,45,213,0.27,SURVEI_SIMULASI,ok,True
 2026-09-04T14:00:00+07:00,S10,reverse,37.7,45,234,0.29,SURVEI_SIMULASI,ok,True
 2026-09-04T15:00:00+07:00,S10,reverse,37.4,45,246,0.31,SURVEI_SIMULASI,ok,True
-2026-09-04T16:00:00+07:00,S10,reverse,15.0,45,594,0.74,SURVEI_SIMULASI,penerima_pengalihan+penerima_pengalihan,True
-2026-09-04T17:00:00+07:00,S10,reverse,14.9,45,598,0.75,SURVEI_SIMULASI,penerima_pengalihan+penerima_pengalihan,True
+2026-09-04T16:00:00+07:00,S10,reverse,15.0,45,594,0.74,SURVEI_SIMULASI,penerima_pengalihan,True
+2026-09-04T17:00:00+07:00,S10,reverse,14.9,45,598,0.75,SURVEI_SIMULASI,penerima_pengalihan,True
 2026-09-04T18:00:00+07:00,S10,reverse,33.6,45,368,0.46,SURVEI_SIMULASI,ok,True
 2026-09-04T19:00:00+07:00,S10,reverse,34.7,45,332,0.41,SURVEI_SIMULASI,ok,True
 2026-09-05T06:00:00+07:00,S10,reverse,37.3,45,248,0.31,SURVEI_SIMULASI,ok,True
@@ -2613,8 +2613,8 @@ timestamp,id_segmen,direction,speed_kmh,free_flow_speed_kmh,volume_veh_per_jam,c
 2026-09-05T13:00:00+07:00,S10,reverse,39.1,45,190,0.24,SURVEI_SIMULASI,ok,True
 2026-09-05T14:00:00+07:00,S10,reverse,38.1,45,222,0.28,SURVEI_SIMULASI,ok,True
 2026-09-05T15:00:00+07:00,S10,reverse,37.9,45,231,0.29,SURVEI_SIMULASI,ok,True
-2026-09-05T16:00:00+07:00,S10,reverse,14.5,45,624,0.78,SURVEI_SIMULASI,penerima_pengalihan+penerima_pengalihan,True
-2026-09-05T17:00:00+07:00,S10,reverse,16.1,45,534,0.67,SURVEI_SIMULASI,penerima_pengalihan+penerima_pengalihan,True
+2026-09-05T16:00:00+07:00,S10,reverse,14.5,45,624,0.78,SURVEI_SIMULASI,penerima_pengalihan,True
+2026-09-05T17:00:00+07:00,S10,reverse,16.1,45,534,0.67,SURVEI_SIMULASI,penerima_pengalihan,True
 2026-09-05T18:00:00+07:00,S10,reverse,33.6,45,369,0.46,SURVEI_SIMULASI,ok,True
 2026-09-05T19:00:00+07:00,S10,reverse,35.4,45,311,0.39,SURVEI_SIMULASI,ok,True
 2026-09-06T06:00:00+07:00,S10,reverse,38.6,45,207,0.26,SURVEI_SIMULASI,ok,True

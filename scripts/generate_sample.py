@@ -173,7 +173,7 @@ def main():
                     f_v *= 1.22
                     f_s *= 0.83
                     flags.append('penerima_pengalihan')
-        return f_v, f_s, '+'.join(flags) if flags else 'ok'
+        return f_v, f_s, '+'.join(dict.fromkeys(flags)) if flags else 'ok'
 
     traffic = []
     for e in edges:
