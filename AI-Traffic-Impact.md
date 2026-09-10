@@ -1,236 +1,204 @@
 # AI Traffic Impact Prediction
 
-## Fokus baru JalanTanggap
+## Subdokumen Fase 4 JalanTanggap
 
-JalanTanggap diarahkan untuk membantu petugas menjawab pertanyaan utama berikut:
+> Dokumen ini adalah rancangan teknis **Fase 4 — AI Traffic Impact Prediction** pada [ROADMAP.md](ROADMAP.md). Dokumen ini bukan roadmap terpisah dan tidak mengubah urutan fase utama JalanTanggap.
 
-> Jika terdapat beberapa rencana perbaikan jalan, ruas atau kawasan mana yang berpotensi mengalami peningkatan kepadatan, pekerjaan mana yang aman dilaksanakan bersamaan, dan pekerjaan mana yang sebaiknya dipisahkan waktunya?
-
-Pencarian jalur alternatif tetap tersedia, tetapi menjadi fitur pendukung. Fokus utama sistem adalah **prediksi dampak kemacetan akibat rencana pekerjaan jalan**.
-
----
-
-## 1. Skenario utama
-
-Contoh terdapat 10 rencana perbaikan jalan:
-
-1. Jalan A
-2. Jalan B
-3. Jalan C
-4. Jalan D
-5. Jalan E
-6. Jalan F
-7. Jalan G
-8. Jalan H
-9. Jalan I
-10. Jalan J
-
-Sistem menganalisis masing-masing pekerjaan dan kombinasi pekerjaan yang waktunya beririsan.
-
-Contoh keluaran:
-
-| Rencana pekerjaan | Ruas/kawasan terdampak | Prediksi perubahan | Risiko |
-|---|---|---:|---|
-| Jalan A | Jalan K, Simpang X | +45% s.d. +60% | Tinggi |
-| Jalan B | Jalan L | +15% s.d. +25% | Sedang |
-| Jalan C | Jalan M | <10% | Rendah |
-| Jalan D | Jalan K, Simpang X | +35% s.d. +50% | Tinggi |
-
-Sistem juga menilai interaksi antarpekerjaan. Contoh:
-
-- Jalan A sendiri: dampak sedang.
-- Jalan D sendiri: dampak sedang.
-- Jalan A dan Jalan D dikerjakan bersamaan: dampak tinggi karena arus pengalihan bertemu pada ruas yang sama.
-
-Dengan demikian rekomendasi sistem dapat berupa:
-
-> Jalan C, E, F, dan H relatif aman dijadwalkan pada periode yang sama. Jalan A dan D sebaiknya tidak dilaksanakan bersamaan karena berpotensi meningkatkan beban pada Simpang X dan Jalan K.
-
-Keputusan akhir tetap berada pada petugas/pejabat terkait.
-
----
-
-## 2. Posisi AI dalam sistem
-
-SAW bukan metode AI. SAW masih dapat dipakai secara opsional untuk penilaian administratif atau prioritas kebutuhan perbaikan, tetapi komponen AI utama ditempatkan pada **Traffic Impact Prediction**.
-
-Alur utama:
+Sebelum mencapai fase ini, JalanTanggap direncanakan telah melewati:
 
 ```text
-Rencana pekerjaan jalan
-        +
-Data historis lalu lintas
-        +
-Karakteristik ruas dan jaringan jalan
-        +
-Waktu, penutupan lajur, pekerjaan aktif, aktivitas sekitar
+Fase 1: BERT/SBERT + Survey + SAW
+Fase 2: AI Prioritization
+Fase 3: AI-Assisted Multi-Project Optimization
         ↓
-Feature engineering spasial-temporal
+Fase 4: AI Traffic Impact Prediction  ← dokumen ini
         ↓
-Model AI / Machine Learning
-        ↓
-Prediksi perubahan volume / kecepatan / risiko kemacetan per ruas
-        ↓
-Analisis penyebaran dampak pada graf jalan
-        ↓
-Peta zona dampak + ranking area paling kritis
-        ↓
-Analisis kombinasi 10+ rencana pekerjaan
-        ↓
-Rekomendasi jadwal dan konflik pekerjaan
+Fase 5: Intelligent Road Maintenance Planning
 ```
 
----
+## 1. Tujuan
 
-## 3. Model AI yang direkomendasikan
+Traffic Impact AI membantu menjawab:
 
-### Tahap MVP: XGBoost atau Random Forest
+> Jika satu atau beberapa ruas direncanakan untuk diperbaiki, ruas/kawasan mana yang berpotensi mengalami perubahan volume, penurunan kecepatan, atau peningkatan risiko kemacetan?
 
-Model tabular lebih realistis untuk prototipe karena dapat bekerja dengan jumlah data yang lebih terbatas dan lebih mudah dijelaskan.
+Fokus utamanya adalah **dampak rencana pekerjaan terhadap jaringan**, bukan sekadar pencarian jalur alternatif.
 
-Contoh fitur input:
+## 2. Hubungan dengan Fase Sebelumnya
 
-- `id_segmen`
-- hari dalam minggu
-- jam
-- volume lalu lintas normal
-- kecepatan normal
-- kecepatan aktual/historis
-- rasio volume terhadap kapasitas
-- jumlah lajur
-- jumlah lajur yang ditutup
-- jenis penutupan: total / sebagian / buka-tutup
-- durasi pekerjaan
-- kelas/fungsi jalan
-- lebar jalan
-- jarak dari lokasi pekerjaan
-- hop/jumlah ruas pada graf dari lokasi pekerjaan
-- jumlah simpang terdekat
-- pekerjaan lain yang aktif di sekitar
-- sekolah/pasar/fasilitas lain yang sedang aktif
-- cuaca jika tersedia
-
-Target model dapat berupa salah satu atau beberapa nilai berikut:
-
-- perubahan volume kendaraan (`delta_volume`)
-- perubahan kecepatan rata-rata (`delta_speed`)
-- probabilitas kemacetan (`congestion_probability`)
-- kelas risiko: rendah / sedang / tinggi
-
-Contoh:
+Fase 4 tidak menentukan dari awal jalan mana yang prioritas.
 
 ```text
-Pekerjaan: Jalan A, 1 lajur ditutup, Senin 07.00–16.00
-
-Prediksi:
-Jalan B      +52% volume     risiko 0.87
-Simpang C    +46% volume     risiko 0.82
-Jalan D      +21% volume     risiko 0.61
-Jalan E       +6% volume     risiko 0.24
+AI Priority Model (Fase 2)
+        ↓
+Priority Score
+        ↓
+Optimizer awal (Fase 3)
+        ↓
+Kandidat/Paket Pekerjaan
+        ↓
+Traffic Impact AI (Fase 4)
+        ↓
+Prediksi Dampak per Proyek/Paket
 ```
 
-### Tahap lanjutan: Spatio-Temporal Graph Neural Network
+Pada Fase 5, prediksi ini dimasukkan kembali ke optimizer sehingga sistem dapat menyusun paket dan jadwal dengan mempertimbangkan dampak traffic.
 
-Jika kelak tersedia data sensor/CCTV yang padat dan historis panjang, jaringan jalan dapat direpresentasikan sebagai graph. Model spatio-temporal graph dapat mempelajari bagaimana gangguan di satu ruas merambat ke ruas lain dari waktu ke waktu.
+## 3. Data yang Dibutuhkan
 
-Model ini bukan kebutuhan MVP.
+Data minimum yang diharapkan:
+- historical traffic per ruas;
+- historical roadworks/gangguan;
+- volume kendaraan;
+- speed dan free-flow speed;
+- congestion index;
+- kapasitas/jumlah lajur;
+- karakteristik dan waktu pekerjaan;
+- jumlah lajur yang ditutup;
+- jaringan jalan/graph;
+- pekerjaan lain yang aktif;
+- aktivitas fasilitas/event dan cuaca bila tersedia.
 
----
+Tanpa pasangan historical traffic + event pekerjaan yang cukup, sistem belum memiliki bukti untuk mengklaim model sebagai prediksi AI yang tervalidasi.
 
-## 4. Data historis kemacetan
+## 4. Historical Traffic
 
-Data historis sebaiknya disimpan dalam bentuk time-series per ruas jalan, bukan hanya label `macet/tidak macet`.
-
-Skema minimum:
+Skema time-series minimum:
 
 ```text
 timestamp
 id_segmen
+direction
 speed
 free_flow_speed
 volume
-jam_factor / congestion_index
+congestion_index
 source
+quality_flag
 ```
 
-Contoh:
+Interval dapat 5/10/15 menit sesuai sumber. Sumber kandidat mencakup ATCS Dishub, traffic counter, CCTV + vehicle counting, survei, provider, atau collector JalanTanggap.
 
-```csv
-timestamp,id_segmen,speed,free_flow_speed,volume,congestion_index,source
-2026-09-10 07:00,S001,18,40,1250,0.72,DISHUB
-2026-09-10 07:05,S001,16,40,1320,0.78,DISHUB
-```
-
-Sumber data yang dapat digabungkan:
-
-1. Data Dishub: ATCS, traffic counter, CCTV, survei volume lalu lintas.
-2. Traffic provider bila tersedia.
-3. CCTV yang diproses computer vision untuk menghitung kendaraan.
-4. Data yang dikumpulkan sistem sendiri secara berkala untuk membangun histori.
-
-Data pekerjaan jalan historis juga sangat penting:
+## 5. Historical Roadworks
 
 ```text
-id_proyek
+id_event
 id_segmen_pekerjaan
 waktu_mulai
 waktu_selesai
-jenis_penutupan
+jenis_pekerjaan
+jenis_pembatasan
 jumlah_lajur_ditutup
-segmen_terdampak
-volume_sebelum
-volume_saat_pekerjaan
-speed_sebelum
-speed_saat_pekerjaan
+arah_terdampak
+severity
 ```
 
-Dari data tersebut model dapat belajar pola seperti:
+Traffic sebelum/saat/setelah event dipasangkan untuk membentuk label seperti:
 
 ```text
-Perbaikan Jalan A
-       ↓
-Jalan B +68% volume
-Jalan C +53% volume
-Jalan D  +4% volume
+source_project = P001
+target_segment = S015
+time_window = 07:00-08:00
+delta_volume = +420
+delta_speed = -12
+congestion = 1
 ```
 
----
+## 6. Road Graph dan Propagasi Dampak
 
-## 5. Baseline sebelum AI matang
+Jaringan jalan direpresentasikan sebagai graph untuk menghasilkan fitur seperti:
+- graph distance;
+- hop count;
+- konektivitas;
+- simpang terkait;
+- kapasitas koridor penerima;
+- overlap area dampak beberapa pekerjaan.
 
-Jika data historis belum cukup untuk melatih model dengan baik, sistem tetap dapat memiliki baseline berbasis aturan dan graph analysis:
+Graph analysis sendiri tidak harus AI. Ia menjadi feature engineering dan alat analisis penyebaran dampak.
 
-- jarak/hop dari lokasi pekerjaan
-- kapasitas ruas penerima
-- lebar dan jumlah lajur
-- volume lalu lintas normal
-- overlap pekerjaan
-- overlap jalur pengalihan
-- jam sibuk
-- aktivitas sekolah/pasar
+## 7. Model MVP
 
-Baseline ini harus diberi label jelas sebagai **risk scoring**, bukan prediksi AI.
+Kandidat awal: **XGBoost atau Random Forest** pada fitur tabular + spasial/graph.
 
-Setelah data historis terkumpul, hasil baseline dapat dibandingkan dengan model ML.
+Contoh feature:
 
----
+```text
+project_segment
+candidate_affected_segment
+graph_distance
+hop_count
+baseline_volume
+baseline_speed
+free_flow_speed
+capacity
+lanes
+lanes_closed
+closure_type
+hour
+day_of_week
+duration
+nearby_active_projects
+facility_activity
+weather_optional
+```
 
-## 6. Analisis 10+ rencana pekerjaan
+Target:
 
-Untuk setiap rencana pekerjaan, sistem membuat skenario gangguan jaringan. Selanjutnya sistem mengevaluasi kombinasi pekerjaan yang waktunya beririsan.
+```text
+delta_volume
+delta_speed
+congestion_probability
+risk_class
+```
 
-Output yang dibutuhkan:
+Pemilihan model final harus berdasarkan hasil validasi.
 
-- prediksi dampak tiap pekerjaan
-- ruas/kawasan paling terdampak
-- pekerjaan yang memiliki wilayah dampak saling tumpang tindih
-- pekerjaan yang aman dilaksanakan bersamaan
-- pekerjaan yang sebaiknya dipisahkan waktunya
-- skenario jadwal alternatif
-- confidence/tingkat keyakinan model
-- alasan faktor utama yang memengaruhi prediksi
+## 8. Contoh Prediksi
 
-Contoh matriks konflik:
+```text
+Pekerjaan: Jalan A
+Waktu: Senin 07.00–16.00
+Penutupan: 1 dari 2 lajur
+
+Prediksi:
+Jalan B      +52% volume    risiko 0.87
+Simpang C    +46% volume    risiko 0.82
+Jalan D      +21% volume    risiko 0.61
+Jalan E       +6% volume    risiko 0.24
+```
+
+Output dashboard dapat menampilkan:
+
+```text
+🔴 Simpang C    risiko tinggi
+🔴 Jalan B      risiko tinggi
+🟡 Jalan D      risiko sedang
+🟢 Jalan E      risiko rendah
+```
+
+Angka di dokumentasi hanyalah ilustrasi.
+
+## 9. Baseline Sebelum Model AI Matang
+
+Jika histori belum cukup, gunakan risk scoring berbasis:
+- graph distance/hop;
+- kapasitas ruas;
+- baseline traffic;
+- jumlah lajur;
+- jenis penutupan;
+- overlap pekerjaan;
+- jam sibuk;
+- aktivitas sekitar.
+
+Output harus diberi label **baseline/risk scoring**, bukan prediksi AI.
+
+Baseline berguna sebagai pembanding setelah model ML tersedia.
+
+## 10. Analisis Banyak Proyek
+
+Setelah prediksi dampak individual tersedia, sistem dapat membentuk overlap/conflict information.
+
+Contoh:
 
 | | A | B | C | D |
 |---|---:|---:|---:|---:|
@@ -239,114 +207,92 @@ Contoh matriks konflik:
 | C | Rendah | Sedang | - | Sedang |
 | D | Tinggi | Rendah | Sedang | - |
 
-Matriks ini dapat dipakai oleh petugas untuk menyusun jadwal pekerjaan.
+Matriks tersebut menjadi input penting **Fase 5**, bukan keputusan jadwal final Fase 4.
 
----
+Output Fase 4:
+- dampak tiap pekerjaan;
+- affected roads/areas;
+- heatmap;
+- overlap area dampak;
+- conflict score/matrix;
+- confidence/uncertainty;
+- faktor utama prediksi.
 
-## 7. Visualisasi utama
+## 11. Evaluasi
 
-Dashboard sebaiknya menampilkan:
+Untuk target numerik:
+- MAE;
+- RMSE;
+- MAPE jika sesuai.
 
-- titik/ruas rencana perbaikan
-- heatmap prediksi dampak
-- ruas merah: risiko tinggi
-- ruas kuning: risiko sedang
-- ruas hijau: risiko rendah
-- timeline seluruh pekerjaan
-- konflik antarpekerjaan
-- perbandingan skenario jadwal
-- detail faktor penyebab prediksi
+Untuk klasifikasi risiko:
+- precision;
+- recall;
+- F1-score;
+- confusion matrix;
+- probability calibration bila menghasilkan probabilitas.
 
-Contoh informasi yang ditampilkan saat sebuah pekerjaan dipilih:
+Evaluasi spasial:
+- apakah ruas yang diprediksi terdampak benar-benar terdampak;
+- ketepatan ranking area kritis;
+- seberapa jauh propagasi dampak diprediksi dengan benar.
+
+Split data perlu memperhatikan waktu/proyek agar data dari event yang sama tidak bocor antara training dan test.
+
+## 12. Model Lanjutan
+
+Jika tersedia sensor/CCTV yang padat, histori panjang, dan graph yang stabil, dapat dievaluasi **Spatio-Temporal Graph Neural Network** seperti keluarga DCRNN/Graph WaveNet atau arsitektur setara.
+
+ST-GNN bukan kebutuhan MVP dan hanya digunakan bila performanya terbukti lebih baik serta biaya operasionalnya masuk akal.
+
+## 13. Integrasi ke Fase 5
 
 ```text
-Rencana: Perbaikan Jalan A
-Waktu: Senin 07.00–16.00
-Penutupan: 1 dari 2 lajur
-
-Area terdampak:
-🔴 Simpang X       risiko 92%
-🔴 Jalan B         risiko 87%
-🟡 Jalan D         risiko 64%
-🟢 Jalan E         risiko 18%
-
-Konflik:
-⚠ Perbaikan Jalan D memiliki area dampak yang sama.
-
-Rekomendasi:
-Pisahkan jadwal Jalan A dan Jalan D atau pilih waktu di luar jam sibuk.
+AI Priority
+     +
+Cost / Duration / Budget
+     +
+Traffic Impact Prediction
+     +
+Conflict Matrix
+     +
+Resource Constraints
+     ↓
+MULTI-PROJECT OPTIMIZER
+     ↓
+Paket Perbaikan
+     ↓
+Tahapan + Jadwal + Heatmap + Alasan
 ```
 
----
+Fase 5 dapat memberikan penalti pada kombinasi yang menghasilkan risiko traffic tinggi tanpa otomatis membuang ruas yang memiliki kebutuhan sangat mendesak.
 
-## 8. Evaluasi model
+## 14. Pembagian Komponen
 
-Untuk target numerik seperti volume atau kecepatan:
+| Komponen | Fungsi | Kategori |
+|---|---|---|
+| AI Priority | menentukan priority/benefit kandidat | AI/ML — Fase 2 |
+| XGBoost/RF Traffic | prediksi dampak traffic | AI/ML — Fase 4 |
+| Graph analysis | konektivitas/propagasi | algoritmik |
+| Conflict matrix | overlap dampak | analitik |
+| OR-Tools/MILP/CP-SAT | paket dan jadwal | mathematical optimization |
+| Dijkstra/A* | routing alternatif opsional | algoritmik |
+| PostGIS | data spasial | database |
+| Leaflet | heatmap/WebGIS | visualisasi |
 
-- MAE
-- RMSE
-- MAPE jika sesuai
+## 15. Definition of Done Fase 4
 
-Untuk target kelas risiko:
+Fase 4 dianggap selesai ketika:
+1. historical traffic dan roadworks dapat dipasangkan dengan ID ruas konsisten;
+2. baseline traffic impact tersedia;
+3. model ML dilatih dengan split yang mencegah leakage;
+4. model dibandingkan dengan baseline;
+5. prediksi `delta_volume`/`delta_speed` atau congestion risk tervalidasi;
+6. affected roads dapat divisualisasikan di WebGIS;
+7. uncertainty/confidence tersedia atau keterbatasannya dinyatakan;
+8. hasil dapat digunakan sebagai input Fase 5;
+9. evaluasi terhadap pekerjaan nyata mulai direkam untuk retraining.
 
-- precision
-- recall
-- F1-score
-- confusion matrix
+## Prinsip Penting
 
-Evaluasi juga perlu dilakukan secara spasial:
-
-- apakah ruas yang diprediksi terdampak benar-benar terdampak
-- seberapa jauh penyebaran dampak yang berhasil diprediksi
-- apakah ranking area kritis sesuai observasi lapangan
-
----
-
-## 9. Pembagian fungsi komponen
-
-| Komponen | Fungsi |
-|---|---|
-| LLM | Ekstraksi laporan warga, klarifikasi, penjelasan hasil |
-| XGBoost / Random Forest | Prediksi dampak lalu lintas pada MVP |
-| Graph analysis | Memahami konektivitas dan penyebaran dampak antar-ruas |
-| Dijkstra / A* | Jalur alternatif, jika diperlukan |
-| SAW | Opsional untuk prioritas administratif, bukan komponen AI |
-| PostGIS | Penyimpanan dan query data spasial |
-| Leaflet | Visualisasi peta dan heatmap |
-
----
-
-## 10. Tahapan implementasi yang disarankan
-
-### Fase 1 — baseline
-- inventarisasi ruas jalan
-- masukkan rencana dan pekerjaan aktif
-- simpan histori traffic per ruas
-- bangun risk scoring berbasis aturan
-- tampilkan heatmap konflik
-
-### Fase 2 — AI MVP
-- siapkan dataset training
-- feature engineering
-- latih XGBoost / Random Forest
-- prediksi dampak tiap rencana pekerjaan
-- ranking ruas/kawasan terdampak
-- validasi dengan data lapangan
-
-### Fase 3 — multi-project analysis
-- evaluasi 10+ pekerjaan sekaligus
-- matriks konflik antarpekerjaan
-- rekomendasi pekerjaan yang dapat berjalan bersamaan
-- optimasi jadwal
-
-### Fase 4 — pengembangan lanjutan
-- integrasi CCTV/ATCS realtime
-- computer vision untuk counting kendaraan
-- spatio-temporal graph model
-- jalur alternatif adaptif
-
----
-
-## Prinsip penting
-
-JalanTanggap tidak menjanjikan bahwa AI dapat mengetahui kemacetan tanpa data. Model hanya boleh menggunakan data lalu lintas, jaringan jalan, karakteristik pekerjaan, dan observasi historis yang tersedia. Bila data historis belum memadai, sistem harus menampilkan hasil sebagai indikator risiko/baseline dan menyertakan tingkat ketidakpastian.
+Traffic Impact AI tidak mengetahui kemacetan tanpa data. Klaim prediksi harus didukung historical traffic, karakteristik pekerjaan, jaringan jalan, dan observasi outcome. Bila data belum memadai, gunakan baseline yang jujur dan tampilkan ketidakpastian.
