@@ -22,6 +22,14 @@
 | waze_feed_contoh.json | **Contoh simulasi** struktur feed Waze for Cities (bukan data Waze asli) |
 | contoh_mapping_jalan.csv | Contoh pemetaan nama jalan → id_segmen untuk konverter Waze |
 | traffic_history_from_waze.csv | Hasil uji konverter Waze → skema traffic_history (volume kosong: Waze tidak menyediakan) |
+
+## Uji pengumpul Waze tanpa token
+
+```powershell
+uv run python scripts/collect_waze_feed.py --url "file://data/sample-tangerang/waze_feed_contoh.json" --mapping data/sample-tangerang/contoh_mapping_jalan.csv --iterations 2 --interval 0
+```
+
+Perintah di atas memakai `waze_feed_contoh.json` (simulasi) sehingga bisa diuji tanpa kredensial Waze. Hasil nyata nanti memerlukan URL feed dari Partner Hub.
 | aturan.json | Bobot contoh, jendela pelaporan, kendaraan, dan pasangan asal–tujuan |
 | manifest.json | Sumber, versi, label simulasi, dan jumlah record |
 | hasil_validasi.json | Hasil rute yang benar-benar dihitung validator |

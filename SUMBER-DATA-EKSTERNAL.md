@@ -51,6 +51,31 @@ Feed GeoRSS (XML/JSON) yang diperbarui **setiap 2 menit**, berisi:
 
 Contoh struktur URL feed: `https://www.waze.com/partnerhub-api/partners/<partner-id>/waze-feeds/<token>?format=1&types=traffic,irregularities`
 
+### Pengumpul berkala (membangun histori)
+
+Waze tidak membagikan histori, jadi partner harus menyimpannya sendiri. Skrip
+`scripts/collect_waze_feed.py` mengambil feed secara berkala, mengubahnya ke
+skema `traffic_history.csv`, dan menambahkan baris baru (de-duplikasi otomatis).
+
+```powershell
+# Set token lewat environment variable agar tidak tersimpan di riwayat perintah
+$env:WAZE_FEED_URL = "https://www.waze.com/partnerhub-api/partners/<id>/waze-feeds/<token>?format=1"
+uv run python scripts/collect_waze_feed.py --mapping data/sample-tangerang/contoh_mapping_jalan.csv --interval 300
+```
+
+| Opsi | Arti | Default |
+|---|---|---|
+| `--url` | URL feed WFC (atau env `WAZE_FEED_URL`) | wajib |
+| `--mapping` | CSV `nama_jalan,id_segmen` | tanpa pemetaan |
+| `--out` | File keluaran | `data/real-tangerang/traffic_history_waze.csv` |
+| `--interval` | Detik antar-polling | 300 |
+| `--iterations` | Jumlah polling; 0 = terus-menerus | 0 |
+| `--timeout` | Timeout per permintaan | 30 |
+
+**Penting:** URL feed memuat token rahasia. Simpan di environment variable
+atau jadikan secret di CI; jangan di-commit. Jalankan sebagai tugas terjadwal
+(Task Scheduler/cron) agar histori terbentuk otomatis.
+
 ## Google Maps Platform
 
 
@@ -117,7 +142,7 @@ Dari Google Maps Platform Terms of Service, pasal **3.2.3 Restrictions Against M
 ## Rekomendasi untuk JalanTanggap
 
 1. **Untuk belajar/menguji integrasi peta:** pakai Maps Demo Key (gratis, tanpa kartu).
-2. **Untuk lalu lintas real-time yang legal:** ajukan **Waze for Cities** melalui Dishub/PUPR/Kominfo Kota Tangerang (gratis, khusus instansi). Konverter sudah tersedia: `scripts/waze_feed_to_traffic_history.py`.
+2. **Untuk lalu lintas real-time yang legal:** ajukan **Waze for Cities** melalui Dishub/PUPR/Kominfo Kota Tangerang (gratis, khusus instansi). Konverter & pengumpul sudah tersedia: `scripts/waze_feed_to_traffic_history.py` dan `scripts/collect_waze_feed.py`.
 3. **Untuk volume kendaraan & histori panjang:** ajukan permintaan data ke Dishub Kota Tangerang (ATCS/counter/CCTV); Waze tidak menyediakan volume dan tidak membagikan histori.
 4. **Selama data nyata belum ada:** tetap pakai `data/sample-tangerang/traffic_history.csv` (simulasi) untuk menguji pipeline, dengan label jelas sebagai simulasi.
 5. **Untuk menampilkan peta di prototipe:** Google Maps atau Leaflet+OSM sama-sama boleh; Leaflet+OSM sudah dipakai dan bebas biaya.
