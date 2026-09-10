@@ -1,250 +1,456 @@
-# Kebutuhan Data
+# Kebutuhan Data JalanTanggap
 
-## Sistem Pendukung Keputusan Prioritas dan Penjadwalan Perbaikan Jalan
-### dengan Analisis Konflik Proyek Aktif dan Pencarian Rute Alternatif Otomatis
+## Rekomendasi Paket Perbaikan + AI Traffic Impact + Optimization
 
-Dokumen ini menjelaskan seluruh data yang dibutuhkan sistem, cara memperolehnya, dan formatnya. Setiap kategori data diberi prioritas dan catatan keterbatasan.
+Dokumen ini mendefinisikan data untuk menjawab dua pertanyaan:
 
----
-
-## Ringkasan Kategori Data
-
-| No | Kategori | Dipakai untuk | Sumber utama |
-|---|---|---|---|
-| A | Laporan warga | Prioritas & pengaduan | Form sistem |
-| B | Ruas & kondisi jalan | Penilaian prioritas | PUPR / verifikasi petugas |
-| C | Jaringan jalan | Pencarian rute otomatis | OpenStreetMap + verifikasi |
-| D | Aktivitas sekitar | Analisis dampak waktu kerja | Pendataan manual |
-| E | Rencana pekerjaan baru | Konteks skenario | Petugas teknis |
-| F | Pekerjaan aktif | Deteksi konflik & kemacetan | Pengawas proyek |
-| G | Lalu lintas dasar | Estimasi beban & risiko kemacetan | Dishub / survei |
-| H | Aturan keputusan | Perhitungan DSS yang konsisten | Kesepakatan petugas |
+1. **Dari seluruh jalan yang membutuhkan penanganan, ruas mana yang sebaiknya masuk paket 10/20 ruas atau paket sesuai anggaran?**
+2. **Jika ruas tersebut dikerjakan, apa dampaknya terhadap lalu lintas dan pekerjaan lain?**
 
 ---
 
-## A. Data Laporan Warga
+## 1. Ringkasan Data
 
-Dibuat langsung lewat formulir sistem (web/Google Form).
-
-| Kolom | Tipe | Wajib | Catatan |
-|---|---|---|---|
-| `id_laporan` | Teks | Ya | Otomatis |
-| `waktu_laporan` | Tanggal-waktu | Ya | Otomatis |
-| `koordinat` | Lat, long | Ya | Pin peta |
-| `nama_jalan` | Teks | Ya | Dari peta/diisi warga |
-| `deskripsi` | Teks bebas | Ya | Kondisi & dampak |
-| `foto` | Gambar | Opsional | Bukti pendukung |
-| `dampak` | Teks | Opsional | Mis. "kendaraan sulit melintas" |
-| `id_pelapor` | Teks | Ya | Internal, untuk deteksi duplikasi; tidak ditampilkan publik |
-| `status` | Enum | Ya | Baru / Perlu klarifikasi / Valid / Duplikat / Ditangani / Selesai |
-| `hasil_ekstraksi_llm` | JSON | - | Lokasi, jenis keluhan, dampak, info kurang |
-| `hasil_verifikasi` | JSON | - | Catatan petugas, penilaian kondisi |
-
-**Aturan penting:**
-- Identitas pelapor hanya untuk deteksi laporan berulang, tidak untuk publik.
-- Duplikasi diperiksa dengan kedekatan koordinat + kemiripan isi (LLM) + konfirmasi petugas.
-- Laporan yang tidak jelas masuk antrean klarifikasi, bukan langsung bernilai rendah.
-
----
-
-## B. Data Ruas dan Kondisi Jalan
-
-Dipakai sebagai unit penilaian prioritas.
-
-| Kolom | Tipe | Sumber | Catatan |
-|---|---|---|---|
-| `id_segmen` | Teks | PUPR / pendataan | Penghubung ke peta & laporan |
-| `geometri` | Geom (garis) | OSM / data GIS | Bentuk segmen di peta |
-| `status_kewenangan` | Enum | PUPR | Kota/kab/provinsi/nasional |
-| `kelas_jalan` | Teks | PUPR | Fungsi jalan |
-| `tingkat_kerusakan` | Skala 1–5 | Verifikasi petugas | Berdasarkan pedoman penilaian |
-| `panjang_rusak_m` | Angka | Survei/verifikasi | Bagian yang rusak |
-| `dampak_akses` | Enum | Verifikasi | Normal / Terganggu / Sulit / Terputus |
-| `tgl_penanganan_terakhir` | Tanggal | Riwayat PUPR | Opsional |
-
-**Catatan:** Pin laporan warga perlu dihubungkan ke segmen yang benar. Segmen terdekat secara koordinat belum tentu yang dimaksud (persimpangan, jalan bertingkat).
-
----
-
-## C. Data Jaringan Jalan (untuk Rute Otomatis)
-
-**Ini data inti pencarian rute.**
-
-| Data | Kegunaan |
-|---|---|
-| Simpul & hubungan antarsegmen | Mengetahui jalan yang benar-benar tersambung |
-| Panjang segmen | Menghitung jarak rute |
-| Arah jalan (satu/dua arah) | Menghindari rute melawan arah |
-| Pembatasan akses & belokan | Menghindari ruas/manuver yang dilarang |
-| Jenis jalan & kendaraan yang diizinkan | Menyesuaikan rute dengan pengguna |
-| Lebar jalan | Memeriksa kelayakan pengalihan |
-| Kondisi permukaan | Kelayakan pengalihan |
-| Batas tinggi/berat | Penting untuk kendaraan besar |
-
-**Sumber:**
-- **OpenStreetMap (OSM)** sebagai sumber awal.
-- Atribut yang tidak tercatat (lebar, batasan kendaraan) ditandai **"belum diketahui"** dan diverifikasi untuk kandidat rute yang akan digunakan.
-- `segmen_tertutup` (segmen yang ditutup + periode) dimasukkan oleh petugas.
-
-**Cara kerja pencarian rute:**
-1. Ambil jaringan jalan sekitar lokasi.
-2. Keluarkan segmen yang ditutup total pada waktu skenario.
-3. Terapkan pembatasan akses pada segmen lain.
-4. Cari kandidat rute antara titik sebelum & sesudah penutupan (atau antara asal & tujuan).
-5. Bandingkan tambahan jarak, benturan aktivitas, dan tumpang tindih dengan pengalihan proyek lain.
-6. Jika tidak ada rute layak: tampilkan "belum ditemukan rute yang layak", jangan memaksakan jalan kecil.
-
----
-
-## D. Data Aktivitas Sekitar
-
-Dipakai untuk membandingkan waktu pengerjaan dan dampak jalur pengalihan.
-
-| Data | Contoh | Sumber |
+| Kategori | Fungsi | Sumber utama |
 |---|---|---|
-| Lokasi fasilitas | Sekolah, pasar, puskesmas, rumah sakit | OSM / data daerah / survei |
-| Jadwal aktivitas | Jam masuk/pulang sekolah, hari pasar | Form pendataan / konfirmasi pengelola |
-| Kegiatan sementara | Acara warga, penutupan jalan lain | Kecamatan / kelurahan |
-| Kebutuhan akses penting | Pintu faskes harus tetap terjangkau | Konfirmasi petugas/pengelola |
-
-**Keterbatasan:** Tanpa data volume lalu lintas, sistem hanya menilai **potensi benturan aktivitas**, bukan besarnya kemacetan.
-
----
-
-## E. Data Rencana Pekerjaan Baru
-
-| Kolom | Isi | Sumber |
-|---|---|---|
-| `id_segmen` | Segmen yang dikerjakan | Petugas teknis |
-| `jenis_pekerjaan` | Perbaikan/penambalan/rekonstruksi | Petugas |
-| `durasi_rencana` | Hari & jam | Petugas |
-| `opsi_waktu` | Kandidat tanggal/jam yang layak secara teknis | Petugas |
-| `jenis_penutupan` | Tutup total / sebagian lajur / buka-tutup | Petugas |
-| `kendaraan_diizinkan` | Jenis kendaraan yang boleh lewat | Petugas |
-| `status_persetujuan` | Draf / disetujui / ditolak / dikerjakan | Pejabat |
-
-**Penting:** Durasi proyek ≠ durasi penutupan jalan. Proyek bisa sebulan, tetapi jalan hanya ditutup jam tertentu.
+| Laporan warga | aspirasi dan dampak yang dirasakan | form/sistem pengaduan |
+| Kondisi ruas | dasar kebutuhan teknis | PUPR/survei/verifikasi |
+| Riwayat penanganan | umur penanganan dan outcome | PUPR |
+| Biaya & durasi | constraint optimizer | perencanaan teknis |
+| Fasilitas/aktivitas | dampak pelayanan | data daerah/OSM/verifikasi |
+| Jaringan jalan | relasi spasial dan graph | GIS/OSM |
+| Historical traffic | baseline dan training AI | Dishub/ATCS/CCTV/provider |
+| Historical roadworks | label efek pekerjaan | PUPR/Dishub |
+| Pekerjaan aktif/rencana | konflik multi-proyek | PUPR/pengawas |
+| Outcome pelaksanaan | evaluasi dan retraining | sistem + lapangan |
 
 ---
 
-## F. Data Pekerjaan Aktif / Terjadwal
+## 2. Laporan Warga
 
-Untuk mendeteksi konflik dan menilai kemacetan.
-
-| Kolom | Isi |
-|---|---|
-| `id_proyek` | Identitas proyek |
-| `segmen_terkena` | Segmen yang ditutup/dibatasi |
-| `status_proyek` | Aktif / Terjadwal / Selesai |
-| `periode_pembatasan` | Tanggal & jam pembatasan |
-| `jenis_pembatasan` | Tutup total / sebagian / buka-tutup |
-| `rute_pengalihan_aktif` | Segmen yang sedang dipakai sebagai pengalihan |
-| `progres_terakhir` | Pembaruan jadwal & waktu pembaruan |
-| `pic` | Pengawas/pelaksana penanggung jawab |
-
-**Sumber:** Pengawas proyek, PUPR, Dishub.
-
----
-
-## G. Data Lalu Lintas Dasar
-
-Dua tingkat analisis:
-
-### G1. Indikator risiko konflik (tanpa data lalu lintas — direkomendasikan untuk awal)
-Sistem memeriksa:
-- Tumpang tindih waktu pembatasan antarpoyek.
-- Jalur alternatif yang melewati pekerjaan aktif.
-- Beberapa pengalihan memakai segmen yang sama.
-- Jalan penerima pengalihan sempit / akses terbatas.
-- Benturan dengan jam sekolah atau pasar.
-- Ketersediaan rute lain yang layak.
-
-**Keluaran:** Risiko rendah / sedang / tinggi + alasan. Ini **penilaian risiko**, bukan prediksi waktu antrean.
-
-### G2. Estimasi beban lalu lintas (jika data volume tersedia)
-Data yang dibutuhkan:
-
-| Kolom | Contoh |
-|---|---|
-| `volume_per_jam` | Kendaraan/jam per arah (jam sibuk & non-sibuk) |
-| `kapasitas_jalan` | Kendaraan/jam per lajur |
-| `jumlah_lajur` | Termasuk lajur yang ditutup saat kerja |
-| `asumsi_peralihan` | % kendaraan yang diperkirakan pindah ke rute alternatif |
-| `arah_dominan` | Arus pagi/sore |
-
-Perhitungan:
-```
-Beban setelah pengalihan = lalu lintas dasar + kendaraan yang beralih
-Beban dibandingkan dengan kapasitas efektif saat pekerjaan berlangsung
+```text
+id_laporan
+waktu_laporan
+koordinat
+id_segmen
+nama_jalan
+deskripsi
+foto
+dampak_dilaporkan
+status_verifikasi
+id_cluster_duplikat
+hasil_ekstraksi_llm
+hasil_verifikasi
 ```
 
-**Keterbatasan:** Prediksi waktu tempuh/antrean memerlukan model tambahan dan validasi. Asumsi peralihan harus dinyatakan jelas dan diuji kepekaannya.
+Aturan:
+- laporan harus dihubungkan ke ruas setelah verifikasi;
+- laporan duplikat tidak dihitung sebagai kejadian kerusakan berbeda;
+- jumlah laporan menjadi salah satu sinyal, bukan penentu tunggal;
+- identitas warga tidak digunakan sebagai fitur prioritas kecuali kebutuhan operasional yang sah dan terpisah.
+
+LLM dapat membantu ekstraksi lokasi/keluhan dan mendeteksi kandidat duplikasi, tetapi hasilnya diverifikasi.
 
 ---
 
-## H. Aturan Keputusan (Bukan data, tapi wajib ditetapkan)
+## 3. Kondisi Ruas
 
-| Aturan | Isi |
+| Field | Contoh/keterangan |
 |---|---|
-| Kriteria prioritas | Tingkat kerusakan, dampak akses, peran jalan, jumlah pelapor valid, lama belum ditangani |
-| Bobot kriteria | Ditetapkan/konfirmasi bersama petugas, didokumentasikan |
-| Definisi skor | Skala tiap kriteria harus jelas agar penilaian konsisten |
-| Ketentuan laporan valid | Koordinat jelas, foto/deskripsi cukup, bukan duplikat |
-| Batasan rute wajib | Jalan dilarang untuk kendaraan tertentu tidak boleh jadi alternatif |
-| Preferensi rute | Tambahan jarak, kesesuaian jalan, benturan aktivitas |
+| `id_segmen` | ID konsisten lintas dataset |
+| `geometry` | LineString PostGIS |
+| `nama_jalan` | nama ruas |
+| `kewenangan` | kota/provinsi/nasional/dll |
+| `kelas_jalan` | fungsi/kelas resmi |
+| `panjang_m` | panjang segmen |
+| `lebar_m` | jika tersedia |
+| `jumlah_lajur` | jika tersedia |
+| `tingkat_kerusakan` | hasil survei/verifikasi |
+| `panjang_rusak_m` | panjang terdampak |
+| `jenis_kerusakan` | lubang/retak/dll sesuai data teknis |
+| `dampak_akses` | normal/terganggu/sulit/terputus |
+| `tanggal_survei` | freshness data |
+| `verified_by` | audit internal |
+
+Nilai kondisi teknis harus berasal dari sumber/verifikasi teknis, bukan inferensi LLM.
 
 ---
 
-## I. Prioritas Ketersediaan Data
+## 4. Riwayat Penanganan
 
-| Urutan | Data | Keterangan |
-|---|---|---|
-| 1 | Jaringan jalan (OSM) | Gratis, langsung diunduh |
-| 2 | Laporan warga | Dibuat lewat form sistem |
-| 3 | Ruas & kondisi jalan | Data PUPR atau survei |
-| 4 | Aktivitas sekitar | Pendataan manual (sekolah, pasar, faskes) |
-| 5 | Rencana pekerjaan | Dari petugas |
-| 6 | Pekerjaan aktif | Perlu koordinasi pengawas proyek |
-| 7 | Lalu lintas dasar | Opsional; mulai dari indikator risiko |
+```text
+id_penanganan
+id_segmen
+tanggal_mulai
+tanggal_selesai
+jenis_penanganan
+biaya_realisasi
+kondisi_sebelum
+kondisi_sesudah
+umur_manfaat_jika_tersedia
+```
+
+Dipakai untuk melihat lama belum ditangani, frekuensi kerusakan berulang, biaya historis, dan outcome.
 
 ---
 
-## J. Contoh Format (CSV)
+## 5. Data Biaya dan Durasi Kandidat
+
+Diperlukan agar mode `berdasarkan anggaran` benar-benar dapat dioptimalkan.
+
+```text
+id_kandidat
+id_segmen
+jenis_penanganan_usulan
+estimasi_biaya
+estimasi_durasi_hari
+jumlah_lajur_terdampak
+jenis_pembatasan
+opsi_waktu_mulai
+batasan_teknis
+```
+
+Tanpa estimasi biaya, sistem hanya dapat mengoptimalkan berdasarkan jumlah ruas atau constraint lain.
+
+---
+
+## 6. Fasilitas dan Aktivitas Sekitar
+
+```text
+id_fasilitas
+tipe
+nama
+geometry
+jam_aktif
+jam_padat
+akses_kritis
+```
+
+Contoh: sekolah, pasar, puskesmas, rumah sakit, terminal, layanan pemerintahan, kawasan aktivitas tinggi.
+
+Digunakan sebagai konteks manfaat dan dampak. Keberadaan fasilitas tidak otomatis menentukan prioritas; bobot/aturan harus terdokumentasi.
+
+---
+
+## 7. Jaringan Jalan / Graph
+
+Data minimum:
+
+```text
+id_segmen
+from_node
+to_node
+geometry
+length_m
+oneway
+road_class
+lanes
+width
+access
+turn_restriction
+speed_limit jika tersedia
+capacity jika tersedia
+```
+
+Sumber awal dapat menggunakan OSM, kemudian atribut penting diverifikasi/dilengkapi dari data daerah.
+
+Graph dipakai untuk:
+- hubungan antar-ruas;
+- jarak/hop dari lokasi pekerjaan;
+- identifikasi koridor penerima dampak;
+- feature engineering traffic AI;
+- jalur alternatif opsional.
+
+---
+
+## 8. Historical Traffic
+
+Ini data utama untuk **AI Traffic Impact Prediction**.
+
+### Format time-series per ruas
+
+```text
+timestamp
+id_segmen
+direction
+speed
+free_flow_speed
+volume
+occupancy jika tersedia
+congestion_index
+source
+quality_flag
+```
+
+Idealnya interval konsisten, misalnya 5/10/15 menit sesuai sumber.
+
+Sumber kandidat:
+- ATCS Dishub;
+- traffic counter;
+- CCTV + vehicle counting;
+- survei lalu lintas;
+- traffic provider jika tersedia;
+- collector berkala JalanTanggap.
+
+Jangan mencampur sumber tanpa menyimpan `source` dan indikator kualitas.
+
+---
+
+## 9. Historical Roadworks / Gangguan
+
+Agar model dapat belajar efek pekerjaan, histori traffic harus dapat dipasangkan dengan histori gangguan.
+
+```text
+id_event
+id_segmen_pekerjaan
+waktu_mulai
+waktu_selesai
+jenis_pekerjaan
+jenis_pembatasan
+jumlah_lajur_ditutup
+arah_terdampak
+severity
+segmen_pengalihan jika diketahui
+```
+
+Training sample kemudian dapat membandingkan baseline dengan kondisi saat event.
+
+Contoh label turunan:
+
+```text
+source_project = P001
+target_segment = S015
+time_window = 07:00-08:00
+delta_volume = +420 veh/hour
+delta_speed = -12 km/hour
+congestion = 1
+```
+
+---
+
+## 10. Pekerjaan Aktif dan Terjadwal
+
+```text
+id_proyek
+id_segmen
+status
+periode_mulai
+periode_selesai
+jam_pembatasan
+jenis_pembatasan
+jumlah_lajur_ditutup
+estimasi_biaya
+progress
+```
+
+Digunakan untuk mendeteksi konflik dengan paket baru.
+
+---
+
+## 11. Dataset Priority / Need Scoring
+
+### Baseline MVP
+
+Fitur dapat mencakup:
+
+```text
+tingkat_kerusakan
+panjang_rusak
+dampak_akses
+kelas_jalan
+jumlah_laporan_valid
+umur_laporan_tertua
+lama_sejak_penanganan
+jumlah_fasilitas_kritis
+estimasi_biaya
+```
+
+Pada MVP, gunakan aturan/SAW yang disepakati petugas dan simpan komponen skor agar dapat diaudit.
+
+### Jika menggunakan ML
+
+Diperlukan target/label yang jelas. Contoh yang mungkin setelah data tersedia:
+- prioritas ahli terverifikasi;
+- outcome/manfaat setelah penanganan;
+- keputusan paket historis yang telah dikaji kualitasnya.
+
+Tidak disarankan mengklaim priority scoring sebagai AI jika hanya menggunakan bobot manual.
+
+---
+
+## 12. Dataset Traffic AI
+
+### Feature per pasangan pekerjaan → target ruas
+
+```text
+project_segment
+candidate_affected_segment
+graph_distance
+hop_count
+baseline_volume
+baseline_speed
+free_flow_speed
+capacity
+lanes
+lanes_closed
+closure_type
+hour
+day_of_week
+nearby_active_projects
+facility_activity
+weather_optional
+```
+
+### Target
+
+```text
+delta_volume
+delta_speed
+congestion_probability
+risk_class
+```
+
+Untuk MVP, XGBoost/Random Forest dapat diuji. Pemilihan model final berdasarkan hasil validasi, bukan nama algoritma.
+
+---
+
+## 13. Data untuk Optimizer
+
+Optimizer membutuhkan hasil dari mesin sebelumnya ditambah constraint perencanaan:
+
+```text
+id_kandidat
+need_score
+estimated_cost
+estimated_duration
+traffic_risk
+uncertainty
+allowed_periods
+required_periods
+conflicting_project_ids
+resource_requirement
+```
+
+Parameter skenario:
+
+```text
+target_project_count = 10 / 20 / null
+budget_limit
+planning_start
+planning_end
+max_simultaneous_projects
+max_acceptable_traffic_risk
+```
+
+Output optimizer harus menyimpan objective score dan alasan constraint yang membuat kandidat tidak masuk/berpindah tahap.
+
+---
+
+## 14. Outcome Setelah Pelaksanaan
+
+Bagian ini penting agar sistem dapat belajar.
+
+```text
+id_proyek
+actual_start
+actual_end
+actual_cost
+actual_closure
+actual_traffic_per_affected_segment
+complaints_during_work
+incident_count jika tersedia
+condition_after
+operator_notes
+```
+
+Outcome dipakai untuk:
+- menguji prediksi;
+- memperbaiki dataset;
+- retraining;
+- mengetahui apakah rekomendasi paket benar-benar memberikan hasil baik.
+
+---
+
+## 15. Contoh CSV Minimum
 
 ### `laporan.csv`
+
 ```csv
-id_laporan,waktu,koordinat,nama_jalan,deskripsi,dampak,status
-L001,2026-09-01 08:12,-6.9174,107.6191,Jalan Melati,Lubang besar di depan sekolah banyak lubang,ban bocor jika lewat,Valid
-L002,2026-09-02 10:30,-6.9176,107.6195,Jalan Melati,Depan sekolah rusak parah,sulit melintas saat pagi,Valid
+id_laporan,waktu,id_segmen,deskripsi,status
+L001,2026-09-01 08:12,S001,"Lubang besar dan mengganggu kendaraan",Valid
+L002,2026-09-02 10:30,S001,"Jalan rusak depan sekolah",Valid
 ```
 
 ### `segmen_jalan.csv`
+
 ```csv
-id_segmen,nama_jalan,kewenangan,tingkat_kerusakan,panjang_rusak_m,dampak_akses
-S001,Jalan Melati,Kota,5,120,Terputus
-S002,Jalan Anggrek,Kota,3,40,Terganggu
+id_segmen,nama_jalan,tingkat_kerusakan,panjang_rusak_m,dampak_akses,jumlah_lajur
+S001,Jalan A,5,120,Sulit,2
+S002,Jalan B,3,40,Terganggu,2
 ```
 
-### `pekerjaan_aktif.csv`
+### `traffic_history.csv`
+
 ```csv
-id_proyek,segmen_terkena,status,periode_mulai,periode_selesai,jenis_pembatasan,rute_pengalihan
-P001,S010,Aktif,2026-09-01,2026-10-15,Tutup total,S009
+timestamp,id_segmen,speed,free_flow_speed,volume,congestion_index,source
+2026-09-10 07:00,S001,18,40,1250,0.72,DISHUB
+2026-09-10 07:05,S001,16,40,1320,0.78,DISHUB
 ```
 
-### `aktivitas_sekitar.csv`
+### `kandidat_pekerjaan.csv`
+
 ```csv
-id,nama,tipe,koordinat,jam_padat,keterangan
-A001,SDN 01 Melati,Sekolah,-6.9180,107.6198,06.30-07.30;15.00-16.00,
-A002,Pasar Melati,Pasar,-6.9170,107.6180,04.00-09.00,,
+id_kandidat,id_segmen,estimasi_biaya,estimasi_durasi_hari,jumlah_lajur_terdampak
+K001,S001,500000000,14,1
+K002,S002,300000000,7,1
 ```
 
 ---
 
-## K. Keterbatasan dan Asumsi
+## 16. Urutan Pengumpulan Data
 
-1. **Laporan warga** menggambarkan lokasi yang dilaporkan, bukan kondisi seluruh jalan di daerah.
-2. **Jumlah laporan ≠ bukti kondisi.** Diberi bobot kecil agar jalan di wilayah yang jarang melapor tetap bisa diprioritaskan berdasarkan kondisi.
-3. **OSM** belum tentu lengkap atribut lebar/pembatasan → verifikasi kandidat rute.
-4. **Indikator kemacetan awal** adalah risiko konflik, bukan simulasi lalu lintas.
-5. **LLM** tidak menghitung volume/capaK; angka berasal dari data.
-6. Data simulasi hanya untuk demonstrasi sistem, bukan kesimpulan pelayanan nyata.
+### Wajib untuk Recommendation MVP
+1. ruas dan kondisi jalan;
+2. laporan warga terverifikasi;
+3. kandidat pekerjaan;
+4. estimasi biaya/durasi;
+5. jaringan jalan;
+6. pekerjaan aktif.
+
+### Wajib untuk Traffic AI yang layak
+7. historical traffic per ruas;
+8. historical roadworks/gangguan;
+9. pasangan baseline vs kondisi saat gangguan;
+10. validasi outcome.
+
+### Pengayaan
+11. fasilitas/aktivitas;
+12. cuaca;
+13. CCTV vehicle counting;
+14. data realtime.
+
+---
+
+## 17. Data Quality
+
+Setiap dataset sebaiknya memiliki:
+- `source`;
+- waktu pembaruan;
+- status verifikasi;
+- quality/confidence flag;
+- ID ruas yang konsisten;
+- version/audit trail untuk perubahan penting.
+
+Masalah utama yang perlu diperiksa: missing value, koordinat salah, ruas ganda, timestamp/timezone tidak konsisten, data traffic kosong, perubahan ID OSM, laporan duplikat, dan data kondisi yang sudah kedaluwarsa.
+
+---
+
+## 18. Batasan
+
+1. Banyak laporan tidak otomatis berarti ruas paling rusak.
+2. Wilayah dengan partisipasi warga rendah tidak boleh otomatis mendapat skor rendah.
+3. Tanpa historical traffic + event pekerjaan yang memadai, dampak kemacetan hanya dapat dinilai sebagai baseline/risk scoring.
+4. Prediksi AI tidak menggantikan survei teknis atau keputusan pejabat.
+5. Estimasi biaya dan kapasitas harus berasal dari sumber teknis.
+6. Contoh data dalam dokumentasi adalah ilustrasi.
+7. Data pribadi warga tidak diperlukan untuk training model rekomendasi.
