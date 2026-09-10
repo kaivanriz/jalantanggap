@@ -1,164 +1,392 @@
 # 🛣️ JalanTanggap
 
-## Pilih jalan yang paling perlu diperbaiki, tanpa membuat masalah lalu lintas baru
+## Dari laporan warga menjadi perencanaan perbaikan jalan berbasis data dan AI
 
-JalanTanggap adalah rancangan **sistem rekomendasi paket perbaikan jalan berbasis data dan AI**. Sistem membantu pemerintah menjawab pertanyaan:
+**JalanTanggap** adalah rancangan sistem pendukung keputusan untuk membantu pemerintah menentukan ruas jalan yang perlu diprioritaskan, memilih paket pekerjaan sesuai anggaran dan sumber daya, serta pada tahap lanjut memprediksi dampak pekerjaan terhadap lalu lintas.
 
-> **Dari seluruh ruas yang rusak dan laporan warga, jika hanya 10 atau 20 lokasi yang dapat diperbaiki, lokasi mana yang sebaiknya dipilih dan bagaimana pelaksanaannya agar manfaatnya tinggi tetapi dampak kemacetannya tetap terkendali?**
+Pengembangan JalanTanggap dilakukan **bertahap**. Sistem tidak langsung bergantung pada AI ketika data historis belum tersedia. MVP dimulai dari **NLP untuk laporan warga + survei teknis + SAW**, kemudian berevolusi menjadi **AI Prioritization, Multi-Project Optimization, AI Traffic Impact Prediction, dan Intelligent Planning**.
 
-Sistem tidak hanya membuat ranking jalan. JalanTanggap menggabungkan **kondisi jalan + aspirasi warga + AI Traffic Impact Prediction + optimization** untuk menghasilkan paket pekerjaan yang dapat dipertanggungjawabkan.
+> **Tujuan akhir:** menjawab ruas mana yang perlu diperbaiki, ruas mana yang dapat dikerjakan bersamaan, kapan sebaiknya dikerjakan, dan wilayah mana yang berpotensi terdampak lalu lintas.
 
-## Skenario utama
+---
 
-Misalnya tersedia 100 kandidat ruas rusak, sedangkan kapasitas program hanya 20 ruas atau dibatasi anggaran tertentu.
+## 🧭 Roadmap Utama
 
 ```text
-Data kerusakan + laporan warga + konteks pelayanan
-                    ↓
-        Priority / Need Scoring
-                    ↓
-           Kandidat perbaikan
-                    ↓
-       AI Traffic Impact Prediction
-                    ↓
- Dampak tiap kandidat ke jaringan sekitar
-                    ↓
-       Multi-Project Optimization
-                    ↓
-   Paket 10 / 20 ruas / sesuai anggaran
-                    ↓
- Tahapan pelaksanaan + peta dampak + alasan
+JalanTanggap 1.0
+BERT/SBERT + Survey Jalan + SAW
+        ↓
+"Mana jalan yang prioritas?"
+
+JalanTanggap 2.0
+NLP + Historical Dataset + AI Prioritization
+        ↓
+"Mana jalan yang direkomendasikan AI?"
+
+JalanTanggap 3.0
+AI Priority + Anggaran + Resource + Optimization
+        ↓
+"Dengan keterbatasan yang ada, paket pekerjaan mana yang terbaik?"
+
+JalanTanggap 4.0
++ Historical Traffic + Road Network + Traffic Impact AI
+        ↓
+"Jika pekerjaan dilakukan, wilayah mana yang berpotensi terdampak?"
+
+JalanTanggap 5.0
+NLP + AI Priority + Traffic AI + Graph + Optimization
+        ↓
+"Mana yang diperbaiki, kapan, mana yang dapat bersamaan, dan apa dampaknya?"
 ```
 
-Contoh hasil:
+Roadmap lengkap dan Definition of Done setiap fase tersedia di **[ROADMAP.md](ROADMAP.md)**.
 
-| Ruas | Kebutuhan | Risiko traffic | Keputusan |
-|---|---:|---|---|
-| Jalan A | 94% | Sedang | Dipilih — Tahap 1 |
-| Jalan B | 91% | Tinggi | Tetap prioritas, tetapi jangan bersamaan dengan A |
-| Jalan C | 88% | Rendah | Dipilih — Tahap 1 |
-| Jalan F | 86% | Rendah | Dipilih — Tahap 1 |
+---
 
-Jalan dengan skor kebutuhan tinggi tidak otomatis dikeluarkan hanya karena berdampak pada lalu lintas. Sistem dapat merekomendasikan **waktu/tahap berbeda**.
+# Fase 1 — Smart Reporting + Survey + SAW
 
-## Tiga mesin keputusan
+Fase pertama adalah MVP yang dapat digunakan meskipun belum tersedia dataset historis besar.
 
-### 1. Priority / Need Scoring
-Menilai seberapa penting suatu ruas ditangani berdasarkan data terverifikasi, misalnya tingkat dan panjang kerusakan, dampak akses, fungsi jalan, lama belum ditangani, fasilitas publik, serta laporan warga yang valid.
+```text
+Laporan Warga
+     ↓
+BERT / NLP
+     ↓
+Klasifikasi + Ekstraksi
+     ↓
+SBERT / Semantic Similarity
+     ↓
+Deteksi kandidat laporan duplikat
+     ↓
+Verifikasi Petugas
+     +
+Survey Kondisi Jalan
+     ↓
+Data Ruas Terverifikasi
+     ↓
+SAW
+     ↓
+Priority Score
+     ↓
+Ranking Top 10 / Top 20
+```
 
-Pada MVP, bila belum tersedia label historis yang memadai, scoring dapat menggunakan SAW/rule-based yang transparan. Setelah tersedia data keputusan dan outcome historis, model ML dapat dikembangkan untuk membantu priority prediction.
+## BERT / NLP untuk laporan warga
 
-### 2. AI Traffic Impact Prediction
-Memprediksi efek pekerjaan pada ruas sekitar berdasarkan histori lalu lintas, karakteristik jaringan, waktu pekerjaan, kapasitas/lajur, pekerjaan aktif, dan aktivitas sekitar.
+BERT/IndoBERT atau model NLP Bahasa Indonesia digunakan untuk memahami teks laporan warga, misalnya:
+
+- klasifikasi jenis laporan;
+- ekstraksi jenis masalah seperti lubang, genangan, atau kerusakan permukaan;
+- identifikasi dampak yang dilaporkan warga;
+- ekstraksi landmark/lokasi dari teks;
+- normalisasi laporan.
+
+**Sentence-BERT/SBERT** atau sentence embedding digunakan untuk semantic similarity, clustering, dan membantu mendeteksi laporan yang kemungkinan membahas kejadian yang sama.
+
+```text
+"Jalan depan pasar banyak lubang"
+              ≈
+"Aspal rusak parah dekat pasar"
+              ↓
+Similarity teks + lokasi + waktu
+              ↓
+Kandidat laporan yang sama
+              ↓
+Verifikasi petugas
+```
+
+NLP **tidak menggantikan survei teknis**. Pernyataan warga seperti "rusak parah" hanya menjadi indikasi awal. Tingkat kerusakan final berasal dari hasil survei/verifikasi teknis.
+
+## SAW sebagai baseline prioritas
+
+Pada fase awal, **Simple Additive Weighting (SAW)** digunakan karena transparan, mudah diaudit, dan belum membutuhkan dataset training besar.
+
+Kriteria dapat mencakup:
+
+- tingkat kerusakan hasil survei;
+- panjang/luas kerusakan;
+- fungsi atau kelas jalan;
+- dampak akses;
+- jumlah laporan warga valid dan terdeduplikasi;
+- lama belum ditangani;
+- fasilitas publik/akses penting;
+- riwayat penanganan.
+
+Output Fase 1:
+
+```text
+1. Jalan A    0.94
+2. Jalan C    0.91
+3. Jalan F    0.88
+...
+10. Jalan K   0.72
+```
+
+Petugas memperoleh **ranking prioritas, Top 10/Top 20, peta prioritas, dan alasan skor per kriteria**.
+
+SAW adalah metode DSS/MCDM dan **bukan AI**.
+
+---
+
+# Fase 2 — AI Prioritization
+
+Selama Fase 1 berjalan, JalanTanggap menyimpan histori:
+
+```text
+Laporan warga
+Hasil NLP
+Hasil survey
+SAW score
+Keputusan petugas
+Dipilih / tidak dipilih
+Biaya dan pelaksanaan
+Kondisi sebelum / sesudah
+Outcome
+        ↓
+Historical JalanTanggap Dataset
+```
+
+Dataset tersebut digunakan untuk mengembangkan model prioritas berbasis machine learning.
+
+```text
+Historical Dataset
+        ↓
+Feature Engineering
+        ↓
+XGBoost / LightGBM / Random Forest / model terpilih
+        ↓
+AI Priority Model
+        ↓
+AI Priority Score
+```
+
+Pada fase ini, **SAW tidak langsung dihapus**. SAW menjadi baseline untuk membandingkan hasil AI dan membantu audit keputusan.
+
+AI juga tidak sebaiknya dilatih hanya untuk meniru skor SAW. Target training diarahkan pada keputusan ahli yang terverifikasi dan outcome nyata agar model dapat memberikan nilai tambah dibanding formula awal.
+
+---
+
+# Fase 3 — AI-Assisted Multi-Project Optimization
+
+Setelah tersedia AI Priority Score, masalah berkembang dari sekadar ranking menjadi pemilihan **kombinasi proyek terbaik**.
 
 Contoh:
 
 ```text
-Perbaikan Jalan A — Senin 07.00–16.00 — 1 lajur ditutup
-
-🔴 Simpang X    risiko 92%
-🔴 Jalan K      risiko 87%
-🟡 Jalan D      risiko 64%
-🟢 Jalan E      risiko 18%
+73 kandidat jalan
+Anggaran Rp20 miliar
+Maksimal 20 ruas
+4 tim pekerjaan
+Periode pelaksanaan tertentu
+        ↓
+AI Priority + Cost + Duration + Resource
+        ↓
+Optimizer
+        ↓
+Paket pekerjaan terbaik
 ```
 
-Untuk MVP, model yang disarankan adalah **XGBoost atau Random Forest**. Jika kelak tersedia histori sensor/CCTV yang besar, dapat dikembangkan ke model spatio-temporal graph.
-
-### 3. Multi-Project Optimization
-Memilih kombinasi pekerjaan terbaik, bukan sekadar mengambil ranking 10/20 teratas.
-
-Optimizer mempertimbangkan manfaat, risiko lalu lintas, konflik antarpekerjaan, jumlah proyek, anggaran, periode pelaksanaan, dan constraint teknis.
+Optimizer dapat menggunakan **OR-Tools CP-SAT, MILP/Pyomo, atau metode constraint optimization lain**.
 
 Secara konseptual:
 
 ```text
 maximize:
-  manfaat_perbaikan - risiko_kemacetan - konflik_proyek
+    total manfaat / priority
 
 subject to:
-  jumlah_proyek <= target
-  total_biaya <= anggaran
-  proyek_berkonflik tidak dijalankan bersamaan
+    total_biaya <= anggaran
+    jumlah_proyek <= target
+    proyek_simultan <= kapasitas_tim
+    constraint teknis terpenuhi
 ```
 
-Metode yang dapat digunakan: **Mixed Integer Programming / constraint optimization**.
+Optimizer tidak harus menghasilkan tepat 20 ruas. Jika kombinasi terbaik dalam batas anggaran adalah 17 ruas, sistem dapat merekomendasikan 17 ruas disertai alasannya.
 
-## Masukan sistem
+Optimization di sini adalah **optimisasi matematis**, sedangkan AI digunakan untuk menghasilkan informasi/prediksi yang menjadi input optimizer.
 
-- laporan/aspirasi warga;
-- hasil verifikasi kondisi jalan;
-- tingkat dan panjang kerusakan;
-- kelas/fungsi/kewenangan jalan;
-- fasilitas penting di sekitar;
-- riwayat penanganan;
-- estimasi biaya dan durasi pekerjaan;
-- jaringan jalan;
-- histori volume, kecepatan, dan kepadatan;
-- pekerjaan aktif/terjadwal;
-- jenis dan waktu pembatasan lajur;
-- aktivitas sekolah, pasar, faskes, atau event.
+---
 
-## Keluaran utama
+# Fase 4 — AI Traffic Impact Prediction
 
-Petugas dapat memilih mode **Top 10**, **Top 20**, atau **berdasarkan anggaran**. Sistem menghasilkan:
+Fase ini menambahkan kemampuan untuk memperkirakan **dampak pekerjaan jalan terhadap jaringan lalu lintas di sekitarnya**.
 
-- paket ruas yang direkomendasikan;
-- alasan pemilihan dan faktor dominan;
-- kandidat penting yang belum dipilih beserta alasannya;
-- heatmap dampak lalu lintas;
-- ranking ruas/kawasan terdampak;
-- matriks konflik antarpekerjaan;
-- pekerjaan yang relatif aman dilakukan bersamaan;
-- pekerjaan yang perlu dipisahkan tahap/waktunya;
-- skenario jadwal;
-- confidence/ketidakpastian model;
-- jalur alternatif sebagai fitur pendukung bila diperlukan.
+Data utama:
 
-## Peran AI dan non-AI
+- historical traffic;
+- historical roadworks;
+- volume kendaraan;
+- kecepatan/free-flow speed;
+- congestion index;
+- waktu dan hari;
+- kapasitas/jumlah lajur;
+- jenis penutupan;
+- jaringan jalan/graph;
+- pekerjaan aktif;
+- aktivitas sekitar bila tersedia.
 
-| Komponen | Fungsi | AI? |
+```text
+Rencana Pekerjaan
+       +
+Historical Traffic
+       +
+Historical Roadworks
+       +
+Road Network
+       ↓
+Traffic Impact AI
+       ↓
+Delta Volume / Delta Speed
+       ↓
+Congestion Probability
+       ↓
+Affected Roads / Areas
+       ↓
+Heatmap Dampak
+```
+
+Untuk MVP Traffic AI, kandidat awal adalah **XGBoost/Random Forest + fitur spasial/graph**. Jika kemudian tersedia time-series sensor/CCTV dalam skala besar, dapat dievaluasi model **spatio-temporal graph neural network**.
+
+Contoh output:
+
+```text
+Perbaikan Jalan A
+Senin 07.00–16.00
+1 dari 2 lajur ditutup
+
+🔴 Jalan B       risiko 91%
+🔴 Simpang X     risiko 86%
+🟡 Jalan C       risiko 64%
+🟢 Jalan D       risiko 17%
+```
+
+Jika data historis belum memadai, sistem harus menyebut hasil sebagai **risk scoring/baseline**, bukan prediksi AI tervalidasi.
+
+---
+
+# Fase 5 — Intelligent Road Maintenance Planning
+
+Fase akhir mengintegrasikan seluruh komponen.
+
+```text
+                 LAPORAN WARGA
+                       ↓
+                  BERT / NLP
+                       ↓
+                 DATA SURVEY
+                       ↓
+              AI PRIORITY MODEL
+                       ↓
+              Kandidat Perbaikan
+                       │
+         ┌─────────────┴─────────────┐
+         ↓                           ↓
+ Anggaran / Resource         Historical Traffic
+                                     ↓
+                            TRAFFIC IMPACT AI
+         │                           │
+         └─────────────┬─────────────┘
+                       ↓
+              MULTI-PROJECT OPTIMIZER
+                       ↓
+              REKOMENDASI PROGRAM
+                       ↓
+       ┌───────────────┼───────────────┐
+       ↓               ↓               ↓
+ Paket Jalan       Tahapan/Jadwal   Dampak Traffic
+ Top 10/20         Timeline         Heatmap
+```
+
+Pada tahap ini JalanTanggap ditujukan untuk menjawab:
+
+> **Dengan anggaran dan sumber daya yang tersedia, ruas mana yang sebaiknya diperbaiki, mana yang dapat dikerjakan bersamaan, kapan waktu pelaksanaannya, dan wilayah mana yang berpotensi terkena dampak lalu lintas?**
+
+Output dapat mencakup paket ruas, alasan rekomendasi, penggunaan anggaran, tahapan pekerjaan, konflik antarproyek, heatmap dampak, confidence model, dan beberapa skenario perencanaan.
+
+Jalur alternatif tetap dapat dikembangkan sebagai **fitur pendukung**, tetapi bukan fokus utama sistem.
+
+---
+
+## Peran AI dan Non-AI
+
+| Komponen | Fungsi | Kategori |
 |---|---|---|
-| LLM | Ekstraksi dan klarifikasi laporan warga, penjelasan hasil | Ya |
-| XGBoost / Random Forest | Traffic Impact Prediction | Ya |
-| Priority ML | Pengembangan lanjutan bila label historis tersedia | Ya |
-| SAW / rule scoring | Baseline prioritas yang transparan | Tidak |
-| Graph analysis | Konektivitas dan penyebaran dampak | Tidak harus AI |
-| Optimization | Memilih paket dan tahapan dengan constraint | Optimisasi matematis |
-| Dijkstra / A* | Jalur alternatif opsional | Tidak |
+| BERT / IndoBERT | Memahami dan mengklasifikasikan laporan warga | NLP / AI |
+| SBERT / Sentence Embedding | Similarity, clustering, kandidat deduplikasi laporan | NLP / AI |
+| SAW | Baseline prioritas Fase 1 | DSS / MCDM, bukan AI |
+| XGBoost / LightGBM / RF | Kandidat AI Priority Model | Machine Learning |
+| Traffic Impact Model | Prediksi dampak lalu lintas | Machine Learning / AI |
+| Graph Analysis | Relasi dan propagasi antar ruas | Algoritmik, tidak harus AI |
+| OR-Tools / MILP / CP-SAT | Memilih paket/tahapan berdasarkan constraint | Mathematical Optimization |
+| Dijkstra / A* | Jalur alternatif opsional | Algoritma routing, bukan AI |
 
-## Prinsip penting
+---
 
-- **Manusia tetap pengambil keputusan akhir.**
-- Jumlah laporan warga tidak boleh menjadi satu-satunya penentu prioritas.
-- LLM tidak boleh menebak kondisi teknis, volume, biaya, atau kapasitas jalan.
-- Jika histori traffic belum cukup, keluaran harus disebut **risk scoring/baseline**, bukan prediksi AI.
-- Model AI harus divalidasi sebelum digunakan untuk rekomendasi operasional.
-- Ruas yang sangat mendesak tetap dapat direkomendasikan walaupun berdampak tinggi, dengan mitigasi jadwal/tahapan.
+## Prinsip Sistem
 
-## Teknologi yang direncanakan
+- **Human-in-the-loop:** keputusan akhir tetap pada petugas/pejabat berwenang.
+- Laporan warga adalah input penting, tetapi bukan satu-satunya penentu prioritas.
+- NLP tidak boleh menggantikan hasil survei teknis.
+- Laporan duplikat harus ditangani agar jumlah laporan tidak memanipulasi skor.
+- SAW digunakan sebagai baseline transparan sebelum dataset AI matang.
+- AI harus divalidasi terhadap data nyata dan outcome, bukan sekadar meniru SAW.
+- Confidence/uncertainty model harus ditampilkan jika tersedia.
+- Semua rekomendasi dan override manusia harus memiliki audit trail.
 
-| Komponen | Rencana |
+---
+
+## Teknologi yang Direncanakan
+
+| Komponen | Teknologi |
 |---|---|
-| Backend | Python / FastAPI |
+| Backend/API | Python / FastAPI |
 | Database spasial | PostgreSQL + PostGIS |
-| Peta | Leaflet / OpenStreetMap |
-| Jaringan jalan | OSMnx / NetworkX |
-| AI Traffic Impact | XGBoost / Random Forest |
-| Optimizer | OR-Tools / Pyomo atau solver setara |
-| Priority baseline | SAW / rule-based |
-| LLM | Ekstraksi laporan dan penjelasan |
-| Rute opsional | Dijkstra / A* |
-| Visualisasi | Heatmap, timeline, matriks konflik, paket rekomendasi |
+| WebGIS | Leaflet / OpenStreetMap |
+| NLP | BERT/IndoBERT + Sentence-BERT/Sentence Transformer |
+| Priority MVP | SAW |
+| AI Prioritization | XGBoost / LightGBM / Random Forest atau model terpilih |
+| Road graph | OSMnx / NetworkX |
+| Traffic Impact AI | XGBoost / Random Forest, lanjut ST-GNN bila data memadai |
+| Optimization | OR-Tools / CP-SAT / MILP / Pyomo |
+| Routing opsional | Dijkstra / A* |
+| Visualisasi | Ranking, WebGIS, heatmap, timeline, conflict matrix |
+
+---
 
 ## Dokumentasi
 
-- [Rencana proyek](Rencana-Proyek.md)
-- [Kebutuhan data](Kebutuhan-Data.md)
-- [AI Traffic Impact Prediction](AI-Traffic-Impact.md)
+- **[ROADMAP.md](ROADMAP.md)** — acuan utama urutan pengembangan dan Definition of Done.
+- [Rencana-Proyek.md](Rencana-Proyek.md) — rancangan proyek dan arsitektur.
+- [Kebutuhan-Data.md](Kebutuhan-Data.md) — kebutuhan dataset setiap komponen.
+- [AI-Traffic-Impact.md](AI-Traffic-Impact.md) — rancangan khusus Traffic Impact AI.
 - [Data nyata Kota Tangerang](data/real-tangerang/README.md)
 - [Analisis koridor Kota Tangerang](data/real-tangerang/analisis_koridor.md)
 - [Data sampel Tangerang–Rajeg](data/sample-tangerang/README.md)
 
-## Status
+---
 
-Tahap **perencanaan dan dokumentasi**. Angka pada contoh merupakan ilustrasi, bukan hasil pengukuran nyata. Prioritas awal dapat dibangun dengan metode transparan sambil mengumpulkan histori yang diperlukan untuk model AI.
+## Status Pengembangan
+
+**Fokus saat ini: Fase 1 — Smart Reporting + Survey + SAW.**
+
+Prioritas implementasi:
+
+```text
+Database & Data Ruas
+        ↓
+Laporan Warga
+        ↓
+BERT / SBERT
+        ↓
+Verifikasi Petugas
+        ↓
+Survey Jalan
+        ↓
+SAW
+        ↓
+Ranking Top 10 / Top 20
+        ↓
+WebGIS / Dashboard
+```
+
+Fase AI berikutnya dikembangkan setelah data historis yang dibutuhkan mulai tersedia dan dapat dievaluasi secara layak.
